@@ -875,6 +875,9 @@
     (and equivalent functionality in other generations of cellular).-->
     <integer name="config_default_cellular_usage_setting">-1</integer>
 
+    <!-- Whether the new Auto Selection Network UI should be shown -->
+    <bool name="config_enableNewAutoSelectNetworkUI">true</bool>
+
     <!-- Whether the Unprocessed audio source supports the required frequency range and level -->
     <bool name="config_supportAudioSourceUnprocessed">true</bool>
 
