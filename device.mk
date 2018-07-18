@@ -345,6 +345,7 @@ $(foreach sku, CN GL, \
 PRODUCT_PACKAGES += \
     ApertureOverlayGarnet \
     CarrierConfigOverlayGarnet \
+    DialerOverlayGarnet \
     FrameworkOverlayGarnet \
     FrameworkOverlayGarnetEsim \
     SettingsOverlayGarnet \
