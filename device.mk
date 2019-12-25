@@ -270,6 +270,7 @@ PRODUCT_PACKAGES += \
     LineageSDKOverlayGarnet \
     LineageSettingsOverlayGarnet \
     LineageSystemUIOverlayGarnet \
+    NfcOverlayGarnet \
     SettingsOverlayGarnet \
     SettingsProviderOverlayGarnetPoco \
     SettingsProviderOverlayGarnetRedmi \
