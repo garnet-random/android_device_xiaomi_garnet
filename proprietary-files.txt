@@ -3497,7 +3497,6 @@ vendor/etc/sensors/config/sns_wrist_pedo.json
 vendor/etc/sensors/config/sx937x_0.json
 vendor/etc/sensors/config/sx937x_reg_0.json
 vendor/etc/sensors/config/tcs3701.json
-vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sns_reg_config
 vendor/etc/vintf/manifest/android.hardware.sensors@2.1-multihal.xml
 vendor/lib/android.frameworks.sensorservice@1.0.so
