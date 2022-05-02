@@ -325,6 +325,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.memtrack-V1-ndk_platform.vendor
 
+# Mlipay
+PRODUCT_PACKAGES += \
+    vendor.xiaomi.hardware.mlipay@1.1.vendor
+
 # Network
 PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.config@1.0.vendor \
