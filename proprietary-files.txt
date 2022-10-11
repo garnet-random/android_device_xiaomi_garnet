@@ -1623,22 +1623,6 @@ vendor/lib64/libsdmextension.so
 vendor/lib64/libtestutils.so
 vendor/lib64/libtinyxml2_1.so
 
-# Display interfaces
-vendor/lib/vendor.qti.hardware.display.config-V1-ndk_platform.so
-vendor/lib/vendor.qti.hardware.display.config-V2-ndk_platform.so
-vendor/lib/vendor.qti.hardware.display.config-V3-ndk_platform.so
-vendor/lib/vendor.qti.hardware.display.config-V4-ndk_platform.so
-vendor/lib/vendor.qti.hardware.display.config-V5-ndk_platform.so
-vendor/lib/vendor.qti.hardware.display.config-V6-ndk_platform.so
-vendor/lib/vendor.qti.hardware.display.config-V7-ndk_platform.so
-vendor/lib64/vendor.qti.hardware.display.config-V1-ndk_platform.so
-vendor/lib64/vendor.qti.hardware.display.config-V2-ndk_platform.so
-vendor/lib64/vendor.qti.hardware.display.config-V3-ndk_platform.so
-vendor/lib64/vendor.qti.hardware.display.config-V4-ndk_platform.so
-vendor/lib64/vendor.qti.hardware.display.config-V5-ndk_platform.so
-vendor/lib64/vendor.qti.hardware.display.config-V6-ndk_platform.so
-vendor/lib64/vendor.qti.hardware.display.config-V7-ndk_platform.so
-
 # Display postprocessing
 vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/ppd
