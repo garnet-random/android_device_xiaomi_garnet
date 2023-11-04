@@ -3731,7 +3731,12 @@ vendor/firmware/vpu20_1v.mbn
 vendor/firmware/vpu20_1v.mdt
 
 # Vibrator firmware
-vendor/firmware/0_click_P_RTP.bin
+vendor/firmware/0_click_P_RTP.bin:vendor/etc/vibrator/effect_0.bin
+vendor/firmware/1_doubelClick_P_RTP.bin:vendor/etc/vibrator/effect_1.bin
+vendor/firmware/2_tick_P_RTP.bin:vendor/etc/vibrator/effect_2.bin
+vendor/firmware/3_thud_P_RTP.bin:vendor/etc/vibrator/effect_3.bin
+vendor/firmware/4_pop_P_RTP.bin:vendor/etc/vibrator/effect_4.bin
+vendor/firmware/5_heavyClick_P_RTP.bin:vendor/etc/vibrator/effect_5.bin
 vendor/firmware/101_offlineCountdown_P_RTP.bin
 vendor/firmware/102_sceneBombInjury_P_RTP.bin
 vendor/firmware/103_sceneBomb_P_RTP.bin
@@ -3828,7 +3833,6 @@ vendor/firmware/190_signalTransitionLight_P_RTP.bin
 vendor/firmware/191_signalTransition_P_RTP.bin
 vendor/firmware/192_hapticsVideo_RTP.bin
 vendor/firmware/19_ringTone4_RTP.bin
-vendor/firmware/1_doubelClick_P_RTP.bin
 vendor/firmware/20_ringTone4_RTP.bin
 vendor/firmware/23_Candy_P_RTP.bin
 vendor/firmware/24_Carousel_P_RTP.bin
@@ -3836,7 +3840,6 @@ vendor/firmware/25_Celesta_P_RTP.bin
 vendor/firmware/26_Childhood_P_RTP.bin
 vendor/firmware/27_Country_P_RTP.bin
 vendor/firmware/28_Cowboy_P_RTP.bin
-vendor/firmware/2_tick_P_RTP.bin
 vendor/firmware/30_Fairyland_P_RTP.bin
 vendor/firmware/31_Fantasy_P_RTP.bin
 vendor/firmware/32_FieldTrip_P_RTP.bin
@@ -3845,7 +3848,6 @@ vendor/firmware/35_IceLatte_P_RTP.bin
 vendor/firmware/36_KungFu_P_RTP.bin
 vendor/firmware/38_Lollipop_P_RTP.bin
 vendor/firmware/39_MiMix2_P_RTP.bin
-vendor/firmware/3_thud_P_RTP.bin
 vendor/firmware/40_Mi_P_RTP.bin
 vendor/firmware/41_MiHouse_P_RTP.bin
 vendor/firmware/42_MiJazz_P_RTP.bin
@@ -3856,7 +3858,6 @@ vendor/firmware/46_WindChime_P_RTP.bin
 vendor/firmware/47_SpaceAge_P_RTP.bin
 vendor/firmware/48_ToyRobot_P_RTP.bin
 vendor/firmware/49_Vigor_P_RTP.bin
-vendor/firmware/4_pop_P_RTP.bin
 vendor/firmware/50_Bottle_P_RTP.bin
 vendor/firmware/51_Bubble_P_RTP.bin
 vendor/firmware/521_AcousticGuitar_P_RTP.bin
@@ -3868,7 +3869,6 @@ vendor/firmware/56_Crystal_P_RTP.bin
 vendor/firmware/57_FadeIn_P_RTP.bin
 vendor/firmware/58_FadeOut_P_RTP.bin
 vendor/firmware/59_Flute_P_RTP.bin
-vendor/firmware/5_heavyClick_P_RTP.bin
 vendor/firmware/60_Fresh_P_RTP.bin
 vendor/firmware/61_Frog_P_RTP.bin
 vendor/firmware/62_Guitar_P_RTP.bin
