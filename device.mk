@@ -324,7 +324,7 @@ PRODUCT_COPY_FILES += \
 
 # Memtrack
 PRODUCT_PACKAGES += \
-    android.hardware.memtrack-V1-ndk_platform.vendor
+    vendor.qti.hardware.memtrack-service
 
 # Mlipay
 PRODUCT_PACKAGES += \
