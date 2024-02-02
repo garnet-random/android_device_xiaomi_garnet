@@ -79,6 +79,8 @@ $(foreach sku, CN GL, \
     $(eval ODM_MANIFEST_$(sku)_FILES += \
         $(DEVICE_PATH)/configs/hidl/manifest_nfc.xml))
 
+DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/framework_manifest.xml
+
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_garnet
 TARGET_RECOVERY_DEVICE_MODULES := libinit_garnet
