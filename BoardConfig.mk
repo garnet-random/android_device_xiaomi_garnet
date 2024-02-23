@@ -60,4 +60,8 @@ BOARD_BOOTCONFIG := \
 TARGET_BOARD_PLATFORM := parrot
 
 # Recovery
+SOONG_CONFIG_NAMESPACES += ufsbsg
+SOONG_CONFIG_ufsbsg += ufsframework
+SOONG_CONFIG_ufsbsg_ufsframework := bsg
+
 BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
