@@ -833,7 +833,6 @@ vendor/etc/dpm_vndr/vendor.dpm.conf
 vendor/etc/excluded-input-devices.xml
 vendor/etc/fs_config_dirs
 vendor/etc/fs_config_files
-vendor/etc/fstab.qcom
 vendor/etc/ftm_test_config_parrot-idp-sku1-snd-card
 vendor/etc/ftm_test_config_parrot-idp-snd-card
 vendor/etc/ftm_test_config_parrot-qrd-sku1-snd-card
@@ -875,12 +874,10 @@ vendor/etc/init/ffu.rc
 vendor/etc/init/hw/init.batterysecret.rc
 vendor/etc/init/hw/init.mi_thermald.rc
 vendor/etc/init/hw/init.qcom.factory.rc
-vendor/etc/init/hw/init.qcom.rc
 vendor/etc/init/hw/init.qcom.usb.rc
 vendor/etc/init/hw/init.qti.kernel.rc
 vendor/etc/init/hw/init.qti.kernel.test.rc
 vendor/etc/init/hw/init.qti.ufs.rc
-vendor/etc/init/hw/init.target.rc
 vendor/etc/init/imsdaemon.rc
 vendor/etc/init/ims_rtp_daemon.rc
 vendor/etc/init/init.charge_logger.rc
@@ -1361,7 +1358,6 @@ vendor/etc/thermal-video.conf
 vendor/etc/top_spk_hp.wav
 vendor/etc/top_spk.wav
 vendor/etc/tzlog.dict
-vendor/etc/ueventd.rc
 vendor/etc/ultrasound.wav
 vendor/etc/usb_audio_policy_configuration.xml
 vendor/etc/usecaseKvManager.xml
@@ -4354,7 +4350,6 @@ odm/etc/fs_config_files
 odm/etc/group
 odm/etc/me_config.xml
 odm/etc/passwd
-odm/etc/ueventd.rc
 odm/lib64/hw/fingerprint.fpc_fod.so
 odm/lib64/hw/fingerprint.goodix_fod.so
 odm/lib64/libdisplaycount.so
