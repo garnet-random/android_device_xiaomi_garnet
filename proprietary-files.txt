@@ -24,7 +24,6 @@ vendor/bin/awk
 vendor/bin/batterysecret
 vendor/bin/boringssl_self_test32
 vendor/bin/boringssl_self_test64
-vendor/bin/btconfig
 vendor/bin/cdsprpcd
 vendor/bin/charge_logger
 vendor/bin/checkpoint_gc
@@ -209,7 +208,6 @@ vendor/bin/myftm
 vendor/bin/netmgrd
 vendor/bin/nqnfcinfo
 vendor/bin/nv_mac
-vendor/bin/PalTest
 vendor/bin/pd-mapper
 vendor/bin/perf_qesdk_client
 vendor/bin/pktlogconf
