@@ -2452,7 +2452,6 @@ vendor/lib64/libgralloc.qti.so
 vendor/lib64/libgrallocutils.so
 vendor/lib64/libgrpc++_unsecure.so
 vendor/lib64/libgsl.so
-vendor/lib64/libgui_vendor.so
 vendor/lib64/libhdcp1prov.so
 vendor/lib64/libhdcp2p2prov.so
 vendor/lib64/libhdcpsrm.so
@@ -3678,7 +3677,6 @@ vendor/lib/libgralloc.qti.so
 vendor/lib/libgrallocutils.so
 vendor/lib/libgrpc++_unsecure.so
 vendor/lib/libgsl.so
-vendor/lib64/libgui_vendor.so
 vendor/lib/libhdcp1prov.so
 vendor/lib/libhdcp2p2prov.so
 vendor/lib/libhdcpsrm.so

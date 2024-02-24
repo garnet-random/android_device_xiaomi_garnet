@@ -57,6 +57,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.common-V2-ndk_platform.vendor
 
+PRODUCT_PACKAGES += \
+    libgui_vendor
+
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss-V1-ndk_platform.vendor
