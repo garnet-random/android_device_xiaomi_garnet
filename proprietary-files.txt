@@ -2271,7 +2271,7 @@ vendor/lib64/libagmdevice.so
 vendor/lib64/libagm_mixer_plugin.so
 vendor/lib64/libagmmixer.so
 vendor/lib64/libagm_pcm_plugin.so
-vendor/lib64/libagm.so
+-vendor/lib64/libagm.so
 vendor/lib64/libaidenoiser.so
 vendor/lib64/libaidenoiserv2.so
 vendor/lib64/libAlacSwDec.so
@@ -2298,7 +2298,7 @@ vendor/lib64/libarcsoft_supernight_front.so
 vendor/lib64/libarcsoft_supernight.so
 vendor/lib64/libar-gpr.so
 vendor/lib64/libar-gsl.so
-vendor/lib64/libar-pal.so
+-vendor/lib64/libar-pal.so
 vendor/lib64/libasn1cper.so
 vendor/lib64/libasn1crt.so
 vendor/lib64/libasn1crtx.so
@@ -3031,7 +3031,7 @@ vendor/lib64/vendor.qti.esepowermanager@1.0.so
 vendor/lib64/vendor.qti.esepowermanager@1.1.so
 vendor/lib64/vendor.qti.gnss-service.so
 vendor/lib64/vendor.qti.gnss-V3-ndk_platform.so
-vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
+-vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 vendor/lib64/vendor.qti.hardware.automotive.vehicle@1.0.so
@@ -3544,7 +3544,7 @@ vendor/lib/libagmdevice.so
 vendor/lib/libagm_mixer_plugin.so
 vendor/lib/libagmmixer.so
 vendor/lib/libagm_pcm_plugin.so
-vendor/lib/libagm.so
+-vendor/lib/libagm.so
 vendor/lib/libaidenoiser.so
 vendor/lib/libaidenoiserv2.so
 vendor/lib/libAlacSwDec.so
@@ -3553,7 +3553,7 @@ vendor/lib/libApeSwDec.so
 vendor/lib/libar-acdb.so
 vendor/lib/libar-gpr.so
 vendor/lib/libar-gsl.so
-vendor/lib/libar-pal.so
+-vendor/lib/libar-pal.so
 vendor/lib/libasn1cper.so
 vendor/lib/libasn1crt.so
 vendor/lib/libasn1crtx.so
@@ -4225,7 +4225,7 @@ vendor/lib/vendor.qti.esepowermanager@1.0.so
 vendor/lib/vendor.qti.esepowermanager@1.1.so
 vendor/lib/vendor.qti.gnss-service.so
 vendor/lib/vendor.qti.gnss-V3-ndk_platform.so
-vendor/lib/vendor.qti.hardware.AGMIPC@1.0-impl.so
+-vendor/lib/vendor.qti.hardware.AGMIPC@1.0-impl.so
 vendor/lib/vendor.qti.hardware.AGMIPC@1.0.so
 vendor/lib/vendor.qti.hardware.alarm@1.0.so
 vendor/lib/vendor.qti.hardware.automotive.vehicle@1.0.so
