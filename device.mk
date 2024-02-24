@@ -53,6 +53,14 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Graphics
+PRODUCT_PACKAGES += \
+    android.hardware.common-V2-ndk_platform.vendor
+
+# GPS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss-V1-ndk_platform.vendor
+
 # Init
 PRODUCT_PACKAGES += \
     init.recovery.qcom.rc
@@ -63,6 +71,20 @@ PRODUCT_COPY_FILES += \
 # Kernel
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)-prebuilt/images/dtb.img:dtb.img
+
+# Keymint
+PRODUCT_PACKAGES += \
+    android.hardware.security.keymint-V1-ndk_platform.vendor \
+    android.hardware.security.secureclock-V1-ndk_platform.vendor \
+    android.hardware.security.sharedsecret-V1-ndk_platform.vendor
+
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light-V1-ndk_platform.vendor
+
+# Memtrack
+PRODUCT_PACKAGES += \
+    android.hardware.memtrack-V1-ndk_platform.vendor
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
