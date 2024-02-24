@@ -98,6 +98,10 @@ BOARD_BOOTCONFIG := \
     androidboot.usbcontroller=a600000.dwc3 \
     androidboot.selinux=permissive
 
+TARGET_KERNEL_EXT_MODULE_ROOT := kernel/xiaomi/sm8450-modules
+TARGET_KERNEL_EXT_MODULES := \
+	qcom/opensource/audio-kernel
+
 # Kernel (prebuilt)
 TARGET_FORCE_PREBUILT_KERNEL := true
 PREBUILT_PATH := device/xiaomi/garnet-prebuilt
