@@ -831,8 +831,6 @@ vendor/etc/dolby/dax-fs19xx.xml
 vendor/etc/dolby_vision.cfg
 vendor/etc/dpm_vndr/vendor.dpm.conf
 vendor/etc/excluded-input-devices.xml
-vendor/etc/fs_config_dirs
-vendor/etc/fs_config_files
 vendor/etc/ftm_test_config_parrot-idp-sku1-snd-card
 vendor/etc/ftm_test_config_parrot-idp-snd-card
 vendor/etc/ftm_test_config_parrot-qrd-sku1-snd-card
@@ -4345,8 +4343,6 @@ odm/etc/camera/camerascene.json
 odm/etc/cit_param_config.json
 odm/etc/default_cloud.json
 odm/etc/device_info_qr_config.yml
-odm/etc/fs_config_dirs
-odm/etc/fs_config_files
 odm/etc/group
 odm/etc/me_config.xml
 odm/etc/passwd
