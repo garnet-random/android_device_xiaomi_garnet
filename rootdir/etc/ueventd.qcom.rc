@@ -44,6 +44,8 @@ subsystem mem_buf_vm
 /dev/diag                 0660   system     oem_2901
 /dev/mhi_*_pipe_4         0660   system     system
 
+/dev/xlog                 0660   system     audio
+
 /dev/genlock              0666   system     system
 /dev/wlan                 0660   wifi       wifi
 /dev/kgsl                 0666   system     system
@@ -190,7 +192,7 @@ subsystem mem_buf_vm
 /dev/qvr_external_sensor_ioctl      0660  system  system
 /sys/kernel/qvr_external_sensor/fd  0660  system  system
 /dev/bus/usb/*                      0660  root    usb
-/dev/hidraw*                        0660  system  system
+/dev/hidraw*                        0660  root    usb
 
 # wlan
 /dev/wcnss_wlan           0660   system     system
@@ -209,6 +211,7 @@ subsystem mem_buf_vm
 /dev/msm_vidc_dec_sec     0660   system     audio
 /dev/msm_vidc_enc         0660   system     audio
 /dev/msm_rotator          0660   system     system
+/dev/hw_random            0600   root       root
 /dev/sdsprpc-smd          0660   system     system
 
 #permissions for audio
@@ -377,6 +380,9 @@ subsystem mem_buf_vm
 
 # Kmsg device
 /dev/kmsg                                               0620   root       system
+
+#KGSL
+/sys/class/kgsl/kgsl-3d0    perfcounter              0660    root    shell
 
 # LED class devices
 /sys/class/leds/red      delay_on     0640    system    system
