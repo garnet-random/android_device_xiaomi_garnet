@@ -1,0 +1,8 @@
+# Audio
+ro.vendor.soundtrigger.dfs.support=1
+
+# Fingerprint
+ro.hardware.fp.mievent=true
+
+# Qcom
+ro.vendor.qti.va_odm.support=1

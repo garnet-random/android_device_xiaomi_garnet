@@ -44,8 +44,16 @@ TARGET_NO_BOOTLOADER := true
 # Display
 TARGET_SCREEN_DENSITY := 540
 
+# Filesystem
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
+
 # Hardware
 BOARD_USES_QCOM_HARDWARE := true
+
+# HIDL
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest_parrot.xml
+ODM_MANIFEST_FILES := $(DEVICE_PATH)/configs/hidl/manifest_garnet.xml
 
 # Kernel
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
@@ -139,6 +147,13 @@ TARGET_USERIMAGES_USE_F2FS := true
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
+# System properties
+TARGET_ODM_PROP += $(DEVICE_PATH)/props/odm.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/props/vendor.prop
+
+# Vendor security patch
+VENDOR_SECURITY_PATCH := 2024-01-01
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
@@ -154,3 +169,6 @@ BOARD_AVB_VBMETA_SYSTEM_KEY_PATH := external/avb/test/data/testkey_rsa4096.pem
 BOARD_AVB_VBMETA_SYSTEM_ALGORITHM := SHA256_RSA4096
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 2
+
+# Vendor
+include vendor/xiaomi/garnet/BoardConfigVendor.mk
