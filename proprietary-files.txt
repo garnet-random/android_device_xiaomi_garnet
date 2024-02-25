@@ -286,8 +286,6 @@ vendor/bin/vendor.qti.hardware.soter@1.0-provision
 vendor/bin/vendor.qti.qspmhal@1.0-service
 vendor/bin/vib_cal
 vendor/bin/vmmgr
-vendor/bin/vndservice
-vendor/bin/vndservicemanager
 vendor/bin/vsimd
 vendor/bin/wdsdaemon
 vendor/bin/wfdhdcphalservice
@@ -989,7 +987,6 @@ vendor/etc/init/vendor.xiaomi.hw.touchfeature@1.0-service.rc
 vendor/etc/init/vendor.xiaomi.sensor.citsensorservice@2.0-service.rc
 vendor/etc/init/vendor.xiaomi.sensor.communicate@1.0-service.rc
 vendor/etc/init/vmmgr.rc
-vendor/etc/init/vndservicemanager.rc
 vendor/etc/init/wfdvndservice.rc
 vendor/etc/init/wlanramdumpcollector.rc
 vendor/etc/IPACM_cfg.xml
