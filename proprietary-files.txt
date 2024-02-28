@@ -20,17 +20,12 @@ vendor/bin/audio-factory-test
 vendor/bin/audioflacapp
 vendor/bin/audio_jack_status.sh
 vendor/bin/aw_ar_get_te
-vendor/bin/awk
 vendor/bin/batterysecret
-vendor/bin/boringssl_self_test32
-vendor/bin/boringssl_self_test64
 vendor/bin/cdsprpcd
 vendor/bin/charge_logger
-vendor/bin/checkpoint_gc
 vendor/bin/cnd
 vendor/bin/cnss-daemon
 vendor/bin/cnss_diag
-vendor/bin/cplay
 vendor/bin/ctrlapp_dut
 vendor/bin/debug-diag
 vendor/bin/DFtool
@@ -45,7 +40,6 @@ vendor/bin/disp_factory_tool
 vendor/bin/displayfeature
 vendor/bin/dpmQmiMgr
 vendor/bin/dspservice
-vendor/bin/dumpsys
 vendor/bin/edgnss-daemon
 vendor/bin/EL_calib
 vendor/bin/elliptic_uscal.sh
@@ -89,7 +83,6 @@ vendor/bin/hw/android.hardware.usb@1.2-service-qti
 vendor/bin/hw/capabilityconfigstoretest
 vendor/bin/hw/dolbycodec2
 vendor/bin/hw/fbo-test
-vendor/bin/hw/hostapd
 vendor/bin/hwinfo
 vendor/bin/hw/mfp-daemon
 vendor/bin/hw/qcrilNrd
@@ -174,7 +167,6 @@ vendor/bin/ipacm-diag
 vendor/bin/iperf
 vendor/bin/iperf3_v
 vendor/bin/irsc_util
-vendor/bin/iw
 vendor/bin/iwconfig
 vendor/bin/iwlist
 vendor/bin/iwpriv
@@ -182,7 +174,6 @@ vendor/bin/KmInstallKeybox
 vendor/bin/ks
 vendor/bin/loadalgo
 vendor/bin/loc_launcher
-vendor/bin/logwrapper
 vendor/bin/lowirpcd
 vendor/bin/lowi-server
 vendor/bin/mec
@@ -265,7 +256,6 @@ vendor/bin/ssr_diag
 vendor/bin/ssr_setup
 vendor/bin/StoreKeybox
 vendor/bin/subsystem_ramdump
-vendor/bin/tcpdump
 vendor/bin/test_diag
 vendor/bin/test-nusensors
 vendor/bin/tftp_server
@@ -273,8 +263,6 @@ vendor/bin/thermal-engine-v2
 vendor/bin/tidad@1.2
 vendor/bin/time_daemon
 vendor/bin/tlping
-vendor/bin/toolbox
-vendor/bin/toybox_vendor
 vendor/bin/TrustedUISampleTest
 vendor/bin/ubwcconvert
 vendor/bin/uet
@@ -838,7 +826,6 @@ vendor/etc/ftm_test_config_ravelin-qrd-snd-card
 vendor/etc/gpfspath_oem_config.xml
 vendor/etc/gps.conf
 vendor/etc/gps_diag.cfg
-vendor/etc/group
 vendor/etc/init/android.hardware.atrace@1.0-service.rc
 vendor/etc/init/android.hardware.audio.service_64.rc
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
@@ -859,7 +846,6 @@ vendor/etc/init/android.hardware.security.keymint-service-qti.rc
 vendor/etc/init/android.hardware.sensors@2.1-service-multihal.rc
 vendor/etc/init/android.hardware.thermal@2.0-service.qti-v2.rc
 vendor/etc/init/android.hardware.usb@1.2-service-qti.rc
-vendor/etc/init/boringssl_self_test.rc
 vendor/etc/init/cnd.rc
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
 vendor/etc/init/dataadpl.rc
@@ -1081,7 +1067,6 @@ vendor/etc/miLutInfo.txt
 vendor/etc/mimdconfig
 vendor/etc/misound_asc_model.tflite
 vendor/etc/mi_us_whitenoise.wav
-vendor/etc/mkshrc
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
@@ -1093,7 +1078,6 @@ vendor/etc/modem/Diag_ims.cfg
 vendor/etc/modem/network_scan_config.cfg
 vendor/etc/modem/power.cfg
 vendor/etc/msm_irqbalance.conf
-vendor/etc/passwd
 vendor/etc/perf/avcsysnodesconfigs.xml
 vendor/etc/perf/commonresourceconfigs.xml
 vendor/etc/perf/commonsysnodesconfigs.xml
@@ -4340,9 +4324,7 @@ odm/etc/camera/camerascene.json
 odm/etc/cit_param_config.json
 odm/etc/default_cloud.json
 odm/etc/device_info_qr_config.yml
-odm/etc/group
 odm/etc/me_config.xml
-odm/etc/passwd
 odm/lib64/hw/fingerprint.fpc_fod.so
 odm/lib64/hw/fingerprint.goodix_fod.so
 odm/lib64/libdisplaycount.so
