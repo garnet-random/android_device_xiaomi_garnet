@@ -38,6 +38,23 @@ BOARD_API_LEVEL := 31
 BOARD_SHIPPING_API_LEVEL := 31
 PRODUCT_SHIPPING_API_LEVEL := 31
 
+# Audio
+PRODUCT_PACKAGES += \
+    android.hardware.audio@7.0-impl \
+    android.hardware.audio.effect@7.0-impl
+
+PRODUCT_PACKAGES += \
+    android.hardware.soundtrigger@2.3-impl
+
+# Atrace
+PRODUCT_PACKAGES += \
+    android.hardware.atrace@1.0.vendor
+
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0.vendor \
+    android.hardware.bluetooth.audio@2.1.vendor
+
 # Boot control
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl-qti \
@@ -46,6 +63,14 @@ PRODUCT_PACKAGES += \
     bootctrl.garnet \
     bootctrl.garnet.recovery
 
+# Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.7.vendor
+
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.4.vendor
+
 # Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
@@ -53,8 +78,13 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor
+
 # Graphics
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.composer@2.4.vendor \
     android.hardware.common-V2-ndk_platform.vendor
 
 PRODUCT_PACKAGES += \
@@ -62,7 +92,12 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
+    android.hardware.gnss@2.1.vendor \
     android.hardware.gnss-V1-ndk_platform.vendor
+
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1.vendor
 
 # Init
 PRODUCT_PACKAGES += \
@@ -80,6 +115,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)-prebuilt/images/dtb.img:dtb.img
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1.vendor
+
 # Keymint
 PRODUCT_PACKAGES += \
     android.hardware.security.keymint-V1-ndk_platform.vendor \
@@ -94,6 +133,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.memtrack-V1-ndk_platform.vendor
 
+# NFC
+PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.2.vendor \
+    android.hardware.secure_element@1.2.vendor
+
 # Overlay
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayGarnet \
@@ -102,6 +146,21 @@ PRODUCT_PACKAGES += \
     SystemUIOverlayGarnet \
     TelephonyOverlayGarnet \
     WifiOverlayGarnet
+
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.2.vendor \
+    android.hardware.power-V1-ndk_platform.vendor
+
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio.config@1.3.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.radio@1.6.vendor
+
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@2.1.vendor
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
