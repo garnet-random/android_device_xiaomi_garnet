@@ -121,6 +121,7 @@ void vendor_load_properties() {
     set_ro_product_prop("model", model);
 
     property_override("ro.product.marketname", marketname.c_str());
+    property_override("bluetooth.device.default_name", marketname.c_str());
     property_override("ro.build.description", description.c_str());
     if (mod_device != "") {
         property_override("ro.product.mod_device", mod_device.c_str());
