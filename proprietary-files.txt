@@ -3390,15 +3390,6 @@ vendor/lib64/vendor.qti.ims.rcsuce@1.2.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 
-# Recovery
-vendor/bin/applypatch
-vendor/etc/init/vendor_flash_recovery.rc
-vendor/etc/recovery-resource.dat
-vendor/lib/librecovery_updater.so
-vendor/lib/librecovery_updater_msm.so
-vendor/lib64/librecovery_updater.so
-vendor/lib64/librecovery_updater_msm.so
-
 # Renderscript
 vendor/lib/hw/android.hardware.renderscript@1.0-impl.so
 vendor/lib64/hw/android.hardware.renderscript@1.0-impl.so
