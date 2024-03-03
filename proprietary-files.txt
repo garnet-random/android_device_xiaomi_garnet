@@ -363,21 +363,6 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so
 vendor/lib64/vendor.qti.hardware.btconfigstore@2.0.so
 
-# Boot control
-vendor/bin/hw/android.hardware.boot@1.2-service
-vendor/etc/init/android.hardware.boot@1.2-service.rc
-vendor/etc/vintf/manifest/android.hardware.boot@1.2.xml
-vendor/lib/android.hardware.boot@1.0.so
-vendor/lib/android.hardware.boot@1.1.so
-vendor/lib/android.hardware.boot@1.2.so
-vendor/lib/hw/android.hardware.boot@1.0-impl-1.2-qti.so
-vendor/lib/libboot_control_qti.so
-vendor/lib64/android.hardware.boot@1.0.so
-vendor/lib64/android.hardware.boot@1.1.so
-vendor/lib64/android.hardware.boot@1.2.so
-vendor/lib64/hw/android.hardware.boot@1.0-impl-1.2-qti.so
-vendor/lib64/libboot_control_qti.so
-
 # CAS
 vendor/bin/hw/android.hardware.cas@1.2-service
 vendor/etc/init/android.hardware.cas@1.2-service.rc
