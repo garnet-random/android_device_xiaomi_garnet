@@ -7,13 +7,6 @@
             <instance>dolby</instance>
         </interface>
     </hal>
-    <hal format="aidl">
-        <name>android.hardware.vibrator</name>
-        <interface>
-            <name>IVibrator</name>
-            <instance>vibratorfeature</instance>
-        </interface>
-    </hal>
     <hal format="hidl">
         <name>com.fingerprints.extension</name>
         <version>3.0</version>

@@ -335,33 +335,6 @@ ro.vendor.cabc.enable=fasle
 ro.vendor.colorpick_adjust=true
 vendor.gralloc.disable_ubwc=0
 
-# Haptic
-sys.haptic.down.normal=2
-sys.haptic.down.strong=5
-sys.haptic.down.weak=0
-sys.haptic.down=5,2
-sys.haptic.dynamiceffect.richtap=true
-sys.haptic.dynamiceffect=true
-sys.haptic.flick.light=7,2
-sys.haptic.flick=5,2
-sys.haptic.hold=4,0
-sys.haptic.infinitelevel=true
-sys.haptic.intensityforkeyboard=true
-sys.haptic.long.press=0,1
-sys.haptic.mesh.heavy=8,2
-sys.haptic.mesh.light=5,1
-sys.haptic.mesh.normal=5,2
-sys.haptic.motor=linear
-sys.haptic.pickup=2,2
-sys.haptic.popup.light=6,1
-sys.haptic.popup.normal=6,2
-sys.haptic.runin=13
-sys.haptic.scroll.edge=7,0
-sys.haptic.switch=9,2
-sys.haptic.tap.light=5,2
-sys.haptic.tap.normal=3,2
-sys.haptic.trigger.drawer=2,0
-
 # Keystore
 ro.hardware.keystore_desede=true
 

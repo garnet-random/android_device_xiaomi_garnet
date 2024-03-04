@@ -3730,20 +3730,6 @@ vendor/firmware/vpu20_1v.b19
 vendor/firmware/vpu20_1v.mbn
 vendor/firmware/vpu20_1v.mdt
 
-# Vibrator
-vendor/bin/hw/vendor.xiaomi.hardware.vibratorfeature.service
-vendor/bin/vib_cal
-vendor/etc/excluded-input-devices.xml
-vendor/etc/init/vendor.xiaomi.hardware.vibratorfeature.service.rc
-vendor/etc/init/vendor.xiaomi.hardware.vibratorfeature@1.0-service.rc
-vendor/etc/vintf/manifest/vendor.xiaomi.hardware.vibratorfeature.service.xml
-vendor/lib/hw/vibrator.default.so
-vendor/lib/libvibrator.so
-vendor/lib64/android.hardware.vibrator-V1-ndk_platform.so
-vendor/lib64/hw/vibrator.default.so
-vendor/lib64/libvibrator.so
-vendor/lib64/vendor.hardware.vibratorfeature.IVibratorExt-V1-ndk_platform.so
-
 # Vibrator firmware
 vendor/firmware/0_click_P_RTP.bin
 vendor/firmware/101_offlineCountdown_P_RTP.bin
