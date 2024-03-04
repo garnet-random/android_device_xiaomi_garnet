@@ -1992,8 +1992,6 @@ vendor/lib/ftm_fm_lib.so
 vendor/lib64/ftm_fm_lib.so
 
 # Fingerprint
-odm/app/OpticalTestTool/OpticalTestTool.apk
-odm/app/goodix_sz/goodix_sz.apk
 odm/lib/hw/fingerprint.fpc_fod.so:odm/lib/hw/fingerprint.fpc_fod.default.so
 odm/lib/hw/fingerprint.goodix_fod.so:odm/lib/hw/fingerprint.goodix_fod.default.so
 odm/lib/libgf_hal.so
