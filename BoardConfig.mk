@@ -70,6 +70,10 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest_parrot.xml
 ODM_MANIFEST_FILES := $(DEVICE_PATH)/configs/hidl/manifest_garnet.xml
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_garnet
+TARGET_RECOVERY_DEVICE_MODULES := libinit_garnet
+
 # Kernel
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_RAMDISK_USE_LZ4 := true
