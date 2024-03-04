@@ -54,8 +54,10 @@ void set_ro_product_prop(const std::string &prop, const std::string &value) {
 void vendor_load_properties() {
     std::string region;
     std::string sku;
+    std::string hwversion;
     region = GetProperty("ro.boot.hwc", "");
     sku = GetProperty("ro.boot.hardware.sku", "");
+    hwversion = GetProperty("ro.boot.hwversion", "");
 
     std::string model;
     std::string brand;
@@ -106,7 +108,11 @@ void vendor_load_properties() {
         description = "garnet-user 13 TKQ1.221114.001 V14.0.17.0.TNRCNXM release-keys";
         fingerprint = "Redmi/garnet/garnet:13/TKQ1.221114.001/V14.0.17.0.TNRCNXM:user/release-keys";
         marketname = "Redmi Note 13 Pro";
-        model = "2312DRA50C";
+        if (hwversion == "17.0.9" || hwversion == "17.1.9" || hwversion == "17.2.6" || hwversion == "17.2.9" || hwversion == "17.9.9") {
+            model = "2312CRAD3C";
+        } else {
+            model = "2312DRA50C";
+        }
     }
 
     set_ro_build_prop("fingerprint", fingerprint);
