@@ -89,6 +89,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.memtrack-V1-ndk_platform.vendor
 
+# Overlay
+PRODUCT_PACKAGES += \
+    CarrierConfigOverlayGarnet \
+    FrameworkOverlayGarnet \
+    SystemUIOverlayGarnet \
+    TelephonyOverlayGarnet \
+    WifiOverlayGarnet
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)

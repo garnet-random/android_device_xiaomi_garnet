@@ -4402,8 +4402,6 @@ vendor/lib/vendor.xiaomi.hidl.miwill@1.0.so
 vendor/lib/vendor.xiaomi.hw.touchfeature@1.0.so
 vendor/lib/vendor.xiaomi.sensor.citsensorservice@1.1.so
 vendor/lib/vendor.xiaomi.sensor.citsensorservice@2.0.so
-vendor/overlay/FrameworksResTarget_Vendor.apk
-vendor/overlay/WifiResTarget_Vendor.apk
 
 # ODM
 odm/app/goodix_sz/goodix_sz.apk
