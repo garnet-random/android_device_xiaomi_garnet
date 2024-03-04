@@ -206,9 +206,15 @@ PRODUCT_PACKAGES += \
     CarrierConfigOverlayGarnet \
     FrameworkOverlayGarnet \
     SettingsOverlayGarnet \
+    SettingsProviderOverlayGarnetPoco \
+    SettingsProviderOverlayGarnetRedmi \
+    SettingsProviderOverlayGarnetRedmiCN \
     SystemUIOverlayGarnet \
     TelephonyOverlayGarnet \
-    WifiOverlayGarnet
+    WifiOverlayGarnet \
+    WifiOverlayGarnetPoco \
+    WifiOverlayGarnetRedmi \
+    WifiOverlayGarnetRedmiCN
 
 # Power
 PRODUCT_PACKAGES += \
