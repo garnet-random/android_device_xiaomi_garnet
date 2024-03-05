@@ -2824,8 +2824,6 @@ vendor/lib64/libperipheral_client.so
 vendor/lib64/libspcom.so
 
 # Power
-vendor/bin/hw/android.hardware.power-service
-vendor/etc/init/android.hardware.power-service.rc
 vendor/etc/powerhint.xml
 vendor/etc/powerhintOfUltra.xml
 vendor/etc/pwr/PSMPowerOptFeature.xml
@@ -2833,14 +2831,11 @@ vendor/etc/pwr/PowerFeatureConfig.xml
 vendor/etc/pwr/StandbyFeature.xml
 vendor/etc/pwr/VendorScenarioPowerOptFeature.xml
 vendor/etc/pwr/VideoPowerOptFeature.xml
-vendor/etc/vintf/manifest/power.xml
 vendor/etc/vintf/manifest/vendor.qti.hardware.power.powermodule.xml
-vendor/lib/hw/power.default.so
 vendor/lib/libpsmoptfeature.so
 vendor/lib/libvendorscenariopoweroptfeature.so
 vendor/lib/libvideooptfeature.so
 vendor/lib/vendor.qti.hardware.power.powermodule@1.0.so
-vendor/lib64/hw/power.default.so
 vendor/lib64/libpsmoptfeature.so
 vendor/lib64/libstandbyfeature.so
 vendor/lib64/libvendorscenariopoweroptfeature.so

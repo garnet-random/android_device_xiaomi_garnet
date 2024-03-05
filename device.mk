@@ -223,8 +223,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2.vendor \
-    android.hardware.power-V1-ndk_platform.vendor
+    android.hardware.power-service-qti
 
 # Radio
 PRODUCT_PACKAGES += \
