@@ -91,50 +91,6 @@ vendor/etc/vintf/manifest/android.hardware.atrace@1.0-service.xml
 vendor/bin/hw/android.hardware.audio.service_64
 vendor/etc/init/android.hardware.audio.service_64.rc
 
-# Audio configs
-odm/etc/audio_policy_engine_configuration_mi.xml
-odm/etc/audio_policy_engine_default_stream_volumes.xml
-odm/etc/audio_policy_engine_product_strategies.xml
-odm/etc/audio_policy_engine_stream_volumes.xml
-vendor/etc/a2dp_audio_policy_configuration.xml
-vendor/etc/audio/sku_parrot/audio_effects.conf
-vendor/etc/audio/sku_parrot/audio_effects.xml
-vendor/etc/audio/sku_parrot/audio_policy_configuration.xml
-vendor/etc/audio/sku_parrot/foursemi/mixer_paths_overlay_dynamic.xml
-vendor/etc/audio/sku_parrot/foursemi/mixer_paths_overlay_static.xml
-vendor/etc/audio/sku_parrot/foursemi/mixer_paths_parrot_qrd.xml
-vendor/etc/audio/sku_parrot/foursemi/resourcemanager_parrot_qrd.xml
-vendor/etc/audio/sku_parrot/mixer_paths_overlay_dynamic.xml
-vendor/etc/audio/sku_parrot/mixer_paths_overlay_static.xml
-vendor/etc/audio/sku_parrot/mixer_paths_parrot_idp.xml
-vendor/etc/audio/sku_parrot/mixer_paths_parrot_idp_sku1.xml
-vendor/etc/audio/sku_parrot/mixer_paths_parrot_qrd.xml
-vendor/etc/audio/sku_parrot/mixer_paths_parrot_qrd_sku1.xml
-vendor/etc/audio/sku_parrot/resourcemanager_parrot_idp.xml
-vendor/etc/audio/sku_parrot/resourcemanager_parrot_idp_sku1.xml
-vendor/etc/audio/sku_parrot/resourcemanager_parrot_qrd.xml
-vendor/etc/audio/sku_parrot/resourcemanager_parrot_qrd_sku1.xml
-vendor/etc/audio/sku_parrot/resourcemanager_upd.xml
-vendor/etc/audio/sku_parrot_qssi/audio_policy_configuration.xml
-vendor/etc/audio_diag.cfg
-vendor/etc/audio_policy_engine_configuration_mi.xml
-vendor/etc/audio_policy_engine_default_stream_volumes.xml
-vendor/etc/audio_policy_engine_product_strategies.xml
-vendor/etc/audio_policy_engine_stream_volumes.xml
-vendor/etc/audio_policy_volumes.xml
-vendor/etc/backend_conf.xml
-vendor/etc/backend_conf_fs.xml
-vendor/etc/bluetooth_qti_audio_policy_configuration.xml
-vendor/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml
-vendor/etc/card-defs.xml
-vendor/etc/default_volume_tables.xml
-vendor/etc/kvh2xml.xml
-vendor/etc/microphone_characteristics.xml
-vendor/etc/r_submix_audio_policy_configuration.xml
-vendor/etc/usb_audio_policy_configuration.xml
-vendor/etc/usecaseKvManager.xml
-vendor/etc/vehicle_display_audio_policy_configuration.xml
-
 # Audio firmware
 vendor/firmware/aw882xx_acf.bin
 
@@ -163,6 +119,7 @@ vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so
 
 # Audio libraries
 vendor/etc/audio_cloud_control_white_list.xml
+vendor/etc/audio_diag.cfg
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
