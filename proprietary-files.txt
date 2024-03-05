@@ -3421,13 +3421,11 @@ vendor/etc/vintf/manifest/vendor.xiaomi.sensor.communicate@1.0_manifest.xml
 vendor/lib64/vendor.xiaomi.sensor.communicate@1.0.so
 
 # Sensors
-vendor/bin/hw/android.hardware.sensors@2.1-service.multihal
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
 vendor/bin/init.qcom.sensors.sh
 vendor/bin/sensors.qti
 vendor/bin/sscrpcd
 vendor/bin/test-nusensors
-vendor/etc/init/android.hardware.sensors@2.1-service-multihal.rc
 vendor/etc/init/init.vendor.ins.rc
 vendor/etc/init/init.vendor.sensors.rc
 vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
@@ -3498,7 +3496,6 @@ vendor/etc/sensors/config/sx937x_0.json
 vendor/etc/sensors/config/sx937x_reg_0.json
 vendor/etc/sensors/config/tcs3701.json
 vendor/etc/sensors/sns_reg_config
-vendor/etc/vintf/manifest/android.hardware.sensors@2.1-multihal.xml
 vendor/lib/android.frameworks.sensorservice@1.0.so
 vendor/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
 vendor/lib/libsensor_cal@2.0.so
