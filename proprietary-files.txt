@@ -3418,7 +3418,6 @@ vendor/lib64/se_nq_extn_client-v1.so
 vendor/bin/init.qcom.sensors.sh
 vendor/bin/sensors.qti
 vendor/bin/sscrpcd
-vendor/bin/test-nusensors
 vendor/etc/init/init.vendor.ins.rc
 vendor/etc/init/init.vendor.sensors.rc
 vendor/etc/init/vendor.sensors.qti.rc
@@ -3514,23 +3513,6 @@ vendor/etc/sensors/config/sx937x_0.json
 vendor/etc/sensors/config/sx937x_reg_0.json
 vendor/etc/sensors/config/tcs3701.json
 vendor/etc/sensors/sns_reg_config
-
-# Sensors elliptic
-vendor/bin/EL_calib
-vendor/bin/audio-factory-test
-vendor/bin/elliptic_uscal.sh
-vendor/bin/elliptic_uscal_v2.sh
-vendor/bin/engine_runner
-vendor/bin/headset_detect.sh
-vendor/bin/playback_headset.sh
-vendor/bin/setup_rcv2backmic.sh
-vendor/bin/setup_rcv2mainmic.sh
-vendor/bin/setup_rcv2topmic.sh
-vendor/bin/spk_dsm_test.sh
-vendor/bin/us_cal.sh
-vendor/etc/init/init.elliptic.rc
-vendor/lib64/libelliptic_engine.so
-vendor/lib64/libelliptic_serializer.so
 
 # Sensors ultrasound
 vendor/lib/libultrasound_notify.so
