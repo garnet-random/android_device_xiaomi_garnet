@@ -53,8 +53,7 @@ PRODUCT_COPY_FILES += \
 
 # Audio configs
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/vendor,$(TARGET_COPY_OUT_VENDOR)/etc) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/odm,$(TARGET_COPY_OUT_ODM)/etc)
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/vendor,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # Atrace
 PRODUCT_PACKAGES += \
