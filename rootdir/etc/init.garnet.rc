@@ -1,3 +1,34 @@
+service nqnfc_2_0_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
+    class early_hal
+    user nfc
+    group nfc
+    override
+    disabled
+
+service secureelement-hal_1_2 /vendor/bin/hw/vendor.qti.secure_element@1.2-service
+    class early_hal
+    user system
+    group system
+    override
+    disabled
+
+service qti_esepowermanager_service_1_1 /vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
+    class early_hal
+    user system
+    group nfc system
+    override
+    disabled
+
+on property:ro.boot.product.hardware.sku=GL
+    enable nqnfc_2_0_hal_service
+    enable secureelement-hal_1_2
+    enable qti_esepowerman
+
+on property:ro.boot.product.hardware.sku=CN
+    enable nqnfc_2_0_hal_service
+    enable secureelement-hal_1_2
+    enable qti_esepowerman
+
 service vendor.sensors-hal-2-1-multihal /vendor/bin/hw/android.hardware.sensors@2.1-service.xiaomi-multihal
     override
     class hal
