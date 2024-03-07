@@ -138,6 +138,7 @@ PRODUCT_PACKAGES += \
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    init.garnet.rc \
     init.qcom.rc \
     init.recovery.qcom.rc \
     init.target.rc \

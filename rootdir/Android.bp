@@ -39,3 +39,10 @@ prebuilt_etc {
     src: "etc/ueventd.qcom.rc",
     vendor: true,
 }
+
+prebuilt_etc {
+    name: "init.garnet.rc",
+    src: "etc/init.garnet.rc",
+    sub_dir: "init",
+    vendor: true,
+}
