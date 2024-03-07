@@ -78,7 +78,8 @@ ODM_MANIFEST_FILES := $(DEVICE_PATH)/configs/hidl/manifest_garnet.xml
 $(foreach sku, CN GL, \
     $(eval ODM_MANIFEST_SKUS += $(sku)) \
     $(eval ODM_MANIFEST_$(sku)_FILES += \
-        $(DEVICE_PATH)/configs/hidl/manifest_nfc.xml))
+        $(DEVICE_PATH)/configs/hidl/manifest_nfc.xml \
+        $(DEVICE_PATH)/configs/hidl/manifest_garnet.xml))
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_garnet
