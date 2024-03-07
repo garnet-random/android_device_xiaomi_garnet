@@ -4451,7 +4451,7 @@ product/framework/uimgbalibrary.jar
 product/framework/uimgbamanagerlibrary.jar
 product/framework/uimservicelibrary.jar
 system_ext/app/ImsRcsService/ImsRcsService.apk
-system_ext/app/QtiTelephony/QtiTelephony.apk
+system_ext/app/QtiTelephony/QtiTelephony.apk|7fadfcfd6e779f6254a684ad879a5fa367369ad5
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/qti_permissions.xml
@@ -4478,5 +4478,5 @@ system_ext/lib64/libimscamera_jni.so
 system_ext/lib64/libimsmedia_jni.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
-system_ext/priv-app/ims/ims.apk
+system_ext/priv-app/ims/ims.apk|790202a6783a2d8d6b01c3af0ace870a3f0dd3bb
 system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
