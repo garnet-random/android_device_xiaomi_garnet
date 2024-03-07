@@ -247,6 +247,7 @@ $(foreach sku, CN GL, \
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayGarnet \
     FrameworkOverlayGarnet \
+    FrameworkOverlayGarnetEsim \
     SettingsOverlayGarnet \
     SettingsProviderOverlayGarnetPoco \
     SettingsProviderOverlayGarnetRedmi \
