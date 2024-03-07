@@ -6,6 +6,22 @@
 
 DEVICE_PATH := device/xiaomi/garnet
 
+# A/B
+AB_OTA_UPDATER := true
+AB_OTA_PARTITIONS := \
+    boot \
+    dtbo \
+    odm \
+    product \
+    recovery \
+    system \
+    system_ext \
+    vbmeta \
+    vbmeta_system \
+    vendor \
+    vendor_boot \
+    vendor_dlkm
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a-branchprot
@@ -55,6 +71,35 @@ BOARD_BOOTCONFIG := \
     androidboot.memcg=1 \
     androidboot.usbcontroller=a600000.dwc3 \
     androidboot.selinux=permissive
+
+# Partitions
+BOARD_BOOTIMAGE_PARTITION_SIZE := 201326592
+BOARD_DTBOIMG_PARTITION_SIZE := 25165824
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 104857600
+BOARD_SUPER_PARTITION_SIZE := 9663676416
+BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 100663296
+
+BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
+
+BOARD_USES_METADATA_PARTITION := true
+
+BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := product system system_ext odm vendor vendor_dlkm
+BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 9659482112 # (BOARD_SUPER_PARTITION_SIZE - 4 MiB)
+BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
+
+BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := erofs
+BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := erofs
+BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := erofs
+BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := erofs
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := erofs
+BOARD_VENDOR_DLKMIMAGE_FILE_SYSTEM_TYPE := erofs
+
+TARGET_COPY_OUT_ODM := odm
+TARGET_COPY_OUT_PRODUCT := product
+TARGET_COPY_OUT_SYSTEM := system
+TARGET_COPY_OUT_SYSTEM_EXT := system_ext
+TARGET_COPY_OUT_VENDOR := vendor
+TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 
 # Platform
 TARGET_BOARD_PLATFORM := parrot
