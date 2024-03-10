@@ -67,13 +67,18 @@ BOARD_USES_QCOM_HARDWARE := true
 
 # HIDL
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest_parrot.xml
-ODM_MANIFEST_FILES := $(DEVICE_PATH)/configs/hidl/manifest_garnet.xml
-
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/configs/hidl/vendor_framework_compatibility_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
     hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml
+
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest_parrot.xml
+ODM_MANIFEST_FILES := $(DEVICE_PATH)/configs/hidl/manifest_garnet.xml
+
+$(foreach sku, CN GL, \
+    $(eval ODM_MANIFEST_SKUS += $(sku)) \
+    $(eval ODM_MANIFEST_$(sku)_FILES += \
+        $(DEVICE_PATH)/configs/hidl/manifest_nfc.xml))
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_garnet
