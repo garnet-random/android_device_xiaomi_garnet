@@ -249,6 +249,7 @@ $(foreach sku, CN GL, \
 
 # Overlay
 PRODUCT_PACKAGES += \
+    ApertureOverlayGarnet \
     CarrierConfigOverlayGarnet \
     FrameworkOverlayGarnet \
     FrameworkOverlayGarnetEsim \
