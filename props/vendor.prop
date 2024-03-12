@@ -392,7 +392,6 @@ persist.vendor.ssr.restart_level=ALL_ENABLE
 ro.vendor.touchfeature.type=243
 
 # USB
-persist.sys.usb.config=none
 sys.usb.mtp.batchcancel=1
 vendor.usb.diag.func.name=ffs
 vendor.usb.dpl.inst.name=dpl
