@@ -173,6 +173,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1.vendor
 
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.memory.block@1.0.vendor \
+    libhidltransport.vendor \
+    libhwbinder.vendor
+
 # Hotword
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
@@ -267,6 +273,10 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
+
+# QMI
+PRODUCT_PACKAGES += \
+    libjson
 
 # Radio
 PRODUCT_PACKAGES += \
