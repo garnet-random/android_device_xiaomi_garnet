@@ -2017,15 +2017,6 @@ vendor/firmware/gmu_gen70000.bin
 vendor/lib/hw/vulkan.adreno.so
 vendor/lib64/hw/vulkan.adreno.so
 
-# Health
-vendor/bin/hw/android.hardware.health@2.1-service
-vendor/etc/init/android.hardware.health@2.1-service.rc
-vendor/etc/vintf/manifest/android.hardware.health@2.1.xml
-vendor/lib/hw/android.hardware.health@2.0-impl-2.1-qti.so
-vendor/lib/libsystem_health_mon.so
-vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-qti.so
-vendor/lib64/libsystem_health_mon.so
-
 # Hotword enrollment
 product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk
 product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk
@@ -2913,6 +2904,7 @@ vendor/lib/libril-qc-radioconfig.so
 vendor/lib/librilqmimiscservices.so
 vendor/lib/librmnetctl.so
 vendor/lib/libshsusr_verinfo.so
+vendor/lib/libsystem_health_mon.so
 vendor/lib/libxiaomi_qcril.so
 vendor/lib/qcrilInterfaces.so
 vendor/lib/qcrilMarshal.so
@@ -3051,6 +3043,7 @@ vendor/lib64/libril-qc-radioconfig.so
 vendor/lib64/librilqmimiscservices.so
 vendor/lib64/librmnetctl.so
 vendor/lib64/libshsusr_verinfo.so
+vendor/lib64/libsystem_health_mon.so
 vendor/lib64/libxiaomi_qcril.so
 vendor/lib64/qcrilInterfaces.so
 vendor/lib64/qcrilMarshal.so
