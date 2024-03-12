@@ -3372,17 +3372,6 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 # Trustzone
 vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk
 
-# USB
-vendor/bin/hw/android.hardware.usb@1.2-service-qti
-vendor/bin/init.qcom.usb.sh
-vendor/etc/init/android.hardware.usb@1.2-service-qti.rc
-vendor/etc/init/hw/init.qcom.usb.rc
-vendor/etc/vintf/manifest/android.hardware.usb@1.2-service.xml
-vendor/lib64/android.hardware.usb@1.0.so
-vendor/lib64/android.hardware.usb@1.1.so
-vendor/lib64/android.hardware.usb@1.2.so
-
-
 # VM mem
 vendor/lib/libvmmem.so
 vendor/lib64/libvmmem.so
