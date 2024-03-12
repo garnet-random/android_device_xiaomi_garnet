@@ -288,15 +288,6 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so
 vendor/lib64/vendor.qti.hardware.btconfigstore@2.0.so
 
-# CAS
-vendor/bin/hw/android.hardware.cas@1.2-service
-vendor/etc/init/android.hardware.cas@1.2-service.rc
-vendor/etc/vintf/manifest/android.hardware.cas@1.2-service.xml
-vendor/lib/android.hardware.cas.native@1.0.so
-vendor/lib/android.hardware.cas@1.0.so
-vendor/lib/android.hardware.cas@1.1.so
-vendor/lib/android.hardware.cas@1.2.so
-
 # CDSP
 vendor/bin/cdsprpcd
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
