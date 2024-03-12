@@ -1994,19 +1994,16 @@ vendor/lib64/ftm_fm_lib.so
 # Fingerprint
 odm/app/OpticalTestTool/OpticalTestTool.apk
 odm/app/goodix_sz/goodix_sz.apk
-odm/lib/hw/fingerprint.fpc_fod.so
-odm/lib/hw/fingerprint.goodix_fod.so
+odm/lib/hw/fingerprint.fpc_fod.so:odm/lib/hw/fingerprint.fpc_fod.default.so
+odm/lib/hw/fingerprint.goodix_fod.so:odm/lib/hw/fingerprint.goodix_fod.default.so
 odm/lib/libgf_hal.so
 odm/lib/vendor.xiaomi.hardware.fx.tunnel@1.0.so
-odm/lib64/hw/fingerprint.fpc_fod.so
-odm/lib64/hw/fingerprint.goodix_fod.so
+odm/lib64/hw/fingerprint.fpc_fod.so:odm/lib64/hw/fingerprint.fpc_fod.default.so
+odm/lib64/hw/fingerprint.goodix_fod.so:odm/lib64/hw/fingerprint.goodix_fod.default.so
 odm/lib64/libgf_hal.so
 odm/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
 vendor/bin/hw/mfp-daemon
 vendor/etc/init/init.mfp-daemon.rc
-vendor/etc/vintf/manifest/AHBF@2.1-service.xml
-vendor/etc/vintf/manifest/fod.xml
-vendor/lib64/android.hardware.biometrics.fingerprint@2.1.so
 vendor/lib64/com.fingerprints.extension@3.0.so
 vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
 

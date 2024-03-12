@@ -275,15 +275,6 @@ persist.vendor.dpm.vndr.feature=1
 persist.vendor.dpm.vndr.halservice.enable=1
 persist.vendor.dpm.vndr.idletimer.mode=default
 
-# Fingerprint
-persist.vendor.sys.fp.expolevel=0x88
-persist.vendor.sys.fp.fod.location.X_Y=504,2332
-persist.vendor.sys.fp.fod.size.width_height=210,210
-ro.hardware.fp.fod.location=low
-ro.hardware.fp.fod.need.X_Y=false
-ro.hardware.fp.fod.touch.ctl.version=2.0
-ro.hardware.fp.fod=true
-
 # FM
 vendor.hw.fm.init=0
 

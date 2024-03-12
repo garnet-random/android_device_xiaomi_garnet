@@ -8,18 +8,6 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>com.fingerprints.extension</name>
-        <version>3.0</version>
-        <interface>
-            <name>IFingerprintNavigation</name>
-            <instance>default</instance>
-        </interface>
-        <interface>
-            <name>IFingerprintSensorTest</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
         <name>vendor.dolby.hardware.dms</name>
         <version>2.0</version>
         <interface>
@@ -52,26 +40,10 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.xiaomi.hardware.dtool</name>
-        <version>1.0</version>
-        <interface>
-            <name>IDtool</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
         <name>vendor.xiaomi.hardware.fbo</name>
         <version>1.0</version>
         <interface>
             <name>IFbo</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.xiaomi.hardware.fingerprintextension</name>
-        <version>1.0</version>
-        <interface>
-            <name>IXiaomiFingerprint</name>
             <instance>default</instance>
         </interface>
     </hal>
