@@ -124,7 +124,6 @@ vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.parrot.so
 vendor/lib/hw/audio.r_submix.default.so
 vendor/lib/hw/audio.usb.default.so
-vendor/lib/hw/audio.vehicle_display.default.so
 vendor/lib/hw/gyro_fusion_interface.so
 vendor/lib/libadm.so
 vendor/lib/libadsprpc.so
@@ -159,7 +158,6 @@ vendor/lib64/hw/audio.primary.default.so
 vendor/lib64/hw/audio.primary.parrot.so
 vendor/lib64/hw/audio.r_submix.default.so
 vendor/lib64/hw/audio.usb.default.so
-vendor/lib64/hw/audio.vehicle_display.default.so
 vendor/lib64/hw/gyro_fusion_interface.so
 vendor/lib64/lib_misound_asc.so
 vendor/lib64/libadm.so
@@ -233,16 +231,6 @@ vendor/lib64/soundfx/libvisualizer.so
 vendor/lib64/soundfx/libvolumelistener.so
 vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.pal@1.0.so
-
-# Automative
-vendor/lib/android.automotive.watchdog-V2-ndk_platform.so
-vendor/lib/android.hardware.automotive.vehicle@2.0-manager-lib.so
-vendor/lib/android.hardware.automotive.vehicle@2.0.so
-vendor/lib/vendor.qti.hardware.automotive.vehicle@1.0.so
-vendor/lib64/android.automotive.watchdog-V2-ndk_platform.so
-vendor/lib64/android.hardware.automotive.vehicle@2.0-manager-lib.so
-vendor/lib64/android.hardware.automotive.vehicle@2.0.so
-vendor/lib64/vendor.qti.hardware.automotive.vehicle@1.0.so
 
 # Batterysecret
 vendor/bin/batterysecret
