@@ -2032,12 +2032,7 @@ vendor/etc/init/ipacm-diag.rc
 vendor/etc/init/ipacm.rc
 
 # IR
-vendor/bin/hw/android.hardware.ir@1.0-service
-vendor/etc/init/android.hardware.ir@1.0-service.rc
-vendor/lib/hw/android.hardware.ir@1.0-impl.so
 vendor/lib/hw/consumerir.qcom.so
-vendor/lib64/android.hardware.ir@1.0.so
-vendor/lib64/hw/android.hardware.ir@1.0-impl.so
 vendor/lib64/hw/consumerir.qcom.so
 
 # IRQ balance
