@@ -33,7 +33,6 @@
 #define FOD_STATUS_ON 1
 
 #define TOUCH_DEV_PATH "/dev/xiaomi-touch"
-#define TOUCH_ID 0
 #define TOUCH_MAGIC 'T'
 #define TOUCH_IOC_SET_CUR_VALUE _IO(TOUCH_MAGIC, SET_CUR_VALUE)
 #define TOUCH_IOC_GET_CUR_VALUE _IO(TOUCH_MAGIC, GET_CUR_VALUE)
@@ -160,7 +159,7 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
     bool enrolling = false;
 
     void setFodStatus(int value) {
-        int buf[MAX_BUF_SIZE] = {TOUCH_ID, Touch_Fod_Enable, value};
+        int buf[MAX_BUF_SIZE] = {MI_DISP_PRIMARY, Touch_Fod_Enable, value};
         ioctl(touch_fd_.get(), TOUCH_IOC_SET_CUR_VALUE, &buf);
     }
 
@@ -169,7 +168,7 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
         mDevice->extCmd(mDevice, COMMAND_FOD_PRESS_Y, pressed ? lastPressY : 0);
         mDevice->extCmd(mDevice, COMMAND_NIT, pressed ? PARAM_NIT_FOD : PARAM_NIT_NONE);
 
-        int buf[MAX_BUF_SIZE] = {TOUCH_ID, Touch_Fod_Enable, pressed ? 1 : 0};
+        int buf[MAX_BUF_SIZE] = {MI_DISP_PRIMARY, Touch_Fod_Enable, pressed ? 1 : 0};
         ioctl(touch_fd_.get(), TOUCH_IOC_SET_CUR_VALUE, &buf);
 
         // Request HBM
