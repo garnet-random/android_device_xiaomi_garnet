@@ -212,7 +212,6 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
         LOG(INFO) << __func__;
         enrolling = false;
 
-        setFingerDown(false);
         setFodStatus(FOD_STATUS_OFF);
     }
 
