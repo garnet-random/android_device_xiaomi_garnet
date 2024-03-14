@@ -614,6 +614,17 @@
         <fqname>@1.0::IQspmhal/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.qti.hardware.qccvndhal</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IQccvndhal</name>
+            <instance>qccvndhal</instance>
+        </interface>
+        <fqname>@1.0::IQccvndhal/qccvndhal</fqname>
+    </hal>
+
+    <hal format="hidl">
         <name>vendor.qti.sla.service</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
