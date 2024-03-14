@@ -35,6 +35,8 @@
 #define DISP_PARAM_LOCAL_HBM_ON "1"
 
 #define COMMAND_FOD_PRESS_STATUS 1
+#define COMMAND_FOD_PRESS_X 2
+#define COMMAND_FOD_PRESS_Y 3
 #define PARAM_FOD_PRESSED 1
 #define PARAM_FOD_RELEASED 0
 
@@ -104,8 +106,11 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
         }).detach();
     }
 
-    void onFingerDown(uint32_t /*x*/, uint32_t /*y*/, float /*minor*/, float /*major*/) {
-        LOG(INFO) << __func__;
+    void onFingerDown(uint32_t x, uint32_t y, float /*minor*/, float /*major*/) {
+        LOG(INFO) << __func__ << "x: " << x << ", y: " << y;
+        // Track x and y coordinates
+        lastPressX = x;
+        lastPressY = y;
         setFingerDown(true);
     }
 
@@ -137,6 +142,7 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
   private:
     fingerprint_device_t* mDevice;
     android::base::unique_fd touch_fd_;
+    uint32_t lastPressX, lastPressY;
 
     void setFodStatus(int value) {
         int fd = open(TOUCH_DEV_PATH, O_RDWR);
@@ -145,6 +151,8 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
     }
 
     void setFingerDown(bool pressed) {
+        mDevice->extCmd(mDevice, COMMAND_FOD_PRESS_X, pressed ? lastPressX : 0);
+        mDevice->extCmd(mDevice, COMMAND_FOD_PRESS_Y, pressed ? lastPressY : 0);
         mDevice->extCmd(mDevice, COMMAND_NIT, pressed ? PARAM_NIT_FOD : PARAM_NIT_NONE);
 
         int fd = open(TOUCH_DEV_PATH, O_RDWR);
