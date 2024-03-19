@@ -2286,7 +2286,6 @@ vendor/etc/init/memtrack_qti.rc
 vendor/etc/vintf/manifest/memtrack_qti.xml
 
 # Mlipay
-vendor/app/IFAAService/IFAAService.apk
 vendor/app/MipayService/MipayService.apk
 vendor/bin/fidoca
 vendor/bin/mlipayd@1.1
