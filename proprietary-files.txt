@@ -707,12 +707,6 @@ vendor/etc/camera/xiaomi/thirdpartysnapshot.json
 vendor/etc/camera/xiaomiSceneDetection.xml
 vendor/etc/init/vendor.qti.camera.provider@2.7-service_64.rc
 vendor/etc/vintf/manifest/vendor.xiaomi.hardware.quickcamera@1.0-service.xml
-vendor/lib/android.frameworks.cameraservice.common@2.0.so
-vendor/lib/android.frameworks.cameraservice.device@2.0.so
-vendor/lib/android.frameworks.cameraservice.device@2.1.so
-vendor/lib/android.frameworks.cameraservice.service@2.0.so
-vendor/lib/android.frameworks.cameraservice.service@2.1.so
-vendor/lib/android.frameworks.cameraservice.service@2.2.so
 vendor/lib/camera.device@1.0-impl.so
 vendor/lib/camera/com.qti.tuned.default.bin
 vendor/lib/camera/components/com.qti.eisv2.so
@@ -801,12 +795,6 @@ vendor/lib/libsynx.so
 vendor/lib/libthreadutils.so
 vendor/lib/libxmi_slow_motion_mein.so
 vendor/lib/vendor.xiaomi.hardware.quickcamera@1.0.so
-vendor/lib64/android.frameworks.cameraservice.common@2.0.so
-vendor/lib64/android.frameworks.cameraservice.device@2.0.so
-vendor/lib64/android.frameworks.cameraservice.device@2.1.so
-vendor/lib64/android.frameworks.cameraservice.service@2.0.so
-vendor/lib64/android.frameworks.cameraservice.service@2.1.so
-vendor/lib64/android.frameworks.cameraservice.service@2.2.so
 vendor/lib64/camera.device@1.0-impl.so
 vendor/lib64/camera/components/com.mi.node.AIIE.so
 vendor/lib64/camera/components/com.mi.node.aiasd.so
