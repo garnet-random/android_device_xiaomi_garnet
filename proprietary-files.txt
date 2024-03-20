@@ -776,7 +776,6 @@ vendor/lib/libcamxswprocessalgo.so
 vendor/lib/libcamxtintlessalgo.so
 vendor/lib/libhme.so
 vendor/lib/libhta_hexagon_runtime_snpe.so
-vendor/lib/libmemunreachable.so
 vendor/lib/libmialgo_ai_vision.so
 vendor/lib/libmialgo_utils.so
 vendor/lib/libmmcamera_bestats.so
@@ -1041,7 +1040,6 @@ vendor/lib64/libipebpsstriping170.so
 vendor/lib64/libipebpsstriping480.so
 vendor/lib64/libjpege.so
 vendor/lib64/libmctfengine_stub.so
-vendor/lib64/libmemunreachable.so
 vendor/lib64/libmfGhostDetection.so
 vendor/lib64/libmiai_deblur.so
 vendor/lib64/libmiai_portraitsupernight.so
