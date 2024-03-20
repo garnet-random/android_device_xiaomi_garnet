@@ -388,9 +388,6 @@ sys.vendor.shutdown.waittime=500
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
-# Touchfeature
-ro.vendor.touchfeature.type=243
-
 # USB
 sys.usb.mtp.batchcancel=1
 vendor.usb.diag.func.name=ffs
