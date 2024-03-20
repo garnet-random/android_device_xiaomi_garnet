@@ -761,7 +761,6 @@ vendor/lib/libSnpeHtpV73Stub.so
 vendor/lib/libc++_shared.so
 vendor/lib/libcalculator.so
 vendor/lib/libcalculator_htp.so
-vendor/lib/libcamera2ndk_vendor.so
 vendor/lib/libcamera_nn_stub.so
 vendor/lib/libcamxcommonutils.so
 vendor/lib/libcamxexternalformatutils.so
@@ -1007,7 +1006,6 @@ vendor/lib64/libbitmlenginev2.so
 vendor/lib64/libc++_shared.so
 vendor/lib64/libcalculator.so
 vendor/lib64/libcalculator_htp.so
-vendor/lib64/libcamera2ndk_vendor.so
 vendor/lib64/libcamera_nn_stub.so
 vendor/lib64/libcamera_scene.so
 vendor/lib64/libcamerapostproc.so
