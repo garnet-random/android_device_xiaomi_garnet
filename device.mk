@@ -299,6 +299,18 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light-V1-ndk_platform.vendor
 
+# Media
+PRODUCT_PACKAGES += \
+    android.hardware.media.c2@1.0.vendor \
+    libOmxCore \
+    libcodec2_hidl@1.0.vendor \
+    libcodec2_soft_common.vendor \
+    libcodec2_vndk.vendor \
+    libstagefrighthw
+
+PRODUCT_PACKAGES += \
+    libavservices_minijail_vendor
+
 # Memtrack
 PRODUCT_PACKAGES += \
     android.hardware.memtrack-V1-ndk_platform.vendor
