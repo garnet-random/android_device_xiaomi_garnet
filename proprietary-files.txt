@@ -1927,14 +1927,6 @@ product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoog
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
-# IPACM
-vendor/bin/ipacm
-vendor/bin/ipacm-diag
-vendor/etc/IPACM_Filter_cfg.xml
-vendor/etc/IPACM_cfg.xml
-vendor/etc/init/ipacm-diag.rc
-vendor/etc/init/ipacm.rc
-
 # IR
 vendor/lib/hw/consumerir.qcom.so
 vendor/lib64/hw/consumerir.qcom.so
