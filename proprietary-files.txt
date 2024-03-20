@@ -16,9 +16,7 @@ vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd
 
 # ADSP
 vendor/bin/adsprpcd
-vendor/bin/audioadsprpcd
 vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
-vendor/etc/init/vendor.qti.audio-adsprpc-service.rc
 vendor/lib/libadsp_default_listener.so
 vendor/lib64/libadsp_default_listener.so
 
@@ -82,10 +80,6 @@ vendor/lib/hw/com.dsi.ant@1.0-impl.so
 vendor/lib64/com.dsi.ant@1.0.so
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
-# Audio
-vendor/bin/hw/android.hardware.audio.service_64
-vendor/etc/init/android.hardware.audio.service_64.rc
-
 # Audio firmware
 vendor/firmware/aw882xx_acf.bin
 
@@ -120,10 +114,7 @@ vendor/etc/audio_diag.cfg
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
-vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.parrot.so
-vendor/lib/hw/audio.r_submix.default.so
-vendor/lib/hw/audio.usb.default.so
 vendor/lib/hw/gyro_fusion_interface.so
 vendor/lib/libadm.so
 vendor/lib/libadsprpc.so
@@ -154,10 +145,7 @@ vendor/lib/libresampler.so
 vendor/lib/libsndcardparser.so
 vendor/lib/vendor.qti.hardware.pal@1.0-impl.so
 vendor/lib/vendor.qti.hardware.pal@1.0.so
-vendor/lib64/hw/audio.primary.default.so
 vendor/lib64/hw/audio.primary.parrot.so
-vendor/lib64/hw/audio.r_submix.default.so
-vendor/lib64/hw/audio.usb.default.so
 vendor/lib64/hw/gyro_fusion_interface.so
 vendor/lib64/lib_misound_asc.so
 vendor/lib64/libadm.so
@@ -187,6 +175,8 @@ vendor/lib64/libpalclient.so
 vendor/lib64/libqtigefar.so
 vendor/lib64/libresampler.so
 vendor/lib64/libsndcardparser.so
+vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.pal@1.0.so
 
 # Audio soundfx
 vendor/lib/soundfx/libasphere.so
@@ -199,16 +189,12 @@ vendor/lib/soundfx/libhapticgenerator.so
 vendor/lib/soundfx/libhwdap.so
 vendor/lib/soundfx/libldnhncr.so
 vendor/lib/soundfx/libmisoundfx.so
-vendor/lib/soundfx/libqcompostprocbundle.so
-vendor/lib/soundfx/libqcomvisualizer.so
-vendor/lib/soundfx/libqcomvoiceprocessing.so
 vendor/lib/soundfx/libreverbwrapper.so
 vendor/lib/soundfx/libshoebox.so
 vendor/lib/soundfx/libswdap.so
 vendor/lib/soundfx/libswgamedap.so
 vendor/lib/soundfx/libswvqe.so
 vendor/lib/soundfx/libvisualizer.so
-vendor/lib/soundfx/libvolumelistener.so
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libaudiopreprocessing.so
 vendor/lib64/soundfx/libbundlewrapper.so
@@ -219,18 +205,12 @@ vendor/lib64/soundfx/libhapticgenerator.so
 vendor/lib64/soundfx/libhwdap.so
 vendor/lib64/soundfx/libldnhncr.so
 vendor/lib64/soundfx/libmisoundfx.so
-vendor/lib64/soundfx/libqcompostprocbundle.so
-vendor/lib64/soundfx/libqcomvisualizer.so
-vendor/lib64/soundfx/libqcomvoiceprocessing.so
 vendor/lib64/soundfx/libreverbwrapper.so
 vendor/lib64/soundfx/libshoebox.so
 vendor/lib64/soundfx/libswdap.so
 vendor/lib64/soundfx/libswgamedap.so
 vendor/lib64/soundfx/libswvqe.so
 vendor/lib64/soundfx/libvisualizer.so
-vendor/lib64/soundfx/libvolumelistener.so
-vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.pal@1.0.so
 
 # Batterysecret
 vendor/bin/batterysecret

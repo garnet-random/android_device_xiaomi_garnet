@@ -39,12 +39,29 @@ BOARD_SHIPPING_API_LEVEL := 31
 PRODUCT_SHIPPING_API_LEVEL := 31
 
 # Audio
+SOONG_CONFIG_NAMESPACES += android_hardware_audio
+SOONG_CONFIG_android_hardware_audio += \
+    run_64bit
+SOONG_CONFIG_android_hardware_audio_run_64bit := true
+
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl \
-    android.hardware.audio.effect@7.0-impl
+    android.hardware.audio.effect@7.0-impl \
+    android.hardware.audio.service
 
 PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl
+
+PRODUCT_PACKAGES += \
+    audioadsprpcd \
+    audio.r_submix.default \
+    audio.usb.default
+
+PRODUCT_PACKAGES += \
+    libqcompostprocbundle \
+    libqcomvisualizer \
+    libqcomvoiceprocessing \
+    libvolumelistener
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
