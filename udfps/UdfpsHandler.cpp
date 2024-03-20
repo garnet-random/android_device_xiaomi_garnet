@@ -15,24 +15,11 @@
 #include <thread>
 
 #include "UdfpsHandler.h"
-
-#define MAX_BUF_SIZE 256
-
-#define TOUCH_FOD_ENABLE 10
+#include "xiaomi_touch.h"
 
 #define COMMAND_NIT 10
 #define PARAM_NIT_FOD 1
 #define PARAM_NIT_NONE 0
-
-#define TOUCH_DEV_PATH "/dev/xiaomi-touch"
-#define SET_CUR_VALUE 0
-#define TOUCH_MAGIC 0x5400
-#define TOUCH_IOC_SETMODE TOUCH_MAGIC + SET_CUR_VALUE
-
-#define DISP_PARAM_PATH "sys/devices/virtual/mi_display/disp_feature/disp-DSI-0/disp_param"
-#define DISP_PARAM_LOCAL_HBM_MODE "9"
-#define DISP_PARAM_LOCAL_HBM_OFF "0"
-#define DISP_PARAM_LOCAL_HBM_ON "1"
 
 #define COMMAND_FOD_PRESS_STATUS 1
 #define COMMAND_FOD_PRESS_X 2
@@ -42,6 +29,17 @@
 
 #define FOD_STATUS_OFF 0
 #define FOD_STATUS_ON 1
+
+#define TOUCH_DEV_PATH "/dev/xiaomi-touch"
+#define TOUCH_ID 0
+#define TOUCH_MAGIC 'T'
+#define TOUCH_IOC_SET_CUR_VALUE _IO(TOUCH_MAGIC, SET_CUR_VALUE)
+#define TOUCH_IOC_GET_CUR_VALUE _IO(TOUCH_MAGIC, GET_CUR_VALUE)
+
+#define DISP_PARAM_PATH "sys/devices/virtual/mi_display/disp_feature/disp-DSI-0/disp_param"
+#define DISP_PARAM_LOCAL_HBM_MODE "9"
+#define DISP_PARAM_LOCAL_HBM_OFF "0"
+#define DISP_PARAM_LOCAL_HBM_ON "1"
 
 #define FOD_PRESS_STATUS_PATH "/sys/class/touch/touch_dev/fod_press_status"
 
@@ -145,9 +143,8 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
     uint32_t lastPressX, lastPressY;
 
     void setFodStatus(int value) {
-        int fd = open(TOUCH_DEV_PATH, O_RDWR);
-        int arg[3] = {0, TOUCH_FOD_ENABLE, value};
-        ioctl(fd, TOUCH_IOC_SETMODE, &arg);
+        int buf[MAX_BUF_SIZE] = {TOUCH_ID, Touch_Fod_Enable, value};
+        ioctl(touch_fd_.get(), TOUCH_IOC_SET_CUR_VALUE, &buf);
     }
 
     void setFingerDown(bool pressed) {
@@ -155,9 +152,9 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
         mDevice->extCmd(mDevice, COMMAND_FOD_PRESS_Y, pressed ? lastPressY : 0);
         mDevice->extCmd(mDevice, COMMAND_NIT, pressed ? PARAM_NIT_FOD : PARAM_NIT_NONE);
 
-        int fd = open(TOUCH_DEV_PATH, O_RDWR);
-        int arg[3] = {0, TOUCH_FOD_ENABLE, pressed};
-        ioctl(fd, TOUCH_IOC_SETMODE, &arg);
+        int buf[MAX_BUF_SIZE] = {TOUCH_ID, Touch_Fod_Enable, pressed ? 1 : 0};
+        ioctl(touch_fd_.get(), TOUCH_IOC_SET_CUR_VALUE, &buf);
+
         set(DISP_PARAM_PATH,
             std::string(DISP_PARAM_LOCAL_HBM_MODE) + " " +
                     (pressed ? DISP_PARAM_LOCAL_HBM_ON : DISP_PARAM_LOCAL_HBM_OFF));
