@@ -348,7 +348,9 @@ PRODUCT_PACKAGES += \
 
 # QMI
 PRODUCT_PACKAGES += \
-    libjson
+    libjson \
+    libqti_vndfwk_detect.vendor \
+    libvndfwk_detect_jni.qti_vendor
 
 # Radio
 PRODUCT_PACKAGES += \
