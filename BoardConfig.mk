@@ -94,7 +94,7 @@ BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image
 
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8450
+TARGET_KERNEL_SOURCE := kernel/xiaomi/garnet
 TARGET_KERNEL_CONFIG := \
     gki_defconfig
 
@@ -112,10 +112,6 @@ BOARD_BOOTCONFIG := \
     androidboot.memcg=1 \
     androidboot.usbcontroller=a600000.dwc3 \
     androidboot.selinux=permissive
-
-TARGET_KERNEL_EXT_MODULE_ROOT := kernel/xiaomi/sm8450-modules
-TARGET_KERNEL_EXT_MODULES := \
-	qcom/opensource/audio-kernel
 
 # Kernel (prebuilt)
 TARGET_FORCE_PREBUILT_KERNEL := true
