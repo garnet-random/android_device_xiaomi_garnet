@@ -97,7 +97,6 @@ vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
 -vendor/lib/libar-pal.so
-vendor/lib/libpal_net_if.so
 vendor/lib64/hw/audio.primary.parrot.so
 vendor/lib64/hw/gyro_fusion_interface.so
 vendor/lib64/lib_misound_asc.so
@@ -123,7 +122,6 @@ vendor/lib64/liblx-ar_util.so
 vendor/lib64/liblx-osal.so
 vendor/lib64/libmcs.so
 vendor/lib64/libmispowerop.so
-vendor/lib64/libpal_net_if.so
 vendor/lib64/libqtigefar.so
 vendor/lib64/libresampler.so
 vendor/lib64/libsndcardparser.so
@@ -1794,6 +1792,7 @@ vendor/lib/liblocdiagiface.so
 vendor/lib/liblowi_client.so
 vendor/lib/liblowi_common.so
 vendor/lib/liblowi_wifihal.so
+vendor/lib/libpal_net_if.so
 vendor/lib/libqcc_file_agent.so
 vendor/lib/libqdma_file_agent.so
 vendor/lib/libqppe.so
@@ -1849,6 +1848,7 @@ vendor/lib64/liblocdiagiface.so
 vendor/lib64/liblowi_client.so
 vendor/lib64/liblowi_common.so
 vendor/lib64/liblowi_wifihal.so
+vendor/lib64/libpal_net_if.so
 vendor/lib64/libqcc_file_agent.so
 vendor/lib64/libqdma_file_agent.so
 vendor/lib64/libqppe.so
