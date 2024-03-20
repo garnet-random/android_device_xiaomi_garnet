@@ -285,6 +285,9 @@ PRODUCT_PACKAGES += \
     android.hardware.authsecret@1.0.vendor \
     android.hardware.keymaster@4.1.vendor
 
+PRODUCT_PACKAGES += \
+    libkeymaster_messages.vendor
+
 # Keymint
 PRODUCT_PACKAGES += \
     android.hardware.hardware_keystore.xml \
