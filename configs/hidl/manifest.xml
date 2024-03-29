@@ -623,17 +623,6 @@
         </interface>
         <fqname>@1.0::IQccvndhal/qccvndhal</fqname>
     </hal>
-
-    <hal format="hidl">
-        <name>vendor.qti.sla.service</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISlaService</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ISlaService/default</fqname>
-    </hal>
     <hal format="hidl">
         <name>vendor.xiaomi.hardware.bgservice</name>
         <transport>hwbinder</transport>
