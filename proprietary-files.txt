@@ -1796,10 +1796,6 @@ odm/lib64/hw/fingerprint.fpc_fod.so:odm/lib64/hw/fingerprint.fpc_fod.default.so
 odm/lib64/hw/fingerprint.goodix_fod.so:odm/lib64/hw/fingerprint.goodix_fod.default.so
 odm/lib64/libgf_hal.so
 odm/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
-vendor/bin/hw/mfp-daemon
-vendor/etc/init/init.mfp-daemon.rc
-vendor/lib64/com.fingerprints.extension@3.0.so
-vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
 
 # GNSS
 vendor/app/CACertService/CACertService.apk
