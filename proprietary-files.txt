@@ -1673,7 +1673,6 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so
 # FTM
 vendor/bin/ftmdaemon
 vendor/bin/myftm
-vendor/etc/ftm_test_config_parrot-qrd-sku1-snd-card
 vendor/etc/ftm_test_config_parrot-qrd-snd-card
 vendor/lib/ftm_fm_lib.so
 vendor/lib64/ftm_fm_lib.so
