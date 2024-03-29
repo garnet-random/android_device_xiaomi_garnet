@@ -1,8 +1,6 @@
 # All unpinned blobs below are extracted from garnet V14.0.6.0.TNRMIXM
 
 # ACDB
-vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb
-vendor/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp
 vendor/etc/acdbdata/Mise/Mise_acdb_cal.acdb
 vendor/etc/acdbdata/Mise/Mise_workspaceFileXml.qwsp
 vendor/etc/acdbdata/Mise/foursemi/Mise_acdb_cal.acdb
@@ -1675,8 +1673,6 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so
 # FTM
 vendor/bin/ftmdaemon
 vendor/bin/myftm
-vendor/etc/ftm_test_config_parrot-idp-sku1-snd-card
-vendor/etc/ftm_test_config_parrot-idp-snd-card
 vendor/etc/ftm_test_config_parrot-qrd-sku1-snd-card
 vendor/etc/ftm_test_config_parrot-qrd-snd-card
 vendor/lib/ftm_fm_lib.so
