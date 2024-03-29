@@ -2000,10 +2000,6 @@ vendor/etc/dolby_vision.cfg
 vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
 vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc
-vendor/etc/seccomp_policy/c2audio.vendor.base-arm.policy
-vendor/etc/seccomp_policy/c2audio.vendor.base-arm64.policy
-vendor/etc/seccomp_policy/c2audio.vendor.ext-arm.policy
-vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy
 vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy
 vendor/etc/vintf/manifest/c2_manifest_vendor.xml
@@ -2076,21 +2072,12 @@ vendor/lib64/libvideotxr.so
 vendor/lib64/qti.video.utils.videobufferlayout.so
 
 # Media Config
-vendor/etc/media_codecs_c2_audio.xml
 vendor/etc/media_codecs_cape_vendor.xml
 vendor/etc/media_codecs_dolby_audio.xml
-vendor/etc/media_codecs_google_audio.xml
-vendor/etc/media_codecs_google_c2.xml
-vendor/etc/media_codecs_google_c2_audio.xml
-vendor/etc/media_codecs_google_c2_video.xml
-vendor/etc/media_codecs_google_telephony.xml
-vendor/etc/media_codecs_google_video.xml
-vendor/etc/media_codecs_google_video_le.xml
 vendor/etc/media_codecs_parrot_v0.xml
 vendor/etc/media_codecs_performance_parrot_v0.xml
 vendor/etc/media_codecs_system_default.xml
 vendor/etc/media_codecs_taro_vendor.xml
-vendor/etc/media_codecs_vendor_audio.xml
 vendor/etc/media_codecs_with_dolby_taro.xml
 vendor/etc/media_parrot_v0/video_system_specs.json
 vendor/etc/media_profiles_parrot_v0.xml
