@@ -125,17 +125,8 @@ vendor/lib64/libsndcardparser.so
 
 # Audio soundfx
 vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libaudiopreprocessing.so
-vendor/lib64/soundfx/libbundlewrapper.so
-vendor/lib64/soundfx/libdownmix.so
-vendor/lib64/soundfx/libdynproc.so
-vendor/lib64/soundfx/libeffectproxy.so
-vendor/lib64/soundfx/libhapticgenerator.so
-vendor/lib64/soundfx/libldnhncr.so
 vendor/lib64/soundfx/libmisoundfx.so
-vendor/lib64/soundfx/libreverbwrapper.so
 vendor/lib64/soundfx/libshoebox.so
-vendor/lib64/soundfx/libvisualizer.so
 
 # Batterysecret
 vendor/bin/batterysecret
