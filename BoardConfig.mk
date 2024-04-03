@@ -115,6 +115,7 @@ BOARD_BOOTCONFIG := \
 # Kernel (prebuilt)
 TARGET_FORCE_PREBUILT_KERNEL := true
 PREBUILT_PATH := device/xiaomi/garnet-prebuilt
+BOARD_PREBUILT_DTBIMAGE_DIR := $(PREBUILT_PATH)/images/dtbs/
 BOARD_PREBUILT_DTBOIMAGE := $(PREBUILT_PATH)/images/dtbo.img
 TARGET_PREBUILT_KERNEL := $(PREBUILT_PATH)/images/kernel
 
