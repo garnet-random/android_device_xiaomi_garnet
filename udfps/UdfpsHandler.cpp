@@ -25,8 +25,6 @@
 #define PARAM_NIT_NONE 0
 
 #define COMMAND_FOD_PRESS_STATUS 1
-#define COMMAND_FOD_PRESS_X 2
-#define COMMAND_FOD_PRESS_Y 3
 #define PARAM_FOD_PRESSED 1
 #define PARAM_FOD_RELEASED 0
 
@@ -180,11 +178,8 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
         }).detach();
     }
 
-    void onFingerDown(uint32_t x, uint32_t y, float /*minor*/, float /*major*/) {
-        LOG(INFO) << __func__ << "x: " << x << ", y: " << y;
-        // Track x and y coordinates
-        lastPressX = x;
-        lastPressY = y;
+    void onFingerDown(uint32_t /*x*/, uint32_t /*y*/, float /*minor*/, float /*major*/) {
+        LOG(INFO) << __func__;
 
         /*
          * On fpc_fod devices, the waiting for finger message is not reliably sent...
@@ -263,7 +258,6 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
     fingerprint_device_t* mDevice;
     android::base::unique_fd touch_fd_;
     android::base::unique_fd disp_fd_;
-    uint32_t lastPressX, lastPressY;
     bool enrolling = false;
     bool isFpcFod;
 
@@ -273,9 +267,6 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
     }
 
     void setFingerDown(bool pressed) {
-        mDevice->extCmd(mDevice, COMMAND_FOD_PRESS_X, pressed ? lastPressX : 0);
-        mDevice->extCmd(mDevice, COMMAND_FOD_PRESS_Y, pressed ? lastPressY : 0);
-
         int buf[MAX_BUF_SIZE] = {MI_DISP_PRIMARY, Touch_Fod_Enable, pressed ? 1 : 0};
         ioctl(touch_fd_.get(), TOUCH_IOC_SET_CUR_VALUE, &buf);
     }
