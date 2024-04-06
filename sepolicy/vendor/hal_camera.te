@@ -1,0 +1,35 @@
+attribute vendor_hal_camerapostproc_xiaomi;
+attribute vendor_hal_camerapostproc_xiaomi_client;
+attribute vendor_hal_camerapostproc_xiaomi_server;
+type hal_quickcamera_hwservice, hwservice_manager_type;
+type vendor_hal_camerapostproc_xiaomi_hwservice, hwservice_manager_type;
+
+add_hwservice(hal_camera_server, vendor_hal_camerapostproc_xiaomi_hwservice)
+add_hwservice(vendor_hal_camerapostproc_xiaomi_server, vendor_hal_camerapostproc_xiaomi_hwservice)
+allow hal_camera_default hal_quickcamera_hwservice:hwservice_manager { add find };
+allow hal_camera_default mnt_vendor_file:dir search;
+allow hal_camera_default vendor_persist_sensors_file:dir search;
+allow hal_camera_default vendor_sysfs_battery_supply:dir search;
+allow hal_camera_default vendor_sysfs_battery_supply:file { open read };
+allow vendor_hal_camerapostproc_xiaomi platform_app:binder transfer;
+allow vendor_hal_camerapostproc_xiaomi platform_app:binder { call transfer };
+allow vendor_hal_camerapostproc_xiaomi platform_app:fd *;
+allow vendor_hal_camerapostproc_xiaomi priv_app:binder transfer;
+allow vendor_hal_camerapostproc_xiaomi priv_app:binder { call transfer };
+allow vendor_hal_camerapostproc_xiaomi priv_app:fd *;
+allow vendor_hal_camerapostproc_xiaomi system_app:binder transfer;
+allow vendor_hal_camerapostproc_xiaomi system_app:binder { call transfer };
+allow vendor_hal_camerapostproc_xiaomi system_app:fd *;
+allow vendor_hal_camerapostproc_xiaomi_client vendor_hal_camerapostproc_xiaomi_hwservice:hwservice_manager find;
+allow vendor_hal_camerapostproc_xiaomi_client vendor_hal_camerapostproc_xiaomi_server:binder transfer;
+allow vendor_hal_camerapostproc_xiaomi_client vendor_hal_camerapostproc_xiaomi_server:binder { call transfer };
+allow vendor_hal_camerapostproc_xiaomi_client vendor_hal_camerapostproc_xiaomi_server:fd *;
+allow vendor_hal_camerapostproc_xiaomi_server vendor_hal_camerapostproc_xiaomi_client:binder transfer;
+allow vendor_hal_camerapostproc_xiaomi_server vendor_hal_camerapostproc_xiaomi_client:binder { call transfer };
+allow vendor_hal_camerapostproc_xiaomi_server vendor_hal_camerapostproc_xiaomi_client:fd *;
+get_prop(hal_camera_default, serialno_prop)
+hal_server_domain(hal_camera_default, vendor_hal_camerapostproc_xiaomi)
+r_dir_file(hal_camera_default, mnt_vendor_file)
+r_dir_file(hal_camera_default, vendor_persist_sensors_file)
+set_prop(hal_camera_default, vendor_camera_p3enable_prop)
+set_prop(hal_camera_default, vendor_camera_sensor_prop)

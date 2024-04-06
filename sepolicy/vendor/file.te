@@ -1,0 +1,24 @@
+# Audio
+type audio_socket, file_type;
+
+# Batterysecret
+type vendor_sysfs_qcom_battery, fs_type, sysfs_type;
+
+# Displayfeature
+type vendor_sysfs_displayfeature, fs_type, sysfs_type;
+
+# Dumpstate
+type minidump_data_file, data_file_type, file_type;
+
+# Fingerprint
+type sysfs_tp_fodstatus, fs_type, sysfs_type;
+type vendor_fingerprint_data_file, data_file_type, file_type;
+type vendor_fingerprint_data_file_fpdump, data_file_type, file_type;
+
+# Thermal
+type sys_thermal_max_brightness, fs_type, sysfs_type;
+type sys_thermal_wifi_limit, fs_type, sysfs_type;
+type thermal_data_file, data_file_type, file_type;
+
+# Wifi
+type vendor_mac_vendor_data_file, data_file_type, file_type, mlstrustedobject;
