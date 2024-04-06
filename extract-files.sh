@@ -61,15 +61,6 @@ function blob_fixup() {
         vendor/etc/vintf/manifest/c2_manifest_vendor.xml)
             sed -ni '/dolby/!p' "${2}"
             ;;
-        vendor/etc/init/hw/init.batterysecret.rc)
-            sed -i s/seclabel\ u:r:batterysecret:s0//g "${2}"
-            ;;
-        vendor/etc/init/hw/init.mi_thermald.rc)
-            sed -i s/seclabel\ u:r:mi_thermald:s0//g "${2}"
-            ;;
-        vendor/etc/init/mi_ric.rc)
-            sed -i s/seclabel\ u:r:mi_ric:s0//g "${2}"
-            ;;
     esac
 }
 
