@@ -228,6 +228,7 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
+    charger_fw_fstab.qti \
     fstab.qcom \
     init.garnet.rc \
     init.qcom.rc \

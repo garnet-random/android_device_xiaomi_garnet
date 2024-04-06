@@ -1,4 +1,10 @@
 prebuilt_etc {
+    name: "charger_fw_fstab.qti",
+    src: "etc/charger_fw_fstab.qti",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "fstab.qcom",
     src: "etc/fstab.qcom",
     vendor: true,
