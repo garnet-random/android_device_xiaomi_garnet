@@ -260,7 +260,7 @@ vendor.display.svi.config=1
 vendor.display.svi.config_path=/vendor/etc/display/SVIConfig.xml
 vendor.display.use_layer_ext=0
 vendor.display.use_smooth_motion=0
-vendor.display.vds_allow_hwc=true
+vendor.display.vds_allow_hwc=0
 
 # DPM
 persist.vendor.dpm.vndr.feature=1
@@ -285,7 +285,7 @@ debug.mdpcomp.logs=0
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_advanced_sf_phase_offset=1
 debug.sf.enable_gl_backpressure=1
-debug.sf.enable_hwc_vds=false
+debug.sf.enable_hwc_vds=1
 debug.sf.high_fps_early_gl_phase_offset_ns=-2000000
 debug.sf.high_fps_early_phase_offset_ns=-4000000
 debug.sf.high_fps_late_app_phase_offset_ns=1000000
