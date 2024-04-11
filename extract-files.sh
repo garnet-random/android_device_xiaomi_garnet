@@ -61,6 +61,9 @@ function blob_fixup() {
         vendor/etc/camera/pureView_parameter.xml)
             sed -i 's/=\([0-9]\+\)>/="\1">/g' "${2}"
             ;;
+        vendor/etc/vintf/manifest/c2_manifest_vendor.xml)
+            sed -ni '/dolby/!p' "${2}"
+            ;;
         vendor/etc/init/hw/init.batterysecret.rc)
             sed -i s/seclabel\ u:r:batterysecret:s0//g "${2}"
             ;;
