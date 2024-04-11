@@ -1788,13 +1788,6 @@ vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti-rkp.xml
 vendor/lib/libqtikeymint.so
 vendor/lib64/libqtikeymint.so
 
-# Lights
-vendor/bin/hw/vendor.qti.hardware.lights.service
-vendor/etc/init/vendor.qti.hardware.lights.service.rc
-vendor/etc/vintf/manifest/vendor.qti.hardware.lights.service.xml
-vendor/lib/hw/lights.mixed.so
-vendor/lib64/hw/lights.mixed.so
-
 # Limits
 vendor/bin/hw/vendor.qti.hardware.limits@1.1-service
 vendor/etc/init/vendor.qti.hardware.limits-service.rc
