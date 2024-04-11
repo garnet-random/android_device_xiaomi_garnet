@@ -2,10 +2,6 @@
 persist.vendor.EnableP3ColorSpace u:object_r:vendor_camera_p3enable_prop:s0
 vendor.camera.sensor. u:object_r:vendor_camera_sensor_prop:s0
 
-# Dumpstate
-vendor.minidump.crash_reason u:object_r:vendor_minidump64_prop:s0
-vendor.minidump.is.valid u:object_r:vendor_minidump64_prop:s0
-
 # Fingerprint
 persist.vendor.fpc. u:object_r:vendor_fp_prop:s0
 persist.vendor.sys.fp. u:object_r:vendor_fp_prop:s0

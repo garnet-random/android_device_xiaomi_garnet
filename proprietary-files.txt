@@ -1461,14 +1461,6 @@ vendor/lib64/vendor.display.color@1.6.so|2ba5b007dbb0ece9b5f233f262a053449aef12a
 vendor/lib64/vendor.display.color@1.7.so|3c809821fc487ba3255e282835920ff8a212b354
 vendor/lib64/vendor.display.postproc@1.0.so|b40852513d7ef19ece4eee7ebff20aa7d1223487
 
-
-# Dumpstate
-vendor/bin/hw/android.hardware.dumpstate@1.1-service.xiaomi
-vendor/etc/init/android.hardware.dumpstate@1.1-service.xiaomi.rc
-vendor/etc/vintf/manifest/android.hardware.dumpstate@1.1-service.xiaomi.xml
-vendor/lib64/android.hardware.dumpstate@1.0.so
-vendor/lib64/android.hardware.dumpstate@1.1.so
-
 # EMBMS
 vendor/bin/embmsslServer
 vendor/etc/init/init.embmssl_server.rc
