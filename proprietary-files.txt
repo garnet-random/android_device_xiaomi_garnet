@@ -1548,9 +1548,6 @@ vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
 vendor/etc/vintf/manifest/vendor.qti.gnss-service.xml
 vendor/etc/xtra_root_cert.pem
 vendor/etc/xtwifi.conf
-vendor/lib/android.hardware.gnss.measurement_corrections@1.0.so
-vendor/lib/android.hardware.gnss.measurement_corrections@1.1.so
-vendor/lib/android.hardware.gnss.visibility_control@1.0.so
 vendor/lib/hw/android.hardware.gnss-aidl-impl-qti.so
 vendor/lib/hw/android.hardware.gnss@2.1-impl-qti.so
 vendor/lib/libMiVDR.so
@@ -1602,9 +1599,6 @@ vendor/lib/libxtwifi_server_protocol.so
 vendor/lib/libxtwifi_server_protocol_uri_v3.so
 vendor/lib/vendor.qti.gnss-V3-ndk_platform.so
 vendor/lib/vendor.qti.gnss-service.so
-vendor/lib64/android.hardware.gnss.measurement_corrections@1.0.so
-vendor/lib64/android.hardware.gnss.measurement_corrections@1.1.so
-vendor/lib64/android.hardware.gnss.visibility_control@1.0.so
 vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so
 vendor/lib64/libMiVDR.so
