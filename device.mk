@@ -510,5 +510,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.passpoint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.passpoint.xml \
     frameworks/native/data/etc/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml
 
+# WiFi Display
+PRODUCT_PACKAGES += \
+    libwfdaac_vendor
+
 # Vendor
 $(call inherit-product, vendor/xiaomi/garnet/garnet-vendor.mk)

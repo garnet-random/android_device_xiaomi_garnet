@@ -3020,7 +3020,6 @@ vendor/lib64/libmm-hdcpmgr.so
 vendor/lib64/libmmosal_vendor.so
 vendor/lib64/libmmrtpdecoder_vendor.so
 vendor/lib64/libmmrtpencoder_vendor.so
-vendor/lib64/libwfdaac_vendor.so
 vendor/lib64/libwfdcodecv4l2_proprietary.so
 vendor/lib64/libwfdcommonutils_proprietary.so
 vendor/lib64/libwfdconfigutils_proprietary.so
