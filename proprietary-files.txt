@@ -1964,7 +1964,6 @@ vendor/lib/libsn100u_fw.so
 vendor/lib/libsn220u_fw.so
 vendor/lib/nfc_nci.nqx.default.hw.v1.so
 vendor/lib/vendor.nxp.hardware.nfc@2.0.so
-vendor/lib64/libchrome.so
 vendor/lib64/libsn100u_fw.so
 vendor/lib64/libsn220u_fw.so
 vendor/lib64/nfc_nci.nqx.default.hw.v1.so
