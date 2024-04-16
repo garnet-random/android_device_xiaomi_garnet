@@ -2466,7 +2466,6 @@ vendor/lib/libril-legacy.so
 vendor/lib/libril-qc-ltedirectdisc.so
 vendor/lib/libril-qc-radioconfig.so
 vendor/lib/librilqmimiscservices.so
-vendor/lib/librmnetctl.so
 vendor/lib/libshsusr_verinfo.so
 vendor/lib/libsystem_health_mon.so
 vendor/lib/libxiaomi_qcril.so
@@ -2605,7 +2604,6 @@ vendor/lib64/libril-legacy.so
 vendor/lib64/libril-qc-ltedirectdisc.so
 vendor/lib64/libril-qc-radioconfig.so
 vendor/lib64/librilqmimiscservices.so
-vendor/lib64/librmnetctl.so
 vendor/lib64/libshsusr_verinfo.so
 vendor/lib64/libsystem_health_mon.so
 vendor/lib64/libxiaomi_qcril.so
