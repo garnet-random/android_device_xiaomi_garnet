@@ -2718,7 +2718,6 @@ vendor/lib/libssc_default_listener.so
 vendor/lib/libssccalapi@2.0.so
 vendor/lib/sensors.ssc.so
 vendor/lib/sensors.touch.detect.so
-vendor/lib64/libsensorndkbridge.so
 vendor/lib64/libsensorslog.so
 vendor/lib64/libsns_device_mode_stub.so
 vendor/lib64/libsns_direct_channel_stub.so
