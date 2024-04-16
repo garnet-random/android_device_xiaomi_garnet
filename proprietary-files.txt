@@ -1939,7 +1939,6 @@ vendor/etc/seccomp_policy/modemManager.policy
 
 # NFC
 vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
-vendor/bin/nqnfcinfo
 vendor/bin/pnscr
 vendor/bin/pnscr-mi
 vendor/bin/pnscr-rf
