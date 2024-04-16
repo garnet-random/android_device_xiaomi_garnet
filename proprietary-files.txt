@@ -1825,7 +1825,6 @@ vendor/lib/libEvrcSwCodec.so
 vendor/lib/libFlacSwDec.so
 vendor/lib/libQcelp13SwCodec.so
 vendor/lib/libdsd2pcm.so
-vendor/lib/libplatformconfig.so
 vendor/lib/libqc2audio_base.so
 vendor/lib/libqc2audio_basecodec.so
 vendor/lib/libqc2audio_core.so
@@ -1854,7 +1853,6 @@ vendor/lib64/libEvrcSwCodec.so
 vendor/lib64/libFlacSwDec.so
 vendor/lib64/libQcelp13SwCodec.so
 vendor/lib64/libdsd2pcm.so
-vendor/lib64/libplatformconfig.so
 vendor/lib64/libqc2audio_base.so
 vendor/lib64/libqc2audio_basecodec.so
 vendor/lib64/libqc2audio_core.so
