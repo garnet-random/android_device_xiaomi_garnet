@@ -146,30 +146,21 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.display.allocator@3.0.vendor \
-    vendor.qti.hardware.display.allocator@4.0.vendor \
-    vendor.qti.hardware.display.composer@3.1.vendor \
-    vendor.qti.hardware.display.demura@2.0.vendor \
-    vendor.qti.hardware.display.mapper@2.0.vendor \
-    vendor.qti.hardware.display.mapper@3.0.vendor \
-    vendor.qti.hardware.display.mapper@4.0.vendor \
-    vendor.qti.hardware.display.mapperextensions@1.2.vendor
-
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.display.config-V1-ndk_platform.vendor \
-    vendor.qti.hardware.display.config-V2-ndk_platform.vendor \
-    vendor.qti.hardware.display.config-V3-ndk_platform.vendor \
-    vendor.qti.hardware.display.config-V4-ndk_platform.vendor \
-    vendor.qti.hardware.display.config-V5-ndk_platform.vendor \
-    vendor.qti.hardware.display.config-V6-ndk_platform.vendor
-
-PRODUCT_PACKAGES += \
-    vendor.display.config@1.11.vendor \
-    vendor.display.config@2.0.vendor
+    android.hardware.graphics.mapper@4.0-impl-qti-display \
+    vendor.qti.hardware.display.allocator-service \
+    vendor.qti.hardware.display.composer-service
 
 PRODUCT_PACKAGES += \
     init.qti.display_boot.rc \
     init.qti.display_boot.sh
+
+PRODUCT_PACKAGES += \
+    vendor.display.config@1.11.vendor \
+    vendor.qti.hardware.display.config-V2-ndk_platform.vendor \
+    vendor.qti.hardware.display.mapper@2.0.vendor
+
+PRODUCT_COPY_FILES += \
+    hardware/qcom-caf/sm8450/display/config/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -195,10 +186,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
 
 # Graphics
-PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.4.vendor \
-    android.hardware.common-V2-ndk_platform.vendor
-
 PRODUCT_PACKAGES += \
     libgui_vendor
 
@@ -490,11 +477,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
-
-# VNDK
-PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v32/arm64/arch-arm-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutils-v32.so \
-    prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v32.so
 
 # WiFi
 PRODUCT_PACKAGES += \
