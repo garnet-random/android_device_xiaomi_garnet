@@ -1473,10 +1473,10 @@ vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
 vendor/lib64/vendor.qti.esepowermanager@1.0.so
 vendor/lib64/vendor.qti.esepowermanager@1.1.so
 
-# Euicc - XT2303-2_LYRIQ_RETIN_13_T2TLS33.3-62-3-3
-product/app/EuiccPartnerApp/EuiccPartnerApp.apk|612f6c88d0e8df564cf9ff28717a9a5bd782fe85
+# Euicc - rtwo_g-user 14 U1TRS34.8-30-13-1 7c77a-12bae6 release-keys
+product/app/EuiccPartnerApp/EuiccPartnerApp.apk|eb559304acb90fde3b60170db2e79a99992ceabd
 product/etc/permissions/privapp-permissions-com.google.android.euicc.xml|ef99fe93aa2ed629fef39c3dcc4b07c597c1f469
-product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED|e1f63b736410953ccf7591cfc3813e0360a9dfa4
+product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED|5ab98b09d2dac060ac24e14739b9d5b62410bc83
 
 # FM
 vendor/bin/fm_qsoc_patches
