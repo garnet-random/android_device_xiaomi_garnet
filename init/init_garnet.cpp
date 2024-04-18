@@ -73,14 +73,14 @@ void vendor_load_properties() {
 
         if (sku == "garnet") {
             brand = "Redmi";
-            description = "garnet_in-user 13 TKQ1.221114.001 V14.0.4.0.TNRINXM release-keys";
-            fingerprint = "Redmi/garnet_in/garnet:13/TKQ1.221114.001/V14.0.4.0.TNRINXM:user/release-keys";
+            description = "garnet_in-user 14 UKQ1.231003.002 V816.0.4.0.UNRINXM release-keys";
+            fingerprint = "Redmi/garnet_in/garnet:14/UKQ1.231003.002/V816.0.4.0.UNRINXM/release-keys";
             marketname = "Redmi Note 13 Pro 5G";
             model = "2312DRA50I";
         } else {
             brand = "POCO";
-            description = "garnetp_in-user 13 TKQ1.221114.001 V14.0.4.0.TNRINXM release-keys";
-            fingerprint = "POCO/garnetp_in/garnet:13/TKQ1.221114.001/V14.0.4.0.TNRINXM:user/release-keys";
+            description = "garnetp_in-user 14 UKQ1.231003.002 V816.0.4.0.UNRINXM release-keys";
+            fingerprint = "POCO/garnetp_in/garnet:14/UKQ1.231003.002/V816.0.4.0.UNRINXM/release-keys";
             marketname = "POCO X6 5G";
             model = "23122PCD1I";
         }
@@ -90,14 +90,14 @@ void vendor_load_properties() {
 
         if (sku == "garnet") {
             brand = "Redmi";
-            description = "garnet_global-user 13 TKQ1.221114.001 V14.0.6.0.TNRMIXM release-keys";
-            fingerprint = "Redmi/garnet_global/garnet:13/TKQ1.221114.001/V14.0.6.0.TNRMIXM:user/release-keys";
+            description = "garnet_global-user 14 UKQ1.231003.002 V816.0.6.0.UNRMIXM release-keys";
+            fingerprint = "Redmi/garnet_global/garnet:14/UKQ1.231003.002/V816.0.6.0.UNRMIXM:user/release-keys";
             marketname = "Redmi Note 13 Pro 5G";
             model = "2312DRA50G";
         } else {
             brand = "POCO";
-            description = "garnetp_global-user 13 TKQ1.221114.001 V14.0.6.0.TNRMIXM release-keys";
-            fingerprint = "POCO/garnetp_global/garnet:13/TKQ1.221114.001/V14.0.6.0.TNRMIXM:user/release-keys";
+            description = "garnetp_global-user 14 UKQ1.231003.002 V816.0.6.0.UNRMIXM release-keys";
+            fingerprint = "POCO/garnetp_global/garnet:14/UKQ1.231003.002/V816.0.6.0.UNRMIXM:user/release-keys";
             marketname = "POCO X6 5G";
             model = "23122PCD1G";
         }
@@ -105,8 +105,8 @@ void vendor_load_properties() {
         device = "garnet";
         mod_device = "garnet";
         brand = "Redmi";
-        description = "garnet-user 13 TKQ1.221114.001 V14.0.17.0.TNRCNXM release-keys";
-        fingerprint = "Redmi/garnet/garnet:13/TKQ1.221114.001/V14.0.17.0.TNRCNXM:user/release-keys";
+        description = "garnet-user 14 UKQ1.231003.002 V816.0.1.0.UNRCNXM release-keys";
+        fingerprint = "Redmi/garnet/garnet:13/UKQ1.231003.002/V816.0.1.0.UNRCNXM:user/release-keys";
         marketname = "Redmi Note 13 Pro";
         if (hwversion == "17.0.9" || hwversion == "17.1.9" || hwversion == "17.2.6" || hwversion == "17.2.9" || hwversion == "17.9.9") {
             model = "2312CRAD3C";
