@@ -179,7 +179,6 @@ on boot
     chown system system /sys/class/thermal/thermal_message/cpu_nolimit_temp
     chown system system /sys/class/thermal/thermal_message/balance_mode
     chown cameraserver cameraserver /sys/class/thermal/thermal_message/flash_state
-    chown cameraserver cameraserver /sys/class/thermal/thermal_message/torch_real_level
     chown system system /sys/module/perf_helper/mimd/mimdtrigger
     write /dev/cpuset/audio-app/cpus 0-7
     # Add a cpuset for the camera daemon
@@ -256,10 +255,11 @@ on property:vendor.display.lcd_density=560
 on property:vendor.display.lcd_density=640
    setprop dalvik.vm.heapgrowthlimit 512m
 
+
 on property:ro.product.name=garnet_eea
    setprop ro.vendor.miui.support_esim true
 
-on property:ro.product.name=garnet_global
+on property:ro.product.name=garnet_global && property:ro.product.mod_device=garnet_global
    setprop ro.vendor.miui.support_esim true
 
 on property:ro.product.name=garnet_ru
@@ -269,6 +269,15 @@ on property:ro.product.name=garnet_tr
    setprop ro.vendor.miui.support_esim true
 
 on property:ro.product.name=garnet_id
+   setprop ro.vendor.miui.support_esim true
+
+on property:ro.product.mod_device=garnet_tw_global
+   setprop ro.vendor.miui.support_esim true
+
+on property:ro.product.mod_device=garnet_jp_kd_global
+   setprop ro.vendor.miui.support_esim true
+
+on property:ro.product.mod_device=garnet_lm_cr_global
    setprop ro.vendor.miui.support_esim true
 
 on init && property:ro.boot.mode=charger

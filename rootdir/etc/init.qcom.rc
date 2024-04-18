@@ -254,10 +254,12 @@ on post-fs-data
     mkdir /data/vendor/camera/offlinelog 0777 cameraserver audio
     chmod 0666 /dev/camlog
 
+
     #logturbo
     chmod 0666 /dev/mi_exception_log
     chown system system /proc/mi_log/binder_delay
     chown system system /proc/mi_log/delay
+
 
     #Create directory for tftp
     mkdir /data/vendor/tombstones 0771 system system
@@ -429,7 +431,7 @@ service vendor.ssr_setup /system/vendor/bin/ssr_setup
     oneshot
     disabled
 
-service vendor.ss_ramdump /vendor/bin/subsystem_ramdump
+service vendor.ss_ramdump /vendor/bin/subsystem_ramdump 3
     class main
     user system
     group system root media_rw everybody
@@ -915,7 +917,6 @@ service esepmdaemon /system/vendor/bin/esepmdaemon
     group nfc
 
 on property:init.svc.vendor.charger=running
-    setprop persist.sys.usb.config mass_storage
     start qcom-post-boot
     chown system system /sys/class/backlight/panel0-backlight/brightness
     chown system system /sys/class/backlight/panel1-backlight/brightness
