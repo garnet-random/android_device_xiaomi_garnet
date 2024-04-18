@@ -3,7 +3,7 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.lineageos.phone.overlay.garnet">
+    package="com.android.phone.overlay.garnet">
     <overlay android:targetPackage="com.android.phone"
                    android:isStatic="true"
                    android:priority="1000"/>

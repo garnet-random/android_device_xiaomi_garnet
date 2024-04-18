@@ -3,7 +3,7 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.lineageos.wifi.resources.overlay.garnet">
+    package="com.android.wifi.resources.overlay.garnet">
     <overlay android:targetPackage="com.android.wifi.resources"
                    android:targetName="WifiCustomization"
                    android:isStatic="true"
