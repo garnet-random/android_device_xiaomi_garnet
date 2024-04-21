@@ -1474,10 +1474,9 @@ vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
 vendor/lib64/vendor.qti.esepowermanager@1.0.so
 vendor/lib64/vendor.qti.esepowermanager@1.1.so
 
-# Euicc - rtwo_g-user 14 U1TRS34.8-30-13-1 7c77a-12bae6 release-keys
-product/app/EuiccPartnerApp/EuiccPartnerApp.apk|eb559304acb90fde3b60170db2e79a99992ceabd
-product/etc/permissions/privapp-permissions-com.google.android.euicc.xml|ef99fe93aa2ed629fef39c3dcc4b07c597c1f469
-product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED|5ab98b09d2dac060ac24e14739b9d5b62410bc83
+# Euicc - OnePlus 11 (CPH2449_14.0.0.401(EX01)).
+my_bigball/etc/permissions/EuiccGoogle_grant_permissions_list.xml:product/etc/permissions/privapp-permissions-euiccgoogle.xml|58ddaa5bbff62eefd2d5c39900b7b29fd177def1
+my_bigball/priv-app/EuiccGoogle/EuiccGoogle.apk:product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED|4fb8d8ab0e1dbda1582361f48395f819367edb0a
 
 # FM
 vendor/bin/fm_qsoc_patches
