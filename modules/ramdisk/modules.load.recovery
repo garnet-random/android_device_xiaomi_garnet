@@ -1,4 +1,3 @@
-miev.ko
 gh_virt_wdt.ko
 qcom-pmu-lib.ko
 qcom_wdt_core.ko
@@ -87,17 +86,12 @@ tmecom-intf.ko
 bcl_pmic5.ko
 dispcc-ravelin.ko
 hwid.ko
-mi_memory.ko
-mi_schedule.ko
-metis.ko
-mi_power.ko
 extend_reclaim.ko
 wl2866d-n16.ko
 msm_sysstats.ko
 zsmalloc.ko
 lzo.ko
 lzo-rle.ko
-cpq.ko
 msm_show_resume_irq.ko
 mhi.ko
 mhi_dev_uci.ko
@@ -188,7 +182,6 @@ msm_kgsl.ko
 zram.ko
 hdcp_qseecom.ko
 qseecom-mod.ko
-perf_helper.ko
 qcom-i2c-pmic.ko
 nfc_i2c.ko
 sg.ko
@@ -247,7 +240,6 @@ qti_userspace_cdev.ko
 qti_cpufreq_cdev.ko
 qti_devfreq_cdev.ko
 regulator_aop_cdev.ko
-mi_thermal_interface.ko
 btpower.ko
 bt_fm_slim.ko
 qcom-cpufreq-hw-debug.ko
@@ -262,10 +254,6 @@ shared_rail_vendor.ko
 tz_log.ko
 qce50.ko
 qcedev-mod.ko
-mi_mempool.ko
-mi_log.ko
-mi_exception_log.ko
-binder_prio.ko
 ipa_fmwk.ko
 usb_bam.ko
 sps_drv.ko
@@ -285,15 +273,6 @@ qcom-spmi-adc5.ko
 qcom-vadc-common.ko
 goodix_health.ko
 icc-test.ko
-binder_gki.ko
-millet_core.ko
-millet_pkg.ko
-millet_hs.ko
-millet_binder.ko
-millet_sig.ko
-millet_oem_cgroup.ko
-migt.ko
-mi_freqwdg.ko
 ofpart.ko
 chipreg.ko
 block2mtd.ko
@@ -326,8 +305,5 @@ cfg80211.ko
 qrtr-smd.ko
 qrtr-mhi.ko
 qrtr-gunyah.ko
-bootinfo.ko
-debug_ext.ko
 msm_drm.ko
 msm-mmrm.ko
-swinfo.ko
