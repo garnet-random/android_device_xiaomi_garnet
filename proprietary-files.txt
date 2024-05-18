@@ -1367,35 +1367,41 @@ vendor/etc/display/qdcm_calib_data_xiaomi_42_02_0b_video_mode_dsc_dsi_panel.json
 vendor/etc/mdss_dsi_n16_36_0d_0a_dsc_vid_mi.xml
 vendor/etc/mdss_dsi_n16_42_02_0b_dsc_vid_mi.xml
 
-# Display HDR - from eqs T1SQS33.15-11-137-10-2
+# Display HDR - from ingot-user 14 UKQ1.231121.127 127 release-keys
 vendor/lib/libhdr_backlight_adapter.so|27a76877b0ef7c090c469b3784bce9d2ecc857d8
-vendor/lib/libhdr_tm.so|26f4e9235982e677383510572cd0d3fb6e146da2
+vendor/lib/libhdr_tm.so|43a2f53d3c4728af2480b11c898ad4165364862f
 vendor/lib64/libhdr_backlight_adapter.so|57036c19938fe40e73e9b9e3d4c6a6073d7aa858
-vendor/lib64/libhdr_tm.so|b5bc48b34450b9031e7b667b9b97991b3aafa5fd
+vendor/lib64/libhdr_tm.so|6f18ddbd3f66f4348a5b92a2ac0bafd979ed2a05
 
-# Display HWC - from eqs T1SQS33.15-11-137-10-2
-vendor/bin/qdcmss|801d4429210c1a4f8c01f6d91f172ff063c5c307
+# Display HDR dynamic
+vendor/lib/libhdrdynamic.so
+vendor/lib/libhdrdynamicootf.so
+vendor/lib64/libhdrdynamic.so
+vendor/lib64/libhdrdynamicootf.so
+
+# Display HWC - from ingot-user 14 UKQ1.231121.127 127 release-keys
+vendor/bin/qdcmss|727147cbaf4d74f0eb38c534fda9beebdfec31f6
 vendor/etc/init/qdcmss.rc|53d78d686678c4f923a9ec4ace7d4d3575b13788
 vendor/lib/libbacklight-calib.so|271b4ceed571e1a56c62930247aad5e135a2a3af
-vendor/lib/libdigital-dimming.so|c36d749d977644b343eb1ca87ec47230d01803fb
-vendor/lib/libdpps.so|4a3b5e5fcb692a00dcb49a668b0ac1bc845736d8
-vendor/lib/libmemutils.so|fd7206a67bdfae4ee3c98bbd12c93b5f8568026f
-vendor/lib/libqdcm-algo.so|0bccf8766e46323619f77a0c61d53472db37c3f4
-vendor/lib/libqdcm-json-mode-parser.so|4d721fabb056bf8fa5b51cf6996c3c9225e874e8
-vendor/lib/libqdcm-mode-parser.so|76c5cd6eacdd9c6a01663d6e61fb0fe2bf30e897
-vendor/lib/libsnapdragoncolor-manager.so|222cbe4e298c24b03291016d4d6f8c30cf44db26
-vendor/lib/libsnapdragoncolor-qdcm.so|94819150b5abcc13a09f0e5e6412ea59f2fb1a34
+vendor/lib/libdigital-dimming.so|4ca314ec5c394278a5e50d1aa1c8f5810b2aae2d
+vendor/lib/libdpps.so|b462ab2faee16421817da867a61d7dfc39027954
+vendor/lib/libmemutils.so|596001f45453872363fa7a6f6dc9ec5c54326864
+vendor/lib/libqdcm-algo.so|3fdebe08495ccb7fd505cd6897ae712fb54d32a9
+vendor/lib/libqdcm-json-mode-parser.so|5da1a6445817e86c7c04dfdddaf1bfc3d95336a5
+vendor/lib/libqdcm-mode-parser.so|022a6cde5f7f19281f8426123c386a3b21c8a21c
+vendor/lib/libsnapdragoncolor-manager.so|16381a258613ececad94d54a286e295eebff1026
+vendor/lib/libsnapdragoncolor-qdcm.so|d0b11feced8e7ca71d110280cb1b1b9a5f0bff2b
 vendor/lib64/libbacklight-calib.so|a5990fa87932196f9e2c38b2ec85786daa6b3a9c
-vendor/lib64/libdigital-dimming.so|566aae7c648ada0f88106b3085ce9a21d465c4ef
-vendor/lib64/libdpps.so|17fdc5ebb4824f455f976d54b9222d450c2aadb4
-vendor/lib64/libmemutils.so|8102e47e3d1c521bfcb1201477006cd5bc339379
-vendor/lib64/libqdcm-algo.so|4ab77288626ca1978ed2a7c15b945af6c223db9b
-vendor/lib64/libqdcm-json-mode-parser.so|decc0d77e1aec8bafc8c0e43f54dd6a14c018466
-vendor/lib64/libqdcm-mode-parser.so|e63dc113ab3728d8b2d3034c7a2027c4c4117ec2
-vendor/lib64/libsnapdragoncolor-manager.so|092cbb36f76b1149c9186b7ae09ce89a5c3de8ca
-vendor/lib64/libsnapdragoncolor-qdcm.so|79dfb4f2307585bd331dea882ed88c8f131e5838
+vendor/lib64/libdigital-dimming.so|66506a386dc80da0994c9d4aeac34edfc1830c5c
+vendor/lib64/libdpps.so|d8e9cc561a3ab706697880975413db23bb41640c
+vendor/lib64/libmemutils.so|e122c3ff95b10a6263e698261abafe62cee98010
+vendor/lib64/libqdcm-algo.so|e873dc21878d92d20f6937453c9d3265a0d3a93d
+vendor/lib64/libqdcm-json-mode-parser.so|1c8f1a841a877efbed0a0b3db3d551ff1283f14f
+vendor/lib64/libqdcm-mode-parser.so|341178dfb18e03b6fabff27a080fb96f15188942
+vendor/lib64/libsnapdragoncolor-manager.so|72291478bd56bada0fc3df3617e765b28ef54f66
+vendor/lib64/libsnapdragoncolor-qdcm.so|9f0bc72290618324e95cd9f4eca6987a6733bd06
 
-# Display SDM - from eqs T1SQS33.15-11-137-10-2
+# Display SDM - from ingot-user 14 UKQ1.231121.127 127 release-keys
 vendor/etc/display/DPU660.xml|b26dd73e361546d89bf3d7082a471703dc6ac2cb
 vendor/etc/display/DPU670.xml|e5131a60ceff29ca5eb561eec7eddadef1d0486f
 vendor/etc/display/DPU720.xml|4e54e8712d65773eb87867bf64a4cb98ea9bb8c3
@@ -1407,55 +1413,51 @@ vendor/etc/display/DPU8__.xml|2360038d60e9dff36d7f14a59a25da74bac1abe4
 vendor/etc/display/DPU9__.xml|ed8ec4a7a6852d8340bd98448db9f13634083edd
 vendor/etc/display/advanced_sf_offsets.xml|29b6b0554d6393a8be90f52fce010946abd38d52
 vendor/etc/display/thermallevel_to_fps.xml|bc38035c8f41308fc25cc30969fbbf16ab86c43f
-vendor/lib/libdisplayqos.so|f03a2af80b2684fe5a4e5c68de6c8b8111841c4d
-vendor/lib/libdisplayskuutils.so|059996fdec758a68339905b568ac3cba0bb7f918
-vendor/lib/libhdrdynamic.so|e8a126848cd3d2833eeb6bf22a94003b67a923d1
-vendor/lib/libhdrdynamicootf.so|2b6a4244e2a432aa1dee8f07a1d5291fc277762f
-vendor/lib/libqseed3.so|37ca8e3c4d3dd1ef16072cd54ffcb33cd00f8a7a
+vendor/lib/libdisplayqos.so|64f93806189182188411deec18669cc1d67f87cd
+vendor/lib/libdisplayskuutils.so|60b84d4b7dad34a46b8ba49125ef58020c38f3dc
+vendor/lib/libqseed3.so|c744e765a9473a50d857782004daf55a39b536ba
 vendor/lib/librcmask.so|5883dcee92a31b16ca90bb83ad5d570d3865011f
-vendor/lib/libsdm-color.so|ed806a93cbb49c4bebd2507ac719a5750d4ed672
-vendor/lib/libsdm-colormgr-algo.so|398dd4dc503e39b1a193cc4474c58b092fa4ec53
-vendor/lib/libsdm-disp-vndapis.so|33c96e0ba3ab35252b9010b31228206411fd0e5d
-vendor/lib/libsdmextension.so|a0e63e9ea86366f7fd5d86054aafd2894a50824d
+vendor/lib/libsdm-color.so|5eb282765211758a3e84202831fdb6354b8f3434
+vendor/lib/libsdm-colormgr-algo.so|c991ad84acc127b745137c60be863077bc14ed38
+vendor/lib/libsdm-disp-vndapis.so|4447d3e765fd719994cc30a7339d1ff7d333ae67
+vendor/lib/libsdmextension.so|6ca925a64ad2c78639f9dfebf12a2cd7133462fa
 vendor/lib/libtestutils.so|553f68210d26fe9d245bdae8d77d5afd6f469150
 vendor/lib/libtinyxml2_1.so|d46a4b98a33a171438fe51a60886b6f0f3a8bf45
-vendor/lib64/libdisplayqos.so|7bb396a7497a1f7f856859bbb03bb190510f83a8
-vendor/lib64/libdisplayskuutils.so|0179f35a0d955432cacc7392d60f86c6b0b533db
-vendor/lib64/libhdrdynamic.so|df82be6d9d2efa33960bafea1b9f7bc035a58174
-vendor/lib64/libhdrdynamicootf.so|22884f0200f27814aae6d07e8fa6ba72d190b3f4
-vendor/lib64/libqseed3.so|9d0de1d3ca9d15160019171b9da8b26fa3591337
+vendor/lib64/libdisplayqos.so|f5620aafca45f8f5c89e5af5d808bd20602a4654
+vendor/lib64/libdisplayskuutils.so|405e2456d79c8e0118efb9ade2d8a8d82565af5c
+vendor/lib64/libqseed3.so|6fcc4cb419053b57fc14d7cb2e3fdb18901cc87e
 vendor/lib64/librcmask.so|36919cfe71e1e6ab4e507f98dab320b7046d24c4
-vendor/lib64/libsdm-color.so|f3ce532eaa9276c3739098075c48dc80721af02d
-vendor/lib64/libsdm-colormgr-algo.so|0d2f6e86fa6aab8e83561a2efbd0c4984a22593b
-vendor/lib64/libsdm-disp-vndapis.so|dcef73e6905f5cb44cb4df07a6719c394a20667d
-vendor/lib64/libsdmextension.so|f80e85481d8f2ce991e4ccba3958a575b39ece09
+vendor/lib64/libsdm-color.so|3ffdac82ec83cfcf0cfab32718a08500ec73e36d
+vendor/lib64/libsdm-colormgr-algo.so|0c922b88dc8f11a9c8dbe78daec337d4d5333087
+vendor/lib64/libsdm-disp-vndapis.so|169adaa522f75d622e76a1597c486eff4551c5a3
+vendor/lib64/libsdmextension.so|2dee5d4ced1c1e7fec52e156219fc9fec17ea6c2
 vendor/lib64/libtestutils.so|61b98f252afde4eb7c674de870e7afb590c9bb2a
 vendor/lib64/libtinyxml2_1.so|ae0c9190fd54c18a6c28dfccdfd29655abcb08de
 
-# Display postprocessing - from eqs T1SQS33.15-11-137-10-2
-vendor/bin/hw/vendor.display.color@1.0-service|daa3a8bc5e1c5f3f6770eff66ee9be9c7da2c7ea
-vendor/bin/ppd|e0604f3620c965089b4891d0ff430ad52e8908bd
-vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
-vendor/lib/libdisp-aba.so|071a627a11dc2285ee3f4efd84424159c96c29d4
-vendor/lib/vendor.display.color@1.0.so|1adbfb89a49b0d6eef6fb6198fc3404a35b7539f
-vendor/lib/vendor.display.color@1.1.so|f6818378783c52f94ebadb3a96b7e9272f6ad089
-vendor/lib/vendor.display.color@1.2.so|6e74880077438f8a9ee0f27860b5db1bac6210af
-vendor/lib/vendor.display.color@1.3.so|3fb7834e17389c03cecccacb109abe97c60f0190
-vendor/lib/vendor.display.color@1.4.so|b6cdf9564ac41957cd14f083de396ca1a992f8da
-vendor/lib/vendor.display.color@1.5.so|47ed220ad71ab38e27f88ec01c5e3900306b64d1
-vendor/lib/vendor.display.color@1.6.so|716374db3d8330ee2b5abfdf433fa2d2a8be856a
-vendor/lib/vendor.display.color@1.7.so|664fc336606d98d4dbce9a373282df37f44c839a
-vendor/lib/vendor.display.postproc@1.0.so|9750497569ceaf6cfbe097d8718132adf4761d00
-vendor/lib64/libdisp-aba.so|a0f0d57b3a2823cf50181af38a8a33555b63d67c
-vendor/lib64/vendor.display.color@1.0.so|d8afed568b6dcf16205abb3ada7b71100ccd1372
-vendor/lib64/vendor.display.color@1.1.so|9c387e272715c386d7f1aad3899a67858ad5101c
-vendor/lib64/vendor.display.color@1.2.so|b2a2214ee0eb6a912fc64fc35f165b36a9731bb4
-vendor/lib64/vendor.display.color@1.3.so|72537d6485a0445009411b69ad7c637e3e0941ac
-vendor/lib64/vendor.display.color@1.4.so|8435fd60504f5d4fba90531bde054c965ffad9ec
-vendor/lib64/vendor.display.color@1.5.so|db606bd09530213ea0919775547c744ded5ec126
-vendor/lib64/vendor.display.color@1.6.so|2ba5b007dbb0ece9b5f233f262a053449aef12a3
-vendor/lib64/vendor.display.color@1.7.so|3c809821fc487ba3255e282835920ff8a212b354
-vendor/lib64/vendor.display.postproc@1.0.so|b40852513d7ef19ece4eee7ebff20aa7d1223487
+# Display postprocessing - from ingot-user 14 UKQ1.231121.127 127 release-keys
+vendor/bin/hw/vendor.display.color@1.0-service|9f37be517ad778857bfe94b78ba3fbf2e90e3967
+vendor/bin/ppd|37202ce410bb2bfd42133cd03cd3fd7ce9a063d8
+vendor/etc/init/vendor.display.color@1.0-service.rc|fc58968025ec9f09b4fedee0b9daecc6a56c8373
+vendor/lib/libdisp-aba.so|4cbfc25ad1e7824f98c2b6be8988ad0d72fe72b8
+vendor/lib/vendor.display.color@1.0.so|c92845362c4efd2f761451d8f36fdcfbdc2aff31
+vendor/lib/vendor.display.color@1.1.so|85976bbf5b70d8be311b67fa56a2f4ec3645e1be
+vendor/lib/vendor.display.color@1.2.so|95b27bd1dcecf02c8f4b864a3c4f1fd1ce951755
+vendor/lib/vendor.display.color@1.3.so|c56404523684d7edf2170ad8829a7f47e823db46
+vendor/lib/vendor.display.color@1.4.so|ad5a307e28786921cb0b9d3cc2e00f9476a06003
+vendor/lib/vendor.display.color@1.5.so|c124d68ed555c352bde1e678e9b627b046a4f7dc
+vendor/lib/vendor.display.color@1.6.so|c3aa30cda193d5fe104ee00bed16ace477210ce1
+vendor/lib/vendor.display.color@1.7.so|f12cae808b03e30a9d07cd0d0bf958e1316aef60
+vendor/lib/vendor.display.postproc@1.0.so|146bea160eb5bedfb3f34df90b3b6c765996b521
+vendor/lib64/libdisp-aba.so|f77d25d1e56378d6b3ec6f4d671113e45fbeba7e
+vendor/lib64/vendor.display.color@1.0.so|cc65cefe1cec1ddc526c8ead1b95f5fd55eff271
+vendor/lib64/vendor.display.color@1.1.so|99a37926e217c8bbe866956af33cf188e4305158
+vendor/lib64/vendor.display.color@1.2.so|689f6269314fa92b59d393460427ae08d68f4576
+vendor/lib64/vendor.display.color@1.3.so|4ad7470d442731378f611a5538a9dccdc62cd831
+vendor/lib64/vendor.display.color@1.4.so|9ae82220713f7d37273a12883498b1adfa19baf4
+vendor/lib64/vendor.display.color@1.5.so|57b83442fd8b7371fb7db758c89ca44a01b2b1da
+vendor/lib64/vendor.display.color@1.6.so|f9f914003858e641fd19d41676465167e5b20053
+vendor/lib64/vendor.display.color@1.7.so|982805fb0f7a68df6a796173d6d3bb24a7dbaa7a
+vendor/lib64/vendor.display.postproc@1.0.so|d4698e4d21e0a65611f2e508a841749447c71498
 
 # EMBMS
 vendor/bin/embmsslServer
