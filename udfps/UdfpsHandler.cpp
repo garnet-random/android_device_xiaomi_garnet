@@ -17,6 +17,7 @@
 #include <thread>
 
 #include <display/drm/mi_disp.h>
+#include <linux/xiaomi_touch.h>
 
 #include "UdfpsHandler.h"
 
@@ -31,6 +32,7 @@
 #define PARAM_FOD_RELEASED 0
 
 #define DISP_FEATURE_PATH "/dev/mi_display/disp_feature"
+#define TOUCH_DEV_PATH "/dev/xiaomi-touch"
 
 using ::aidl::android::hardware::biometrics::fingerprint::AcquiredInfo;
 
