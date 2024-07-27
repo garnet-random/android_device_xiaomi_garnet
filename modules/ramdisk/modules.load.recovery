@@ -170,7 +170,6 @@ qcom_sync_file.ko
 hung_task_enh.ko
 qfprom-sys.ko
 qcom_pm8008-regulator.ko
-qpnp-amoled-regulator.ko
 hvc_gunyah.ko
 msm_rng.ko
 frpc-adsprpc.ko

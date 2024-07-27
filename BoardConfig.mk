@@ -98,6 +98,8 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := TARGET_PRODUCT=garnet
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8450
 TARGET_KERNEL_CONFIG := \
     gki_defconfig \
+    vendor/parrot_GKI.config \
+    vendor/xiaomi_GKI.config \
     vendor/garnet_GKI.config
 
 BOARD_BOOT_HEADER_VERSION := 4
