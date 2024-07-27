@@ -86,5 +86,4 @@ tmecom-intf.ko
 bcl_pmic5.ko
 dispcc-ravelin.ko
 hwid.ko
-extend_reclaim.ko
 wl2866d-n16.ko
