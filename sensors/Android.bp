@@ -4,14 +4,23 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
+cc_library_headers {
+    name: "xiaomi_garnet_sensor_notifier_headers",
+    export_include_dirs: ["include"],
+    vendor: true,
+}
+
 cc_binary {
-    name: "nonui-notifier",
+    name: "sensor-notifier",
     vendor: true,
 
-    init_rc: ["nonui-notifier.rc"],
+    init_rc: ["sensor-notifier.rc"],
 
     srcs: [
-        "NonUiNotifier.cpp",
+        "main.cpp",
+        "notifiers/NonUiNotifier.cpp",
+        "SensorNotifier.cpp",
+        "utils/SensorNotifierUtils.cpp",
     ],
 
     shared_libs: [
@@ -23,5 +32,6 @@ cc_binary {
 
     header_libs: [
         "generated_kernel_headers",
+        "xiaomi_garnet_sensor_notifier_headers",
     ],
 }
