@@ -76,6 +76,7 @@ vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
 # Audio firmware
 vendor/firmware/aw882xx_acf.bin
+vendor/firmware/fs19xx.fsm
 
 # Audio graph manager
 -vendor/lib/libagm.so
