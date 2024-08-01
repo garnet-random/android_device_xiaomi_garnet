@@ -406,6 +406,10 @@ PRODUCT_PACKAGES += \
     WifiOverlayGarnetRedmiCN \
     WifiOverlayGarnetXIG05
 
+# Parts
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
