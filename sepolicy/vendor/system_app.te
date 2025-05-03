@@ -14,3 +14,5 @@ allow system_app vendor_sysfs_kgsl_gpuclk:file { getattr open read };
 allow system_app vendor_sysfs_battery_supply:dir { search };
 allow system_app vendor_sysfs_battery_supply:file { getattr open read };
 r_dir_file(system_app, vendor_sysfs_battery_supply)
+
+allow system_app sysfs_thermal:file { rw_file_perms getattr };
