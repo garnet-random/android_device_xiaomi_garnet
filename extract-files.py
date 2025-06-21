@@ -60,6 +60,7 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libinput_shim.so')
         .remove_needed('android.hidl.base@1.0.so'),
     'system_ext/lib64/libwfdservice.so': blob_fixup()
+        .add_needed('libaudioclient_shim.so')
         .replace_needed(
             'android.hardware.common-V2-ndk_platform.so',
             'android.hardware.common-V2-ndk.so'
