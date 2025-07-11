@@ -77,21 +77,21 @@ vendor/firmware/aw882xx_acf.bin
 vendor/firmware/fs19xx.fsm
 
 # Audio graph manager
-vendor/bin/agmcap;MAKE_COPY_RULE_ONLY
-vendor/bin/agmcompressplay;MAKE_COPY_RULE_ONLY
-vendor/bin/agmplay;MAKE_COPY_RULE_ONLY
-vendor/bin/hw/vendor.qti.hardware.AGMIPC@1.0-service;MAKE_COPY_RULE_ONLY
+vendor/bin/agmcap;MODULE=agmcap_garnet;OVERRIDES=agmcap
+vendor/bin/agmcompressplay;MODULE=agmcompressplay_garnet;OVERRIDES=agmcompressplay
+vendor/bin/agmplay;MODULE=agmplay_garnet;OVERRIDES=agmplay
+vendor/bin/hw/vendor.qti.hardware.AGMIPC@1.0-service;MODULE=vendor.qti.hardware.AGMIPC@1.0-service_garnet;OVERRIDES=vendor.qti.hardware.AGMIPC@1.0-service
 vendor/etc/init/vendor.qti.hardware.AGMIPC@1.0-service.rc
-vendor/lib64/libagm.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/libagm_compress_plugin.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/libagm_mixer_plugin.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/libagm_pcm_plugin.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/libagmclient.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/libagmmixer.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/libagm.so;MODULE=libagm_garnet;OVERRIDES=libagm
+vendor/lib64/libagm_compress_plugin.so;MODULE=libagm_compress_plugin_garnet;OVERRIDES=libagm_compress_plugin
+vendor/lib64/libagm_mixer_plugin.so;MODULE=libagm_mixer_plugin_garnet;OVERRIDES=libagm_mixer_plugin
+vendor/lib64/libagm_pcm_plugin.so;MODULE=libagm_pcm_plugin_garnet;OVERRIDES=libagm_pcm_plugin
+vendor/lib64/libagmclient.so;MODULE=libagmclient_garnet;OVERRIDES=libagmclient
+vendor/lib64/libagmmixer.so;MODULE=libagmmixer_garnet;OVERRIDES=libagmmixer
 vendor/lib64/libmisight.so
-vendor/lib64/libsndcardparser.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/libsndcardparser.so;MODULE=libsndcardparser_garnet;OVERRIDES=libsndcardparser
+vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so;MODULE=vendor.qti.hardware.AGMIPC@1.0-impl_garnet;OVERRIDES=vendor.qti.hardware.AGMIPC@1.0-impl
+vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so;MODULE=vendor.qti.hardware.AGMIPC@1.0_garnet;OVERRIDES=vendor.qti.hardware.AGMIPC@1.0
 
 # Audio libraries
 vendor/etc/audio_cloud_control_white_list.xml
@@ -99,34 +99,34 @@ vendor/etc/audio_diag.cfg
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
-vendor/lib64/hw/audio.primary.parrot.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/hw/gyro_fusion_interface.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/lib_misound_asc.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/libadm.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/hw/audio.primary.parrot.so;MODULE=audio.primary.parrot_garnet;OVERRIDES=audio.primary.parrot
+vendor/lib64/hw/gyro_fusion_interface.so
+vendor/lib64/lib_misound_asc.so
+vendor/lib64/libadm.so;MODULE=libadm_garnet;OVERRIDES=libadm
 vendor/lib64/libadsprpc.so
-vendor/lib64/libar-acdb.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/libar-gpr.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/libar-gsl.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/libar-pal.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/libats.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/libaudio_log_utils.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/libaudiocloudctrl.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/libaudioroute_ext.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/libawcal.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/libcapiv2svacnnvendor.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/libcapiv2svarnnvendor.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/libcapiv2uvvendor.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/libfsalgocal.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/libkaraokepal.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/liblx-ar_util.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/liblx-osal.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/libmcs.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/libpalclient.so;DISABLE_CHECKELF;MAKE_COPY_RULE_ONLY
-vendor/lib64/libqtigefar.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/libresampler.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/libar-acdb.so;MODULE=libar-acdb_garnet;OVERRIDES=libar-acdb
+vendor/lib64/libar-gpr.so;MODULE=libar-gpr_garnet;OVERRIDES=libar-gpr
+vendor/lib64/libar-gsl.so;MODULE=libar-gsl_garnet;OVERRIDES=libar-gsl
+vendor/lib64/libar-pal.so;MODULE=libar-pal_garnet;OVERRIDES=libar-pal
+vendor/lib64/libats.so;MODULE=libats_garnet;OVERRIDES=libats
+vendor/lib64/libaudio_log_utils.so
+vendor/lib64/libaudiocloudctrl.so
+vendor/lib64/libaudioroute_ext.so
+vendor/lib64/libawcal.so
+vendor/lib64/libcapiv2svacnnvendor.so;MODULE=libcapiv2svacnnvendor_garnet;OVERRIDES=libcapiv2svacnnvendor
+vendor/lib64/libcapiv2svarnnvendor.so;MODULE=libcapiv2svarnnvendor_garnet;OVERRIDES=libcapiv2svarnnvendor
+vendor/lib64/libcapiv2uvvendor.so;MODULE=libcapiv2uvvendor_garnet;OVERRIDES=libcapiv2uvvendor
+vendor/lib64/libfsalgocal.so
+vendor/lib64/libkaraokepal.so
+vendor/lib64/liblx-ar_util.so;MODULE=liblx-ar_util_garnet;OVERRIDES=liblx-ar_util
+vendor/lib64/liblx-osal.so;MODULE=liblx-osal_garnet;OVERRIDES=liblx-osal
+vendor/lib64/libmcs.so;MODULE=libmcs_garnet;OVERRIDES=libmcs
+vendor/lib64/libpalclient.so;MODULE=libpalclient_garnet;OVERRIDES=libpalclient
+vendor/lib64/libqtigefar.so;MODULE=libqtigefar_garnet;OVERRIDES=libqtigefar
+vendor/lib64/libresampler.so
 vendor/lib64/libxlog.so
-vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/vendor.qti.hardware.pal@1.0.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so;MODULE=vendor.qti.hardware.pal@1.0-impl_garnet;OVERRIDES=vendor.qti.hardware.pal@1.0-impl
+vendor/lib64/vendor.qti.hardware.pal@1.0.so;MODULE=vendor.qti.hardware.pal@1.0_garnet;OVERRIDES=vendor.qti.hardware.pal@1.0
 
 # Audio soundfx
 vendor/lib64/soundfx/libasphere.so
@@ -147,9 +147,9 @@ vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
-vendor/lib64/lib_bt_aptx.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/lib_bt_ble.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/lib_bt_bundle.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/lib_bt_aptx.so;MODULE=lib_bt_aptx_garnet;OVERRIDES=lib_bt_aptx
+vendor/lib64/lib_bt_ble.so;MODULE=lib_bt_ble_garnet;OVERRIDES=lib_bt_ble
+vendor/lib64/lib_bt_bundle.so;MODULE=lib_bt_bundle_garnet;OVERRIDES=lib_bt_bundle
 vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/libbluetooth_audio_session_qti_2_1.so
 vendor/lib64/libbt-hidlclient.so
@@ -1484,9 +1484,7 @@ vendor/lib64/vendor.qti.hardware.limits@1.0.so
 vendor/lib64/vendor.qti.hardware.limits@1.1.so
 
 # Listen
-vendor/etc/vintf/manifest/manifest_non_qmaa.xml
-vendor/etc/vintf/manifest/manifest_non_qmaa_extn.xml
-vendor/lib64/hw/sound_trigger.primary.parrot.so;DISABLE_CHECKELF
+vendor/lib64/hw/sound_trigger.primary.parrot.so
 vendor/lib64/libeai_fixed.so
 vendor/lib64/libeai_float.so
 vendor/lib64/liblistensoundmodel2vendor.so
@@ -1512,7 +1510,7 @@ vendor/lib64/libqc2audio_base.so
 vendor/lib64/libqc2audio_basecodec.so
 vendor/lib64/libqc2audio_core.so
 vendor/lib64/libqc2audio_hooks.so
-vendor/lib64/libqc2audio_hwaudiocodec.so;DISABLE_CHECKELF
+vendor/lib64/libqc2audio_hwaudiocodec.so
 vendor/lib64/libqc2audio_platform.so
 vendor/lib64/libqc2audio_swaudiocodec.so
 vendor/lib64/libqc2audio_utils.so

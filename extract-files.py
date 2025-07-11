@@ -9,7 +9,6 @@ from extract_utils.fixups_blob import (
     blob_fixups_user_type,
 )
 from extract_utils.fixups_lib import (
-    lib_fixup_remove,
     lib_fixups,
     lib_fixups_user_type,
 )
@@ -27,12 +26,19 @@ namespace_imports = [
     'vendor/qcom/opensource/dataservices',
 ]
 
+lib_replace_map = {
+    "audio.primary.parrot": "audio.primary.parrot_garnet",
+    "libar-pal": "libar-pal_garnet",
+}
+
+def lib_fixup_replace(lib: str, *args, **kwargs):
+    return lib_replace_map.get(lib, lib)
+
+libs_to_replace = tuple(lib_replace_map.keys())
+
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
-    (
-        'libar-pal',
-        'libpalclient',
-    ): lib_fixup_remove,
+    libs_to_replace: lib_fixup_replace,
 }
 
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
