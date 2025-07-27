@@ -5,6 +5,6 @@
 
 runtime_resource_overlay {
     name: "CarrierConfigOverlayGarnet",
-    vendor: true,
+    system_ext_specific: true,
     aaptflags: ["--keep-raw-values"],
 }
