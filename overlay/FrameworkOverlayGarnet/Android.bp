@@ -7,3 +7,16 @@ runtime_resource_overlay {
     name: "FrameworkOverlayGarnet",
     vendor: true,
 }
+runtime_resource_overlay {
+    name: "FrameworkOverlayGarnetGLEsim",
+    manifest: "AndroidManifestGLEsim.xml",
+    resource_dirs: ["res-Esim"],
+    vendor: true,
+}
+
+runtime_resource_overlay {
+    name: "FrameworkOverlayGarnetJPEsim",
+    manifest: "AndroidManifestJPEsim.xml",
+    resource_dirs: ["res-Esim"],
+    vendor: true,
+}
