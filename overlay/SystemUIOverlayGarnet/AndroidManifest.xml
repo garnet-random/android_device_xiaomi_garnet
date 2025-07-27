@@ -1,10 +1,10 @@
 <!--
-     Copyright (C) 2024 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.systemui.overlay.garnet">
     <overlay android:targetPackage="com.android.systemui"
                    android:isStatic="true"
-                   android:priority="1000" />
+                   android:priority="1000"/>
 </manifest>
