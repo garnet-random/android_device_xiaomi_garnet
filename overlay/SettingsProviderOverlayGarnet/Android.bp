@@ -1,0 +1,32 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+runtime_resource_overlay {
+    name: "SettingsProviderOverlayGarnetPoco",
+    manifest: "AndroidManifest-poco.xml",
+    resource_dirs: ["res-poco"],
+    vendor: true,
+}
+
+runtime_resource_overlay {
+    name: "SettingsProviderOverlayGarnetRedmi",
+    manifest: "AndroidManifest-redmi.xml",
+    resource_dirs: ["res-redmi"],
+    vendor: true,
+}
+
+runtime_resource_overlay {
+    name: "SettingsProviderOverlayGarnetRedmiCN",
+    manifest: "AndroidManifest-redmiCn.xml",
+    resource_dirs: ["res-redmiCn"],
+    vendor: true,
+}
+
+runtime_resource_overlay {
+    name: "SettingsProviderOverlayGarnetXIG05",
+    manifest: "AndroidManifest-xig05.xml",
+    resource_dirs: ["res-xig05"],
+    vendor: true,
+}
