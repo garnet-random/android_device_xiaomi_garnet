@@ -287,8 +287,26 @@ PRODUCT_PACKAGES += \
     NcmTetheringOverlay
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/overlay/config-vendor.xml:$(TARGET_COPY_OUT_VENDOR)/overlay/config/config.xml \
-    $(LOCAL_PATH)/overlay/config-system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/overlay/config/config.xml \
+    $(LOCAL_PATH)/overlay/config/config-vendor.xml:$(TARGET_COPY_OUT_VENDOR)/overlay/config/config.xml \
+    $(LOCAL_PATH)/overlay/config/config-system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/overlay/config/config.xml \
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/overlay/config/IN/config.xml:$(TARGET_COPY_OUT_VENDOR)/overlay/config/IN/config.xml \
+    $(LOCAL_PATH)/overlay/config/IN/garnet/config.xml:$(TARGET_COPY_OUT_VENDOR)/overlay/config/IN/garnet/config.xml \
+    $(LOCAL_PATH)/overlay/config/IN/garnetp/config.xml:$(TARGET_COPY_OUT_VENDOR)/overlay/config/IN/garnetp/config.xml
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/overlay/config/GL/config.xml:$(TARGET_COPY_OUT_VENDOR)/overlay/config/GL/config.xml \
+    $(LOCAL_PATH)/overlay/config/GL/garnet/config.xml:$(TARGET_COPY_OUT_VENDOR)/overlay/config/GL/garnet/config.xml \
+    $(LOCAL_PATH)/overlay/config/GL/garnetp/config.xml:$(TARGET_COPY_OUT_VENDOR)/overlay/config/GL/garnetp/config.xml
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/overlay/config/CN/config.xml:$(TARGET_COPY_OUT_VENDOR)/overlay/config/CN/config.xml \
+    $(LOCAL_PATH)/overlay/config/CN/garnet/config.xml:$(TARGET_COPY_OUT_VENDOR)/overlay/config/CN/garnet/config.xml
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/overlay/config/JP/config.xml:$(TARGET_COPY_OUT_VENDOR)/overlay/config/JP/config.xml \
+    $(LOCAL_PATH)/overlay/config/JP/XIG05/config.xml:$(TARGET_COPY_OUT_VENDOR)/overlay/config/JP/XIG05/config.xml \
 
 # Partitions
 PRODUCT_PACKAGES += \

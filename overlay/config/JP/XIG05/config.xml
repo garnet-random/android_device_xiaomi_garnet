@@ -1,0 +1,9 @@
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<config>
+    <overlay package="com.android.settingsproviders.garnet.XIG05" mutable="false" enabled="true" />
+    <overlay package="com.android.wifi.resources.overlay.garnet.XIG05" mutable="false" enabled="true" />
+    <overlay package="android.overlay.garnet.japan.esim" mutable="false" enabled="true" />
+</config>

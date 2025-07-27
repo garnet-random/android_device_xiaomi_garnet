@@ -4,5 +4,5 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="android.overlay.garnet">
-    <overlay android:targetPackage="android" />
+    <overlay android:targetPackage="android"/>
 </manifest>

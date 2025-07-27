@@ -5,6 +5,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.wifi.resources.overlay.garnet.redmi">
     <overlay android:targetPackage="com.android.wifi.resources"
-                   android:requiredSystemPropertyName="ro.boot.hardware.sku"
-                   android:requiredSystemPropertyValue="garnet"/>
+                   android:targetName="WifiCustomization"/>
 </manifest>

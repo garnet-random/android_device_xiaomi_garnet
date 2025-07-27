@@ -1,0 +1,9 @@
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<config>
+    <overlay package="com.android.settingsproviders.garnet.redmi" mutable="false" enabled="true" />
+    <overlay package="com.android.wifi.resources.overlay.garnet.redmi" mutable="false" enabled="true" />
+    <overlay package="android.overlay.garnet.global.esim" mutable="false" enabled="true" />
+</config>

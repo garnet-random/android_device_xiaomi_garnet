@@ -1,0 +1,25 @@
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<config>
+    <merge path="${ro.boot.hwc}/config.xml" />
+
+    <!-- Framework -->
+    <overlay package="android.overlay.garnet" mutable="false" enabled="true" />
+
+    <!-- NFC -->
+    <overlay package="com.android.nfc.overlay.garnet" mutable="false" enabled="true" />
+
+    <!-- Settings -->
+    <overlay package="com.android.settings.overlay.garnet" mutable="false" enabled="true" />
+
+    <!-- System UI -->
+    <overlay package="com.android.systemui.overlay.garnet" mutable="false" enabled="true" />
+
+    <!-- Tethering -->
+    <overlay package="com.android.networkstack.tethering.overlay.ncm" mutable="false" enabled="true" />
+
+    <!-- Wi-Fi -->
+    <overlay package="com.android.wifi.resources.overlay.garnet" mutable="false" enabled="true" />
+</config>

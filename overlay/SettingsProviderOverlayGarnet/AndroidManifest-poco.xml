@@ -4,7 +4,5 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.settingsproviders.garnet.poco">
-    <overlay android:targetPackage="com.android.providers.settings"
-                   android:requiredSystemPropertyName="ro.boot.hardware.sku"
-                   android:requiredSystemPropertyValue="garnetp"/>
+    <overlay android:targetPackage="com.android.providers.settings"/>
 </manifest>

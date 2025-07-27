@@ -5,6 +5,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.wifi.resources.overlay.garnet.XIG05">
     <overlay android:targetPackage="com.android.wifi.resources"
-                   android:requiredSystemPropertyName="ro.boot.hardware.sku"
-                   android:requiredSystemPropertyValue="XIG05"/>
+                   android:targetName="WifiCustomization"/>
 </manifest>
