@@ -5,5 +5,5 @@
 
 runtime_resource_overlay {
     name: "TelephonyOverlayGarnet",
-    vendor: true,
+    system_ext_specific: true,
 }
