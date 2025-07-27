@@ -5,7 +5,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.wifi.resources.overlay.garnet">
     <overlay android:targetPackage="com.android.wifi.resources"
-                   android:targetName="WifiCustomization"
-                   android:isStatic="true"
-                   android:priority="1000"/>
+                   android:targetName="WifiCustomization"/>
 </manifest>

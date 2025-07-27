@@ -4,7 +4,5 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="lineageos.platform.garnet">
-    <overlay android:targetPackage="lineageos.platform"
-                   android:isStatic="true"
-                   android:priority="1000" />
+    <overlay android:targetPackage="lineageos.platform"/>
 </manifest>

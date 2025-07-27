@@ -6,8 +6,6 @@
     package="com.android.wifi.resources.overlay.garnet.redmi.cn">
     <overlay android:targetPackage="com.android.wifi.resources"
                    android:targetName="WifiCustomization"
-                   android:isStatic="true"
-                   android:priority="851"
                    android:requiredSystemPropertyName="ro.boot.hwc"
                    android:requiredSystemPropertyValue="CN"/>
 </manifest>

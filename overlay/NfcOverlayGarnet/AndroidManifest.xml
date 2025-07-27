@@ -4,7 +4,5 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.nfc.overlay.garnet">
-    <overlay android:targetPackage="com.android.nfc"
-                   android:isStatic="true"
-                   android:priority="600"/>
+    <overlay android:targetPackage="com.android.nfc" />
 </manifest>

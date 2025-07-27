@@ -1,0 +1,26 @@
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<config>
+    <!-- Aperture -->
+    <overlay package="org.lineageos.aperture.garnet" mutable="false" enabled="true" />
+
+    <!-- CarrierConfig -->
+    <overlay package="com.android.carrierconfig.overlay.garnet" mutable="false" enabled="true" />
+
+    <!-- Dialer -->
+    <overlay package="com.android.dialer.overlay.garnet" mutable="false" enabled="true" />
+
+    <!-- LineageOS SDK -->
+    <overlay package="lineageos.platform.garnet" mutable="false" enabled="true" />
+
+    <!-- Settings Lineage -->
+    <overlay package="com.android.settings.lineage.overlay.garnet" mutable="false" enabled="true" />
+
+    <!-- System UI Lineage -->
+    <overlay package="com.android.systemui.lineage.overlay.garnet" mutable="false" enabled="true" />
+
+    <!-- Telephony -->
+    <overlay package="com.android.phone.overlay.garnet" mutable="false" enabled="true" />
+</config>

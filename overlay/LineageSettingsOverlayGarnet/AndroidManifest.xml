@@ -4,7 +4,5 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.settings.lineage.overlay.garnet">
-    <overlay android:targetPackage="com.android.settings"
-                   android:isStatic="true"
-                   android:priority="1000" />
+    <overlay android:targetPackage="com.android.settings" />
 </manifest>

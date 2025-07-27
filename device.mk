@@ -286,6 +286,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     NcmTetheringOverlay
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/overlay/config-vendor.xml:$(TARGET_COPY_OUT_VENDOR)/overlay/config/config.xml \
+    $(LOCAL_PATH)/overlay/config-system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/overlay/config/config.xml \
+
 # Partitions
 PRODUCT_PACKAGES += \
     vendor_bt_firmware_mountpoint \
