@@ -33,7 +33,4 @@
 
     <!-- String indicating the package name of the device GbaService implementation. -->
     <string name="config_gba_package" translatable="false">com.qualcomm.qti.uimGbaApp</string>
-
-    <!-- Show Preferred Network Type options in No SIM case -->
-    <bool name="config_no_sim_display_network_modes">true</bool>
 </resources>
