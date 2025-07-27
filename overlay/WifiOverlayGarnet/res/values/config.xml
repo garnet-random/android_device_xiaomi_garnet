@@ -19,9 +19,6 @@
     <!-- Wifi driver supports IEEE80211AX multiple user beamformer for softap -->
     <bool name="config_wifiSoftapHeMuBeamformerSupported" translatable="false">true</bool>
 
-    <!-- Indicates that bridged AP mode is supported on this device -->
-    <bool name="config_wifiBridgedSoftApSupported" translatable="false">false</bool>
-
     <!-- Indicates that SAE Hash-to-Element is supported on this device -->
     <bool name="config_wifiSaeH2eSupported" translatable="false">true</bool>
 
