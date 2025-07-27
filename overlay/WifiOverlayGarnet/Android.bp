@@ -7,3 +7,31 @@ runtime_resource_overlay {
     name: "WifiOverlayGarnet",
     vendor: true,
 }
+
+runtime_resource_overlay {
+    name: "WifiOverlayGarnetPoco",
+    manifest: "AndroidManifest-poco.xml",
+    resource_dirs: ["res-poco"],
+    vendor: true,
+}
+
+runtime_resource_overlay {
+    name: "WifiOverlayGarnetRedmi",
+    manifest: "AndroidManifest-redmi.xml",
+    resource_dirs: ["res-redmi"],
+    vendor: true,
+}
+
+runtime_resource_overlay {
+    name: "WifiOverlayGarnetRedmiCN",
+    manifest: "AndroidManifest-redmiCn.xml",
+    resource_dirs: ["res-redmiCn"],
+    vendor: true,
+}
+
+runtime_resource_overlay {
+    name: "WifiOverlayGarnetXIG05",
+    manifest: "AndroidManifest-xig05.xml",
+    resource_dirs: ["res-xig05"],
+    vendor: true,
+}
