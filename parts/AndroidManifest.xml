@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015-2016 The CyanogenMod Project
+                   2017-2018 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.lineageos.settings"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:sharedUserId="android.uid.system">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_SURFACE_FLINGER" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" tools:ignore="ProtectedPermissions" />
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="30"/>
+
+    <application
+        android:label="@string/device_settings_app_name"
+        android:persistent="true"
+        android:defaultToDeviceProtectedStorage="true"
+        android:directBootAware="true"
+        android:theme="@style/Theme.SubSettingsBase">
+
+        <receiver
+            android:name=".BootCompletedReceiver"
+            android:exported="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            tools:replace="android:authorities"/>
+
+        <receiver
+            android:name=".Startup"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".thermal.ThermalActivity"
+            android:label="@string/thermal_title">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.battery" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/thermal_summary" />
+        </activity>
+
+        <service
+            android:name=".thermal.ThermalService"
+            android:permission="ThermalService">
+        </service>
+
+	<activity
+    	    android:name=".charge.ChargeActivity"
+            android:label="@string/charge_bypass_title">
+    	    <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+            <meta-data
+        	android:name="com.android.settings.category"
+        	android:value="com.android.settings.category.ia.battery" />
+            <meta-data
+       		android:name="com.android.settings.summary"
+        	android:resource="@string/charge_bypass_summary" />
+	</activity>
+
+	<activity
+    	    android:name=".corecontrol.CoreControlActivity"
+    	    android:label="@string/core_control_title">
+    	    <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+    	    </intent-filter>
+    	    <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.battery" />
+    	    <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/core_control_summary" />
+        </activity>
+
+        <activity
+            android:name=".speaker.ClearSpeakerActivity" 
+            android:label="@string/clear_speaker_title">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.sound" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/clear_speaker_summary" />
+        </activity>
+
+        <activity
+            android:name=".refreshrate.RefreshActivity"
+            android:label="@string/refresh_title"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.display" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/refresh_summary" />
+        </activity>
+
+        <service
+            android:name=".refreshrate.RefreshService"
+            android:exported="true"
+            android:permission="RefreshService">
+        </service>
+
+      <!-- TileHandler activity -->
+        <activity
+            android:name=".TileHandlerActivity"
+            android:exported="true"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />
+            </intent-filter>
+        </activity>
+
+        <!-- Display Saturation activity -->
+        <activity
+            android:name=".saturation.SaturationActivity"
+            android:label="@string/saturation_title"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.display" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/saturation_summary" />
+        </activity>
+
+        <!-- Display Saturation tile service -->
+        <service  
+            android:name=".saturation.SaturationTileService"
+            android:label="@string/saturation_title"
+            android:icon="@drawable/ic_saturation_tile"
+            android:exported="true"  
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+	<!-- TileHandler activity -->
+        <activity
+            android:name=".TileHandlerActivity"
+            android:exported="true"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />
+            </intent-filter>
+        </activity>
+
+        <!-- Auto HBM activity -->
+        <activity
+            android:name=".autohbm.AutoHbmActivity"
+            android:label="@string/auto_hbm_title"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.display" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/auto_hbm_summary" />
+        </activity>
+
+        <!-- Auto HBM service -->
+        <service
+            android:name=".autohbm.AutoHbmService"
+            android:exported="false" />
+
+        <!-- Auto HBM tile service -->
+        <service
+            android:name=".autohbm.AutoHbmTileService"
+            android:label="@string/auto_hbm_title"
+            android:icon="@drawable/ic_auto_hbm_tile"
+            android:exported="true"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.TOGGLEABLE_TILE"
+                android:value="true" />
+        </service>
+
+        <!--HBM tile service -->
+        <service
+            android:name=".autohbm.HbmTileService"
+            android:label="@string/tile_hbm"
+            android:icon="@drawable/ic_hbm_tile"
+            android:exported="true"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.TOGGLEABLE_TILE"
+                android:value="true" />
+        </service>
+
+        <!-- GameBar Overlay -->
+        <activity
+            android:name=".gamebar.GameBarSettingsActivity"
+            android:label="@string/game_bar_title"
+            android:theme="@style/Theme.SubSettingsBase"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.system" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/game_bar_summary" />
+	    <meta-data
+                android:name="com.android.settings.icon"
+                android:resource="@drawable/ic_gamebar" />
+        </activity>
+
+        <!-- GameBar Overlay Tile Service -->
+        <service
+            android:name=".gamebar.GameBarTileService"
+            android:label="@string/game_bar_tile_label"
+            android:icon="@drawable/ic_gamebar"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.TOGGLEABLE_TILE"
+                android:value="true" />
+        </service>
+
+        <!-- GameBar Overlay Monitor Service -->
+        <service
+            android:name=".gamebar.GameBarMonitorService"
+            android:exported="false" />
+
+        <activity
+            android:name=".gamebar.GameBarPerAppConfigActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SubSettingsBase" />    
+
+        <!-- GameBar BootReceiver -->
+        <receiver
+            android:name=".gamebar.GameBarBootReceiver"
+            android:exported="true"
+            android:enabled="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+             </intent-filter>
+        </receiver>
+
+        <!-- Sound Control -->
+        <activity
+            android:name=".soundcontrol.SoundControlSettingsActivity"
+            android:label="@string/sound_control_title"
+            android:exported="true"
+            android:theme="@style/Theme.SubSettingsBase">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.sound" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/sound_control_title" />
+        </activity>
+
+    </application>
+</manifest>
