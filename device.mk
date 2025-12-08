@@ -4,9 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Call the MiuiCamera setupAdd commentMore actionsAdd commentMore actions
-$(call inherit-product-if-exists, device/xiaomi/miuicamera-garnet/device.mk)
-
 # Enable virtual A/B OTA
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 
@@ -471,4 +468,5 @@ PRODUCT_COPY_FILES += \
 # Vendor
 $(call inherit-product, vendor/xiaomi/garnet/garnet-vendor.mk)
 
+# Vendor MiuiCamera
 $(call inherit-product-if-exists, device/xiaomi/miuicamera-garnet/device.mk)
