@@ -23,6 +23,8 @@
 /vendor/lib(64)?/libcalculator\.so u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libcalculator_htp\.so u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libhta_hexagon_runtime_snpe\.so u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libprocessgroup_shim\.so u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libgui_shim\.so u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libmialgoengine\.so u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libmialgo_.*\.so u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libcamera_algoup_jni\.xiaomi\.so u:object_r:same_process_hal_file:s0
