@@ -4,6 +4,7 @@ hal_client_domain(hal_camera_default, vendor_hal_qspmhal)
 
 allow hal_camera_default proc_pressure_cpu:file r_file_perms;
 allow hal_camera_default proc_pressure_mem:file r_file_perms;
+allow hal_camera_default proc_meminfo:file r_file_perms;
 allow hal_camera_default proc_pressure_io:file r_file_perms;
 
 allow hal_camera_default vendor_sysfs_kgsl:file r_file_perms;
