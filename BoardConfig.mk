@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+
+-include device/xiaomi/miuicamera-garnet/BoardConfig.mk
+
 DEVICE_PATH := device/xiaomi/garnet
 
 BUILD_BROKEN_DUP_RULES := true
