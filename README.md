@@ -22,3 +22,4 @@ The **Xiaomi Redmi Note 13 Pro 5G / Poco X6 5G** (codenamed _garnet_) is a mid-r
 ## Device Picture
 
 ![Xiaomi Redmi Note 13 Pro 5G](logo.png)
+<img width="640" height="580" alt="488" src="https://github.com/user-attachments/assets/9bca1ec4-6129-486c-a499-69a07cd1d5dd" />
