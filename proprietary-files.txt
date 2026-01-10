@@ -35,7 +35,7 @@ vendor/lib/rfsa/adsp/libCalculator_skel.so
 vendor/lib/rfsa/adsp/libMIAIHDR_skel.so
 vendor/lib/rfsa/adsp/libQnnHtpV69.so
 vendor/lib/rfsa/adsp/libQnnHtpV69Skel.so
-vendor/lib/rfsa/adsp/libQnnSaver.so
+vendor/lib/rfsa/adsp/libQnnSaver.so;MODULE_SUFFIX=_adsp
 vendor/lib/rfsa/adsp/libSnpeDspV65Skel.so
 vendor/lib/rfsa/adsp/libSnpeDspV66Skel.so
 vendor/lib/rfsa/adsp/libSnpeHtpV68Skel.so
