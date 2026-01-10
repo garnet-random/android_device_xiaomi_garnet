@@ -1679,11 +1679,6 @@ vendor/lib64/vendor.qti.qesdhal@1.1-impl.so
 vendor/lib64/vendor.qti.qesdhal@1.1.so
 vendor/lib64/vendor.qti.qesdsys-V1-ndk_platform.so
 
-# QGuard
-vendor/bin/qguard
-vendor/etc/init/qguard.rc
-vendor/etc/qguard.json
-
 # QMI
 system/etc/sysconfig/qti_whitelist.xml
 system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml
