@@ -233,7 +233,7 @@ PRODUCT_COPY_FILES += \
 
 # Keylayout
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/keylayout/parrot-qrd-snd-card_Button_Jack.kl:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/usr/keylayout/parrot-qrd-snd-card_Button_Jack.kl
+    $(LOCAL_PATH)/configs/keylayout/parrot-qrd-snd-card_Button_Jack.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/parrot-qrd-snd-card_Button_Jack.kl
 
 # Keymint
 PRODUCT_COPY_FILES += \
