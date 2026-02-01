@@ -538,7 +538,7 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMinFreq",
       "Duration": 0,
-      "Value": "500000000"
+      "Value": "940000000"
     },
     {
       "PowerHint": "Flipendo",
