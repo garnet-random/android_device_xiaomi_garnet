@@ -1354,6 +1354,9 @@ vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
 # Graphics (Adreno)
+vendor/etc/permissions/android.hardware.vulkan.version-1_3.xml:vendor/etc/permissions/android.hardware.vulkan.version-1_3.xml
+vendor/etc/permissions/android.software.opengles.deqp.level.xml
+vendor/etc/permissions/android.software.vulkan.deqp.level.xml
 vendor/gpu/kbc/sequence_manifest.bin
 vendor/gpu/kbc/unified_kbcs_32.bin
 vendor/gpu/kbc/unified_kbcs_64.bin
@@ -1365,6 +1368,9 @@ vendor/lib/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib/libGLESv2_adreno.so
 vendor/lib/egl/libVkLayer_ADRENO_qprofiler.so
 vendor/lib/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib/libq3dtools_adreno.so
 vendor/lib/egl/libq3dtools_esx.so
+vendor/lib/libOpenCL_adreno.so
+vendor/lib/libadreno_compiler_cl.so
+vendor/lib/libdmabufheap.so
 vendor/lib/libCB.so
 vendor/lib/libOpenCL.so
 vendor/lib/libadreno_app_profiles.so
@@ -1383,6 +1389,7 @@ vendor/lib64/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib64/libGLESv2_adreno.so
 vendor/lib64/egl/libVkLayer_ADRENO_qprofiler.so
 vendor/lib64/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib64/libq3dtools_adreno.so
 vendor/lib64/egl/libq3dtools_esx.so
+vendor/lib64/egl/libPipeline_plugin.so
 vendor/lib64/libCB.so
 vendor/lib64/libOpenCL.so
 vendor/lib64/libadreno_app_profiles.so
@@ -1394,6 +1401,10 @@ vendor/lib64/libkernelmanager.so
 vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
 vendor/lib64/libllvm-qgl.so
+vendor/lib64/libOpenCL_adreno.so
+vendor/lib64/libadreno_compiler_cl.so
+vendor/lib64/libdmabufheap.so
+vendor/lib64/libgamepoweroptfeature.so
 
 # Graphics (Adreno firmware)
 vendor/firmware/a710_sqe.fw
@@ -1404,9 +1415,15 @@ vendor/firmware/a710_zap.elf
 vendor/firmware/a710_zap.mbn
 vendor/firmware/a710_zap.mdt
 vendor/firmware/gmu_gen70000.bin
+vendor/firmware/a630_sqe.fw
+vendor/firmware/a650_sqe.fw
+vendor/firmware/a660_sqe.fw
+vendor/firmware/a730_sqe.fw
+vendor/firmware/gen71100_sqe.fw
 
 # Graphics (Vulkan)
 vendor/lib64/hw/vulkan.adreno.so
+vendor/lib/hw/vulkan.adreno.so
 
 # Hotword enrollment
 product/etc/permissions/privapp-permissions-google-audio-system.xml:product/etc/permissions/privapp-permissions-hotword.xml
@@ -2086,6 +2103,7 @@ vendor/bin/thermal-engine-v2
 vendor/etc/init/hw/init.mi_thermald.rc
 vendor/etc/init/init_thermal-engine-v2.rc
 vendor/etc/thermal-4k.conf
+vendor/etc/thermal-boost.conf
 vendor/etc/thermal-camera.conf
 vendor/etc/thermal-cclassvideo.conf
 vendor/etc/thermal-cgame.conf
