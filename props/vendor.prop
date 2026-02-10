@@ -259,20 +259,20 @@ persist.vendor.qti.inputopts.movetouchslop=0.6
 ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
 
 # HWUI
-ro.hwui.render_ahead=3
-ro.hwui.drop_shadow_cache_size=8
-ro.hwui.gradient_cache_size=3
-ro.hwui.layer_cache_size=56
-ro.hwui.path_cache_size=48
-ro.hwui.r_buffer_cache_size=16
-ro.hwui.text_large_cache_height=2048
-ro.hwui.text_large_cache_width=4096
+ro.hwui.render_ahead=15
+ro.hwui.drop_shadow_cache_size=6
+ro.hwui.gradient_cache_size=1
+ro.hwui.layer_cache_size=48
+ro.hwui.path_cache_size=32
+ro.hwui.r_buffer_cache_size=8
+ro.hwui.text_large_cache_height=1024
+ro.hwui.text_large_cache_width=2048
 ro.hwui.text_small_cache_height=1024
 ro.hwui.text_small_cache_width=1024
-ro.hwui.texture_cache_size=136
 ro.hwui.texture_cache_flushrate=0.4
+ro.hwui.texture_cache_size=72
 debug.hwui.use_hint_manager=true
-debug.hwui.target_cpu_time_percent=45
+debug.hwui.target_cpu_time_percent=30
 debug.hwui.renderer=skiavk
 debug.hwui.show_overdraw=false
 debug.hwui.use_triple_buffering=true
@@ -280,15 +280,7 @@ debug.hwui.vulkan.use_pipeline_cache=true
 debug.renderengine.vulkan=true
 debug.renderengine.backend=vulkan
 renderthread.skia.reduceopstasksplitting=true
-
-# Vulkan Core - Adreno 710 Optimized 
-debug.hwui.vulkan.batch_size=128
-debug.hwui.vulkan.parallel_compile=true
-debug.hwui.vulkan.async_present=true
-debug.vulkan.frame.pacing=1
-debug.vulkan.gpu.priority=high
 debug.gralloc.enable_fb_ubwc=1
-debug.gralloc.gfx_ubwc_disable=0
 
 # Performance
 debug.performance.tuning=1
