@@ -11,6 +11,7 @@ soong_namespace {
         "hardware/qcom-caf/common/libqti-perfd-client",
         "hardware/xiaomi",
         "vendor/qcom/opensource/commonsys-intf/display",
+	"vendor/xiaomi/garnet",
     ],
 }
 

@@ -55,6 +55,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed(
             'libgrpc++_unsecure.so',
             'libgrpc++_unsecure_prebuilt.so'
+    'system_ext/framework/mirilhook.jar': blob_fixup()
+        .apktool_patch('blob-patches/mirilhook.patch', '-r'),
         ),
     (
         'vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service',
