@@ -1,0 +1,35 @@
+//
+// Copyright (C) 2023-2025 Paranoid Android
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+android_app {
+    name: "EuiccGarnet",
+    certificate: "platform",
+    srcs: ["src/**/*.kt"],
+    platform_apis: true,
+    privileged: true,
+    system_ext_specific: true,
+    static_libs: [
+        "androidx.core_core",
+        "androidx.preference_preference",
+        "org.lineageos.settings.resources",
+        "SettingsLib",
+        "qcrilhook",
+    ],
+    required: [
+        "privapp_whitelist_com.xiaomi.settings.xml",
+    ],
+    optional_uses_libs: [
+        "com.qualcomm.qcrilhook",
+        "com.qti.extphone.extphonelib",
+    ],
+}
+
+prebuilt_etc {
+    name: "privapp_whitelist_com.xiaomi.settings.xml",
+    src: "permissions/privapp_whitelist_com.xiaomi.settings.xml",
+    relative_install_path: "permissions",
+    system_ext_specific: true,
+}

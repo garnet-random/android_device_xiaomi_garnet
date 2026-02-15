@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from garnet OS2.0.203.0.VNRMIXM
+# All unpinned blobs below are extracted from garnet OS2.0.206.0.VNRMIXM
 
 # ACDB
 vendor/etc/acdbdata/Mise/Mise_acdb_cal.acdb
@@ -35,7 +35,7 @@ vendor/lib/rfsa/adsp/libCalculator_skel.so
 vendor/lib/rfsa/adsp/libMIAIHDR_skel.so
 vendor/lib/rfsa/adsp/libQnnHtpV69.so
 vendor/lib/rfsa/adsp/libQnnHtpV69Skel.so
-vendor/lib/rfsa/adsp/libQnnSaver.so
+vendor/lib/rfsa/adsp/libQnnSaver.so;MODULE_SUFFIX=_adsp
 vendor/lib/rfsa/adsp/libSnpeDspV65Skel.so
 vendor/lib/rfsa/adsp/libSnpeDspV66Skel.so
 vendor/lib/rfsa/adsp/libSnpeHtpV68Skel.so
@@ -232,35 +232,6 @@ vendor/lib64/vendor.qti.latency@2.1.so
 # Camera
 odm/etc/camera/camerabooster.json
 odm/etc/camera/camerascene.json
-odm/etc/camera/videofilter/110_BlackGold.png
-odm/etc/camera/videofilter/129_LeicaVivid.png
-odm/etc/camera/videofilter/130_LeicaNatural.png
-odm/etc/camera/videofilter/131_MonochromeTrue.png
-odm/etc/camera/videofilter/132_MonochromeHighContrast.png
-odm/etc/camera/videofilter/133_MonochromeBrown.png
-odm/etc/camera/videofilter/134_MonochromeBlue.png
-odm/etc/camera/videofilter/144_RedHero.png
-odm/etc/camera/videofilter/146_TactileGreen.png
-odm/etc/camera/videofilter/148_Mild.png
-odm/etc/camera/videofilter/149_LilyWhite.png
-odm/etc/camera/videofilter/150_Bright.png
-odm/etc/camera/videofilter/151_Fresh.png
-odm/etc/camera/videofilter/152_Limpid.png
-odm/etc/camera/videofilter/153_KC64.png
-odm/etc/camera/videofilter/154_V250.png
-odm/etc/camera/videofilter/155_H400.png
-odm/etc/camera/videofilter/156_ColdWhite.png
-odm/etc/camera/videofilter/157_Native.png
-odm/etc/camera/videofilter/158_BWClassical.png
-odm/etc/camera/videofilter/159_Flowers.png
-odm/etc/camera/videofilter/160_Vivid.png
-odm/etc/camera/videofilter/161_KP160.png
-odm/etc/camera/videofilter/162_Natural.png
-odm/etc/camera/videofilter/163_KG200.png
-odm/etc/camera/videofilter/164_FC400.png
-odm/etc/camera/videofilter/165_C50D.png
-odm/etc/camera/videofilter/166_F50.png
-odm/lib64/libMiVideoFilter.so
 odm/lib64/librfs_warp.so
 vendor/bin/hw/vendor.qti.camera.provider@2.7-service_64
 vendor/bin/hw/vendor.xiaomi.hardware.quickcamera@1.0-service
@@ -652,7 +623,6 @@ vendor/lib64/camera/components/com.mi.node.superiq.so
 vendor/lib64/camera/components/com.mi.node.test_rearvideo.so
 vendor/lib64/camera/components/com.mi.node.tsskinbeautifier.so
 vendor/lib64/camera/components/com.mi.node.videobokeh.so
-vendor/lib64/camera/components/com.mi.node.videofilter.so
 vendor/lib64/camera/components/com.qti.camx.chiiqutils.so
 vendor/lib64/camera/components/com.qti.eisv2.so
 vendor/lib64/camera/components/com.qti.eisv3.so
@@ -1048,6 +1018,34 @@ vendor/lib64/camera/com.qti.tuned.garnet_sunny_s5khp3_wide_global_i.bin
 vendor/lib64/camera/com.qti.tuned.garnet_sunny_s5khp3_wide_i.bin
 vendor/lib64/hw/com.qti.chi.override.so
 
+# Camera Video Filter LUts
+vendor/etc/camera/102_SummerDay.png|854075e4570bbf561063a096dae0fe9d2151809d
+vendor/etc/camera/103_Fantasy.png|0eb52c60f767c4a9b26b22f4ee35ec646545a123
+vendor/etc/camera/104_Meet.png|f72dbf0c125237acb41a115dab40233e275fcf92
+vendor/etc/camera/105_WindSing.png|8d07722a63e5619fbd3b293078ae67dfe271a72c
+vendor/etc/camera/106_Lost.png|61a35b9eb3c6286357ba213cfce0b3e1fc112fd6
+vendor/etc/camera/107_Central.png|64c1e291c873ff7715ee9017c3a0d6cae48a9b6a
+vendor/etc/camera/108_NorthernEurope.png|ae5c9c7ad2e37d4e924bac229af1577be8b2595b
+vendor/etc/camera/109_Rome.png|6a46690036b8e6925b51b1b4c2a687870e486b87
+vendor/etc/camera/110_BlackGold.png|41f2757306323470f32c3a07356362e6903b7b02
+vendor/etc/camera/111_GreenOrange.png|7ccb8c48068296275ab440129750cddc47e26f4d
+vendor/etc/camera/112_CyberPunk.png|a8245aafb5cf4a2bf2aa1ed58ad35dc3140607bb
+vendor/etc/camera/113_BlackIce.png|00bb1b9b499aca960475b79414b5a076324c8b46
+vendor/etc/camera/121_Bleach.png|7cae58047cf3bd9854510cd54cd11c6c0e442f75
+vendor/etc/camera/122_Thriller.png|d73f8b11a3f45a0a646eb5d71b6a1d5bf72e90d3
+vendor/etc/camera/123_TealOrange.png|c7acfd64e602235ef26c0051cc125b15a2d6437b
+vendor/etc/camera/124_JapaneseStyle.png|7dfec84eb0a7728e2503a7d260634e0f26011364
+vendor/etc/camera/125_Latin.png|eac04636de0aeac2480a3be9d1f0e04f58ddfd0b
+vendor/etc/camera/126_Fantasy2.png|8b94fd32b66b3e88129618612f2603b9bdc0b3c9
+vendor/etc/camera/127_Creamy.png|71d1a5bc75edad2eb29ef58b1e41a18c55e5f609
+vendor/etc/camera/128_Sepia.png|ac5cf27142b07425c0775e8939ae2d99524ed622
+vendor/etc/camera/129_Vivid.png|5da99b1616af1d61a62c9e296a5b2e51951e1769
+vendor/etc/camera/130_Natural.png|e6b9363ca508adc198681356ad343c1e29bc695a
+
+# Camera Video Filter Libraries
+vendor/lib64/libMiVideoFilter.so|7a7c64e8bbb4268414bc491ec3668132d60bfdbc|ab5942405e6129c10c42b5c599db610791daa5c2
+vendor/lib64/camera/components/com.mi.node.videofilter.so|503b5bcdc2c0be330c83b5823f54b2a0489f927e
+
 # Computer vision
 vendor/lib64/libcv_common.so
 vendor/lib64/libcvp2_1.so
@@ -1192,12 +1190,12 @@ vendor/bin/qdcmss|727147cbaf4d74f0eb38c534fda9beebdfec31f6
 vendor/etc/init/qdcmss.rc|53d78d686678c4f923a9ec4ace7d4d3575b13788
 vendor/lib64/libbacklight-calib.so|a5990fa87932196f9e2c38b2ec85786daa6b3a9c
 vendor/lib64/libdigital-dimming.so|66506a386dc80da0994c9d4aeac34edfc1830c5c
-vendor/lib64/libdpps.so|d8e9cc561a3ab706697880975413db23bb41640c
+vendor/lib64/libdpps.so|d8e9cc561a3ab706697880975413db23bb41640c|5d3e5f10ce5adff610e67acd837b19a551412876
 vendor/lib64/libmemutils.so|e122c3ff95b10a6263e698261abafe62cee98010
 vendor/lib64/libqdcm-algo.so|e873dc21878d92d20f6937453c9d3265a0d3a93d
 vendor/lib64/libqdcm-json-mode-parser.so|1c8f1a841a877efbed0a0b3db3d551ff1283f14f
 vendor/lib64/libqdcm-mode-parser.so|341178dfb18e03b6fabff27a080fb96f15188942
-vendor/lib64/libsnapdragoncolor-manager.so|72291478bd56bada0fc3df3617e765b28ef54f66
+vendor/lib64/libsnapdragoncolor-manager.so|72291478bd56bada0fc3df3617e765b28ef54f66|ba9a38c02dae4cc2211895714969c589faaff1f4
 vendor/lib64/libsnapdragoncolor-qdcm.so|9f0bc72290618324e95cd9f4eca6987a6733bd06
 
 # Display SDM - from ingot-user 14 UKQ1.240227.165 release-keys
@@ -1356,6 +1354,9 @@ vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
 # Graphics (Adreno)
+vendor/etc/permissions/android.hardware.vulkan.version-1_3.xml:vendor/etc/permissions/android.hardware.vulkan.version-1_3.xml
+vendor/etc/permissions/android.software.opengles.deqp.level.xml
+vendor/etc/permissions/android.software.vulkan.deqp.level.xml
 vendor/gpu/kbc/sequence_manifest.bin
 vendor/gpu/kbc/unified_kbcs_32.bin
 vendor/gpu/kbc/unified_kbcs_64.bin
@@ -1367,6 +1368,9 @@ vendor/lib/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib/libGLESv2_adreno.so
 vendor/lib/egl/libVkLayer_ADRENO_qprofiler.so
 vendor/lib/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib/libq3dtools_adreno.so
 vendor/lib/egl/libq3dtools_esx.so
+vendor/lib/libOpenCL_adreno.so
+vendor/lib/libadreno_compiler_cl.so
+vendor/lib/libdmabufheap.so
 vendor/lib/libCB.so
 vendor/lib/libOpenCL.so
 vendor/lib/libadreno_app_profiles.so
@@ -1385,6 +1389,7 @@ vendor/lib64/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib64/libGLESv2_adreno.so
 vendor/lib64/egl/libVkLayer_ADRENO_qprofiler.so
 vendor/lib64/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib64/libq3dtools_adreno.so
 vendor/lib64/egl/libq3dtools_esx.so
+vendor/lib64/egl/libPipeline_plugin.so
 vendor/lib64/libCB.so
 vendor/lib64/libOpenCL.so
 vendor/lib64/libadreno_app_profiles.so
@@ -1396,6 +1401,10 @@ vendor/lib64/libkernelmanager.so
 vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
 vendor/lib64/libllvm-qgl.so
+vendor/lib64/libOpenCL_adreno.so
+vendor/lib64/libadreno_compiler_cl.so
+vendor/lib64/libdmabufheap.so
+vendor/lib64/libgamepoweroptfeature.so
 
 # Graphics (Adreno firmware)
 vendor/firmware/a710_sqe.fw
@@ -1406,9 +1415,15 @@ vendor/firmware/a710_zap.elf
 vendor/firmware/a710_zap.mbn
 vendor/firmware/a710_zap.mdt
 vendor/firmware/gmu_gen70000.bin
+vendor/firmware/a630_sqe.fw
+vendor/firmware/a650_sqe.fw
+vendor/firmware/a660_sqe.fw
+vendor/firmware/a730_sqe.fw
+vendor/firmware/gen71100_sqe.fw
 
 # Graphics (Vulkan)
 vendor/lib64/hw/vulkan.adreno.so
+vendor/lib/hw/vulkan.adreno.so
 
 # Hotword enrollment
 product/etc/permissions/privapp-permissions-google-audio-system.xml:product/etc/permissions/privapp-permissions-hotword.xml
@@ -1519,7 +1534,32 @@ vendor/lib64/libqcodec2_v4l2codec.so
 vendor/lib64/libvideotxr.so
 vendor/lib64/qti.video.utils.videobufferlayout.so
 
+# Media (Dolby)
+vendor/etc/dolby/dax-default.xml
+
+# Media (Dolby) - YUDI_OS1.0.2.0.UMHCNXM
+vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
+vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc|bc1e134139c7dd0e5b4f98952aa51c629ea66dc7
+vendor/etc/media_codecs_dolby_audio.xml|3119c61cc5471bb7902ac8b1ccd5785bb55a1918
+vendor/etc/vintf/manifest/vendor.dolby.hardware.dms.xml|c8095f649de19b80271fb429b4b6b439297a0678
+vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|556fa97b7fc5a3a8efd89aa413a4e6b508a9425e|f2bdf53f4d9ccc269a0df097e4b0acc7f3badb89
+vendor/bin/hw/vendor.dolby.media.c2@1.0-service|27e7aed8b219b082a66b8150e018f1db1c2bbcd8|e2afe22b6633f0b19fb39830c82c871cc0bc4d60
+vendor/lib64/libcodec2_soft_ac4dec.so|3f7da3e48b391f94e3e4aedbbea514eb5f4283ed
+vendor/lib64/libcodec2_soft_ddpdec.so|55275a7abcfde2d3f44fc48f9dd7a976fb98ebc1
+vendor/lib64/libcodec2_store_dolby.so|d0a85979f9c622cc5ad4071635271fe51c9ecb55
+vendor/lib64/libdapparamstorage.so|6dd6cf3bd92710cdba1cb981b52e64dca2407bd1
+vendor/lib64/libdeccfg.so|8ef3036d0b7a5f2caae277e21b5cf5174b2f085f
+vendor/lib64/libdlbdsservice.so|d4f9aa59644b1f90b221f188fc25a0b54db84c39|905fa82fbb586ff70db2c665546f01d4844e481c
+vendor/lib64/libdlbpreg.so|e1588ec15d1b328c037ffd2f80c426dcd90d6467|464e56435f739fc4f7a1f953e19feaeec7a06850
+vendor/lib64/soundfx/libdlbvol.so|1ebd52ecc1a42e1ec0eb785e541b08d191bf9924|56a4fbd854097e4b3b151e9ad94056699e55e623
+vendor/lib64/soundfx/libhwdap.so|1058720b5930196370e1e792a14e60e16c9a46e1|42dcf6149366ff1e8f3679d771bdcb14bb62a599
+vendor/lib64/soundfx/libswgamedap.so|cac12e23c860270775986d56c8f9b8f58ac07be3
+vendor/lib64/soundfx/libswvqe.so|bcfc527b34066600c4b747cced45ab8012e4c1a5
+vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|63db226e3f51448c094ef00ec9a92be089050219
+vendor/lib64/vendor.dolby.hardware.dms@2.0.so|e5c3409c9422297055cc79eff526e625be79ac32
+
 # Media Config
+vendor/etc/media_codecs_c2_audio.xml
 vendor/etc/media_codecs_parrot_v0.xml
 vendor/etc/media_codecs_performance_parrot_v0.xml
 vendor/etc/media_parrot_v0/video_system_specs.json
@@ -1532,11 +1572,6 @@ vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
 vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml
 vendor/lib64/libmlipay.so
 vendor/lib64/libmlipay@1.1.so
-
-# Modem manager
-vendor/bin/modemManager
-vendor/etc/init/modemManager.rc
-vendor/etc/seccomp_policy/modemManager.policy
 
 # NFC
 vendor/etc/libnfc-nci.conf
@@ -1625,25 +1660,6 @@ vendor/lib64/libsubsystem_control.so
 vendor/bin/init.qti.qcv.sh
 vendor/etc/init/init.qti.qcv.rc
 
-# QESDK
-vendor/bin/qesdk-manager
-vendor/bin/sensors-qesdk
-vendor/etc/init/qesdk-manager.rc
-vendor/etc/init/vendor.sensors.qesdk.rc
-vendor/etc/seccomp_policy/qesdk.policy
-vendor/etc/seccomp_policy/sensors-qesdk.policy
-vendor/lib64/libqesdk.so
-vendor/lib64/libqesdk_manager.so
-vendor/lib64/vendor.qti.qesdhal@1.0.so
-vendor/lib64/vendor.qti.qesdhal@1.1-impl.so
-vendor/lib64/vendor.qti.qesdhal@1.1.so
-vendor/lib64/vendor.qti.qesdsys-V1-ndk_platform.so
-
-# QGuard
-vendor/bin/qguard
-vendor/etc/init/qguard.rc
-vendor/etc/qguard.json
-
 # QMI
 system/etc/sysconfig/qti_whitelist.xml
 system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml
@@ -1715,6 +1731,7 @@ system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/qti_permissions.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
+system_ext/framework/mirilhook.jar
 system_ext/framework/qcrilhook.jar
 system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar
 system_ext/framework/vendor.qti.ims.connectionaidlservice-V1-java.jar
@@ -2063,6 +2080,7 @@ vendor/bin/thermal-engine-v2
 vendor/etc/init/hw/init.mi_thermald.rc
 vendor/etc/init/init_thermal-engine-v2.rc
 vendor/etc/thermal-4k.conf
+vendor/etc/thermal-boost.conf
 vendor/etc/thermal-camera.conf
 vendor/etc/thermal-cclassvideo.conf
 vendor/etc/thermal-cgame.conf

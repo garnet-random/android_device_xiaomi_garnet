@@ -1,0 +1,24 @@
+type hal_dms_default, domain;
+type hal_dms_default_exec, exec_type, file_type, vendor_file_type;
+type hal_dms_hwservice, hwservice_manager_type;
+
+init_daemon_domain(hal_dms_default)
+
+hal_attribute_hwservice(hal_dms, hal_dms_hwservice)
+hal_server_domain(hal_dms_default, hal_dms)
+
+add_hwservice(hal_dms_server, hal_dms_hwservice)
+
+binder_call(hal_dms_client, hal_dms_server)
+binder_call(hal_dms_server, hal_dms_client)
+
+allow hal_dms_default hal_dms_hwservice:hwservice_manager add;
+
+allow hal_dms_default vendor_data_file:dir rw_dir_perms;
+allow hal_dms_default vendor_data_file:file create_file_perms;
+allow hal_dms_default property_socket:sock_file write;
+
+allow hal_dms_default vendor_audio_prop:property_service set;
+allow hal_dms_default vendor_audio_prop:file {read getattr map open};
+
+allow hal_dms_default init:unix_stream_socket connectto;

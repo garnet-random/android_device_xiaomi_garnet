@@ -1,6 +1,3 @@
-attribute vendor_hal_camerapostproc_xiaomi;
-attribute vendor_hal_camerapostproc_xiaomi_client;
-attribute vendor_hal_camerapostproc_xiaomi_server;
 type hal_quickcamera_hwservice, hwservice_manager_type;
 type vendor_hal_camerapostproc_xiaomi_hwservice, hwservice_manager_type;
 
@@ -28,8 +25,10 @@ allow vendor_hal_camerapostproc_xiaomi_server vendor_hal_camerapostproc_xiaomi_c
 allow vendor_hal_camerapostproc_xiaomi_server vendor_hal_camerapostproc_xiaomi_client:binder { call transfer };
 allow vendor_hal_camerapostproc_xiaomi_server vendor_hal_camerapostproc_xiaomi_client:fd *;
 get_prop(hal_camera_default, serialno_prop)
+hal_client_domain(hal_camera_default, hal_power)
 hal_server_domain(hal_camera_default, vendor_hal_camerapostproc_xiaomi)
 r_dir_file(hal_camera_default, mnt_vendor_file)
 r_dir_file(hal_camera_default, vendor_persist_sensors_file)
 set_prop(hal_camera_default, vendor_camera_p3enable_prop)
 set_prop(hal_camera_default, vendor_camera_sensor_prop)
+set_prop(hal_camera_default, vendor_camera_prop)
