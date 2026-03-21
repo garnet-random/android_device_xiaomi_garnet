@@ -11,6 +11,18 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "fstab.modem.cn",
+    src: "etc/fstab.modem.cn",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "fstab.modem.gl",
+    src: "etc/fstab.modem.gl",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.qcom.rc",
     src: "etc/init.qcom.rc",
     sub_dir: "init/hw",

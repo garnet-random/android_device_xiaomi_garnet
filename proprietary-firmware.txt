@@ -20,3 +20,6 @@ uefisecapp.img;AB
 xbl.img;AB
 xbl_config.img;AB
 xbl_ramdump.img;AB
+
+# garnet OS2.0.206.0.VNRCNXM
+modem.img:cust.img|56ff8b5e665984e46b1354d150c885284781df13
