@@ -73,6 +73,18 @@ on fs
     mkdir /mnt/vendor/persist/qca6490/ 0700 system system
     chmod 0666 /dev/xlog
 
+on fs && property:ro.boot.hwc=IN
+    mount vfat /dev/block/bootdevice/by-name/cust /firmware ro context=u:object_r:firmware_file:s0
+
+on fs && property:ro.boot.hwc=CN
+    mount vfat /dev/block/bootdevice/by-name/cust /firmware ro context=u:object_r:firmware_file:s0
+
+on fs && property:ro.boot.hwc=GL
+    mount vfat /dev/block/bootdevice/by-name/modem${ro.boot.slot_suffix} /firmware ro context=u:object_r:firmware_file:s0
+
+on fs && property:ro.boot.hwc=JP
+    mount vfat /dev/block/bootdevice/by-name/modem${ro.boot.slot_suffix} /firmware ro context=u:object_r:firmware_file:s0
+
 on fs && property:ro.boot.product.vendor.sku=taro
     mkdir /mnt/vendor/spunvm 0660 system system
     wait /dev/block/bootdevice/by-name/spunvm
@@ -87,6 +99,22 @@ on late-fs
     wait_for_prop hwservicemanager.ready true
     #exec_start wait_for_keymaster
     mount_all /vendor/etc/fstab.qcom --late
+
+on late-fs && property:ro.boot.hwc=IN
+    wait /dev/block/bootdevice/by-name/cust
+    mount vfat /dev/block/bootdevice/by-name/cust /vendor/firmware_mnt ro shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337,context=u:object_r:firmware_file:s0
+
+on late-fs && property:ro.boot.hwc=CN
+    wait /dev/block/bootdevice/by-name/cust
+    mount vfat /dev/block/bootdevice/by-name/cust /vendor/firmware_mnt ro shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337,context=u:object_r:firmware_file:s0
+
+on late-fs && property:ro.boot.hwc=GL
+    wait /dev/block/bootdevice/by-name/modem${ro.boot.slot_suffix}
+    mount vfat /dev/block/bootdevice/by-name/modem${ro.boot.slot_suffix} /vendor/firmware_mnt ro shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337,context=u:object_r:firmware_file:s0
+
+on late-fs && property:ro.boot.hwc=JP
+    wait /dev/block/bootdevice/by-name/modem${ro.boot.slot_suffix}
+    mount vfat /dev/block/bootdevice/by-name/modem${ro.boot.slot_suffix} /vendor/firmware_mnt ro shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337,context=u:object_r:firmware_file:s0
 
 on post-fs-data
     mkdir /vendor/data/tombstones 0771 system system
