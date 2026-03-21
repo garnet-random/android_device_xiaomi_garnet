@@ -44,6 +44,17 @@ on fs
 
     # Load ADSP firmware for PMIC
     mkdir /firmware
+
+on fs && property:ro.boot.hwc=IN
+    mount vfat /dev/block/bootdevice/by-name/cust /firmware ro context=u:object_r:firmware_file:s0
+
+on fs && property:ro.boot.hwc=CN
+    mount vfat /dev/block/bootdevice/by-name/cust /firmware ro context=u:object_r:firmware_file:s0
+
+on fs && property:ro.boot.hwc=GL
+    mount vfat /dev/block/bootdevice/by-name/modem${ro.boot.slot_suffix} /firmware ro context=u:object_r:firmware_file:s0
+
+on fs && property:ro.boot.hwc=JP
     mount vfat /dev/block/bootdevice/by-name/modem${ro.boot.slot_suffix} /firmware ro context=u:object_r:firmware_file:s0
 
 on property:dev.mnt.blk.firmware=*

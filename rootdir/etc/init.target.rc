@@ -74,16 +74,20 @@ on fs
     chmod 0666 /dev/xlog
 
 on fs && property:ro.boot.hwc=IN
-    mount_all /vendor/etc/fstab.modem.gl --early
+    wait /dev/block/bootdevice/by-name/cust
+    mount vfat /dev/block/bootdevice/by-name/cust /vendor/firmware_mnt ro shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337,context=u:object_r:firmware_file:s0
 
 on fs && property:ro.boot.hwc=CN
-    mount_all /vendor/etc/fstab.modem.gl --early
+    wait /dev/block/bootdevice/by-name/cust
+    mount vfat /dev/block/bootdevice/by-name/cust /vendor/firmware_mnt ro shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337,context=u:object_r:firmware_file:s0
 
 on fs && property:ro.boot.hwc=GL
-    mount_all /vendor/etc/fstab.modem.cn --early
+    wait /dev/block/bootdevice/by-name/modem${ro.boot.slot_suffix}
+    mount vfat /dev/block/bootdevice/by-name/modem${ro.boot.slot_suffix} /vendor/firmware_mnt ro shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337,context=u:object_r:firmware_file:s0
 
 on fs && property:ro.boot.hwc=JP
-    mount_all /vendor/etc/fstab.modem.cn --early
+    wait /dev/block/bootdevice/by-name/modem${ro.boot.slot_suffix}
+    mount vfat /dev/block/bootdevice/by-name/modem${ro.boot.slot_suffix} /vendor/firmware_mnt ro shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337,context=u:object_r:firmware_file:s0
 
 on fs && property:ro.boot.product.vendor.sku=taro
     mkdir /mnt/vendor/spunvm 0660 system system
@@ -99,18 +103,6 @@ on late-fs
     wait_for_prop hwservicemanager.ready true
     #exec_start wait_for_keymaster
     mount_all /vendor/etc/fstab.qcom --late
-
-on fs && property:ro.boot.hwc=IN
-    mount_all /vendor/etc/fstab.modem.gl --late
-
-on fs && property:ro.boot.hwc=CN
-    mount_all /vendor/etc/fstab.modem.gl --late
-
-on fs && property:ro.boot.hwc=GL
-    mount_all /vendor/etc/fstab.modem.cn --late
-
-on fs && property:ro.boot.hwc=JP
-    mount_all /vendor/etc/fstab.modem.cn --late
 
 on post-fs-data
     mkdir /vendor/data/tombstones 0771 system system
